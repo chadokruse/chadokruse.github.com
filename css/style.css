@@ -1,0 +1,215 @@
+/*
+Theme Name: Grid-A-Licious(tm)
+Theme URI: http://www.suprb.com/grid-a-licious/
+Version: 1.0
+Author: <a href="http://www.suprb.com">(c) 2008 Suprb</a>
+*/
+
+body { 
+	font-size: 65%; 
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+	color:#000000;
+	margin: 0px; 
+	padding: 0px;
+	background-color: #ffffff;
+}
+
+a {	
+	color: #666666; 
+	text-decoration: underline; 
+}
+
+a img {
+	text-decoration: none;
+	border: none;
+}
+
+a:hover	{ 
+	color: #23aebb; 
+	text-decoration: underline; }
+
+#topborder {
+	height:35px;
+	background-color:#1a1a1a;
+	width:100%;
+}
+
+#topcontact {
+	margin:0 0 0 0px;
+	float: right;
+	padding:0px 30px 0px 0px;
+	height: 35px;
+}
+
+.mailto {
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.clear {
+	clear: both;
+}
+
+#header {
+	width:940px; 
+	height: 217px;
+	margin: 0 auto 30px; 
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+
+.noscript {
+	color: #FF0000;
+	font-size: 14px;
+}
+
+.intro {
+	width: 940px;
+	margin-bottom:100px;
+	margin-top:-20px;
+	margin-right:0px;
+	margin-left:0px;
+	padding:22px 0;
+}
+
+#navdiv { 
+	width: 97%;
+	height: 30px; 
+	border-top: 1px solid #808080;
+	border-bottom: 1px solid #808080;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	margin-left: 20px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;	
+}
+
+
+
+#nav {
+	padding:0;
+	margin:0;
+	color:#888888;
+	font-size: 11px;
+}
+
+#nav ul {	
+	padding: 0px;
+	margin:13px 0 0 0px;
+}
+
+#nav li {
+	display:inline;
+	padding:0.2em 1em;
+	color:#000000;
+	text-decoration:none;
+	border:0px solid #000;
+	margin:0 0 0 0px;
+}
+
+#nav li a {
+	color:#888888;
+	text-decoration:none;
+}
+
+#nav li a.current {
+	color:#000000;
+	text-decoration:none;
+}
+
+#nav li a.active {
+	color:#23aebb;
+	text-decoration:none;
+}
+
+#nav li a:hover {
+	color:#23aebb;
+}
+
+
+
+.contentIndex p img { 
+	display:none;
+}
+
+
+.eachpost { 	
+	background-color: #ffffff; 
+	width: 220px;
+	border-color: #d0d0d0; 	
+	border-width: 2px; 	
+	border-style: solid;		
+	font-family: Georgia, "Times New Roman", Times, serif;
+	position:absolute;
+	_margin-top: 10px;
+	_margin-right: 10px;	 
+	_padding-top: 10px;	 
+	_padding-left: 10px;
+	_padding-bottom: 10px;	
+}
+			
+.eachpost > div { 
+	padding: 10px;
+	margin: 0px;
+	_width:180px; 
+	_padding:0px;
+}
+	
+#allposts { 
+	margin-left: 20px; 
+	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	padding:0px;
+	background: #eeeeee;
+
+}
+
+.twocols { 
+	background-color: white; 
+	width: 440px;
+	border-color: #d0d0d0; 
+	border-width: 1px; 
+	border-style: solid; 
+	font-family: Georgia, "Times New Roman", Times, serif; 
+}
+
+.threecols { 
+	font-family: Georgia, "Times New Roman", Times, serif; 
+	background: white 
+}
+
+.tileheader { 
+	color: #ff6633; 
+	margin-bottom: 10px;
+	line-height: 14px; 
+	font-size: 12px; 
+	font-family: Georgia, "Times New Roman", Times, serif; 
+	font-weight: bold;
+}
+
+.tileheader a { 
+	text-decoration: none; 
+	color: #ff6633; 
+	line-height: 14px; 
+	font-size: 11px; 
+	font-family: Georgia, "Times New Roman", Times, serif; 
+	font-weight: bold; 
+}
+
+.tileheader a:hover { 
+	text-decoration: none; 
+	color: #23aebb; 
+	line-height: 14px; 
+	font-size: 11px; 
+	font-family: Georgia, "Times New Roman", Times, serif; 
+	font-weight: bold; 
+}
+
+span.blue { color: #7dc679; }
+
+span.grey { color: #707070; font-weight:bold; }
+
+span.black { color: #000000; }
+
