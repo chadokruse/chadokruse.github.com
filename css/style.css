@@ -11,7 +11,8 @@ body {
 	color:#000000;
 	margin: 0px; 
 	padding: 0px;
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
+	background: url("../images/bg.png")
 }
 
 a {	
@@ -64,19 +65,25 @@ a:hover	{
 }
 
 .intro {
-	width: 940px;
 	margin-bottom:100px;
 	margin-top:-20px;
 	margin-right:0px;
-	margin-left:0px;
+	margin-left:350px;
 	padding:22px 0;
+	text-align: left;
+	font-size: 48px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	text-shadow: 0 1px 0 white;
+	
 }
 
 #navdiv { 
 	width: 97%;
 	height: 30px; 
-	border-top: 1px solid #808080;
-	border-bottom: 1px solid #808080;
+	background: #fff;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ddd;
 	padding-top: 0px;
 	padding-bottom: 10px;
 	margin-left: 20px;
@@ -136,10 +143,7 @@ a:hover	{
 
 .eachpost { 	
 	background-color: #ffffff; 
-	width: 220px;
-	border-color: #d0d0d0; 	
-	border-width: 2px; 	
-	border-style: solid;		
+	width: 220px;		
 	font-family: Georgia, "Times New Roman", Times, serif;
 	position:absolute;
 	_margin-top: 10px;
@@ -147,6 +151,10 @@ a:hover	{
 	_padding-top: 10px;	 
 	_padding-left: 10px;
 	_padding-bottom: 10px;	
+	box-shadow:0px 0px 10px #888;
+	-moz-box-shadow:0px 0px 10px #888;
+	-webkit-box-shadow:0px 0px 10px #888;
+	filter:progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=0),progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=90),progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=180),progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=270);
 }
 			
 .eachpost > div { 
@@ -158,7 +166,7 @@ a:hover	{
 	
 #allposts { 
 	margin-left: 20px; 
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-bottom: 0px;
 	margin-right: 0px;
 	padding:0px;
