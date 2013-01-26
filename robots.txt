@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /kyn/
+Disallow: /10speak/
