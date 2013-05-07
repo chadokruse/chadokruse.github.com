@@ -92,8 +92,6 @@ a:hover	{
 	margin-bottom: 0px;	
 }
 
-
-
 #nav {
 	padding:0;
 	margin:0;
@@ -134,12 +132,9 @@ a:hover	{
 	color:#23aebb;
 }
 
-
-
 .contentIndex p img { 
 	display:none;
 }
-
 
 .eachpost { 	
 	background-color: #ffffff; 
@@ -171,7 +166,6 @@ a:hover	{
 	margin-right: 0px;
 	padding:0px;
 	background: #eeeeee;
-
 }
 
 .twocols { 
