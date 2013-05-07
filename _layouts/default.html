@@ -19,63 +19,7 @@
     <script type="text/javascript" src="scripts/jquery-1.2.6.pack.js"></script>
     <script type="text/javascript" src="scripts/jquery.jfade.1.0.min.js"></script>
     <script type="text/javascript" src="scripts/grid-a-licious.js"></script>
-    <script language="javascript" type="text/javascript">
-
-    $(document).ready(function() {
-
-    $(".eachpost").jFade({
-        trigger: "mouseover",
-        property: 'background',
-        start: 'ffffff',
-        end: 'cccccc',
-        steps: 8,
-        duration: 8
-    }).jFade({
-        trigger: "mouseout",
-        property: 'background',
-        start: 'cccccc',
-        end: 'ffffff',
-        steps: 8,
-        duration: 8
-    });
-
-    $(".eachpost twocols").jFade({
-        trigger: "mouseover",
-        property: 'background',
-        start: 'ffffff',
-        end: 'cccccc',
-        steps: 8,
-        duration: 8
-    }).jFade({
-        trigger: "mouseout",
-        property: 'background',
-        start: 'cccccc',
-        end: 'ffffff',
-        steps: 8,
-        duration: 8
-    });
-
-    });
-    </script>
-    
-    <script type="text/javascript">
-     $(document).ready(function(){
-       $(".photo").css({opacity: 0.25})
-       $(".photo").hover(function () {
-         $(this).fadeTo("normal", 1.0);
-       }, function () {
-         $(this).fadeTo("normal", 0.25);
-         });
-
-     });
-    </script>
-    
-    <script type="text/javascript">
-     $(document).ready(function(){
-       $(".eachpost").css({opacity: 0});
-       $(".eachpost").fadeTo("slow", 1); 
-     });
-    </script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
     
 </head>
 <body>
