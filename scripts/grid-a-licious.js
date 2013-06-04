@@ -17,7 +17,7 @@
  * Thanks for understanding.
  */
 
-	var MIN_COLS = 5;
+	var MIN_COLS = 4; // Default was 5
 	var COL_WIDTH = 220;
 	var GAP = 20; 
 	
