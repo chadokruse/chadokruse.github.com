@@ -2,6 +2,12 @@ $(document).ready(function() {
 
     // Sticky Nav (filter bar sticks to top when reaches top)
     $('#navdiv').scrollToFixed();
+
+    // Active state for filter bar
+    // Active state for subnav
+    $(function(){
+        $('a[data-pathname="' + window.location.pathname + '"]').addClass('current');
+    });
  
     // Filter AJAX Call
     $('a.filter').on('click', function(event) {

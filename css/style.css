@@ -25,7 +25,7 @@ a img {
 	border: none;
 }
 
-a:hover	{ 
+a:hover { 
 	color: #23aebb; 
 	text-decoration: underline; }
 
@@ -125,6 +125,11 @@ a:hover	{
 #nav li a.current {
 	color:#000000;
 	text-decoration:none;
+}
+#nav li a.current:hover {
+	color:inherit;
+	text-decoration: inherit;
+	cursor: default;
 }
 
 #nav li a.active {
