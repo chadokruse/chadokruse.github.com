@@ -29,7 +29,9 @@ $(document).ready(function() {
          event.stopPropagation();
     });
 
-    // Hover gray-out effect TODO: Why is this js? Convert to CSS
+    // Hover gray-out effect
+    /* Unhide if you want to addback the effect
+
     $(".eachpost").jFade({
         trigger: "mouseover",
         property: 'background',
@@ -61,6 +63,8 @@ $(document).ready(function() {
         steps: 8,
         duration: 8
     });
+
+    End of hover gray-out effect comment */
 
      // Fade effect after grid-a-licious calculates layout
      
