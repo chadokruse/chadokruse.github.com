@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    // Sticky Nav (filter bar sticks to top when reaches top)
+    $('#navdiv').scrollToFixed();
+ 
     // Filter AJAX Call
     $('a.filter').on('click', function(event) {
         var elem = $("#allposts");
