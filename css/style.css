@@ -169,6 +169,17 @@ a:hover {
 	_width:180px; 
 	_padding:0px;
 }
+
+.eachpost.solid-color {
+	background-color: red;
+	color: white;
+	font-family: Lato, Arial;
+	font-size: 18px;
+	line-height: 0px;
+	text-align: center;
+	height: 120px;
+	padding-top: 80px;
+}
 	
 #allposts { 
 	margin-left: 20px; 
