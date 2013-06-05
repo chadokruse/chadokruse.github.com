@@ -123,11 +123,13 @@ a:hover {
 }
 
 #nav li a.current {
-	color:#000000;
-	text-decoration:none;
+	// color:#000000;
+	// color: #7dc679;
+	color: #23aebb;
+	text-decoration: none;
 }
 #nav li a.current:hover {
-	color:inherit;
+	color: #23aebb;
 	text-decoration: inherit;
 	cursor: default;
 }
