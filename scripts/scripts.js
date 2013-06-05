@@ -1,5 +1,25 @@
 $(document).ready(function() {
 
+    // Filter AJAX Call
+    $('a.filter').on('click', function(event) {
+        var elem = $("#allposts");
+        var url = $(this).attr('href');
+         $.ajax({
+            type: "GET",
+            url: url,
+            dataType: 'html',
+            success: function(data) {
+                //elem.replaceWith(data); // Works, but does not allow for fadeOut of existing div
+                $(elem).fadeOut('fast', function() {
+                    $(elem).html(data);
+                    $(elem).fadeIn('slow');
+                });                          
+             }       
+         });    
+         event.preventDefault();
+         event.stopPropagation();
+    });
+
     // Hover gray-out effect TODO: Why is this js? Convert to CSS
     $(".eachpost").jFade({
         trigger: "mouseover",
