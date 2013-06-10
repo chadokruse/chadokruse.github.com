@@ -2,15 +2,15 @@ $(document).ready(function() {
 
     // Sticky Nav (filter bar sticks to top when reaches top)
     $('#navdiv').scrollToFixed();
-
-    // Active state for filter bar
-    // Active state for subnav
-    $(function(){
-        $('a[data-pathname="' + window.location.pathname + '"]').addClass('current');
-    });
  
     // Filter AJAX Call
     $('a.filter').on('click', function(event) {
+        
+        // Highlight current subnav link
+        $('a.filter').removeClass('current'); // Remove current class from all subnav links
+        $(this).addClass('current'); // Add "current" class to clicked subnav link
+
+        // Call new grid
         var elem = $("#allposts");
         var url = $(this).attr('href');
          $.ajax({
@@ -18,15 +18,14 @@ $(document).ready(function() {
             url: url,
             dataType: 'html',
             success: function(data) {
-                //elem.replaceWith(data); // Works, but does not allow for fadeOut of existing div
-                $(elem).fadeOut('fast', function() {
-                    $(elem).html(data);
-                    $(elem).fadeIn('slow');
-                });                          
-             }       
+                $(elem).replaceWith(data);
+                arrange(); // Call grid-a-licious to calculate new layout  
+                $(".eachpost").css({opacity: 0});
+                $(".eachpost").fadeTo("slow", 1);                     
+             },
          });    
          event.preventDefault();
-         event.stopPropagation();
+         //event.stopPropagation();
     });
 
     // Hover gray-out effect
@@ -66,9 +65,8 @@ $(document).ready(function() {
 
     End of hover gray-out effect comment */
 
-     // Fade effect after grid-a-licious calculates layout
-     
-   $(".eachpost").css({opacity: 0});
-   $(".eachpost").fadeTo("slow", 1);
-
+     // Fade effect after grid-a-licious calculates layout TODO: Is it possible to DRY this up? See also AJAX call
+     $(".eachpost").css({opacity: 0});
+     $(".eachpost").fadeTo("slow", 1);
+   
 }); 

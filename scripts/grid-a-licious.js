@@ -30,9 +30,6 @@
 		offx = $('#allposts').offset().left;
 		arrange(); 
 	});
-
-	// on filter click, call again
-	// ????
 	
 	// on window resize, call again
 	$(window).resize( function() { arrange(); } );
