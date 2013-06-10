@@ -5,11 +5,13 @@ $(document).ready(function() {
  
     // Filter AJAX Call
     $('a.filter').on('click', function(event) {
-        
+
         // Highlight current subnav link
         $('a.filter').removeClass('current'); // Remove current class from all subnav links
         $(this).addClass('current'); // Add "current" class to clicked subnav link
-
+        $('body,html').animate({ // Scroll and focus on subnav at top TODO: still a bit jumpy when scrolls from bottom
+                scrollTop: 280
+            }, 'slow');
         // Call new grid
         var elem = $("#allposts");
         var url = $(this).attr('href');
@@ -18,12 +20,14 @@ $(document).ready(function() {
             url: url,
             dataType: 'html',
             success: function(data) {
+                
                 $(elem).replaceWith(data);
-                arrange(); // Call grid-a-licious to calculate new layout  
+                arrange(); // Call grid-a-licious to calculate new layout 
+                 
                 $(".eachpost").css({opacity: 0});
-                $(".eachpost").fadeTo("slow", 1);                     
+                $(".eachpost").fadeTo("slow", 1);                                     
              },
-         });    
+         }); 
          event.preventDefault();
          //event.stopPropagation();
     });
