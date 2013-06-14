@@ -8,8 +8,8 @@ $(document).ready(function() {
 
         var scrollToFilter = function(){  // Define Scroll-to-filter animation
             $('body,html').animate({
-                scrollTop: 0
-                //scrollTop: $('#header').offset().top
+                //scrollTop: 0
+                scrollTop: $('#filter-focus').offset().top
                 }, "fast"); 
         };
         var elem = $("#allposts");
