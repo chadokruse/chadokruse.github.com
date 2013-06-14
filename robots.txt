@@ -4,6 +4,7 @@ Disallow: /technology-ventures.html
 Disallow: /all.html
 Disallow: /social-ventures/
 Disallow: /technology-ventures/
+Disallow: /2000/
 Disallow: /all/
 Disallow: /kyn/
 Disallow: /10speak/
