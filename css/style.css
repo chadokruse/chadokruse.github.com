@@ -193,7 +193,7 @@ a:hover {
 	margin-right: 0px;
 	padding:0px;
 	background: #eeeeee;
-	min-height: 1500px; // Allows consistency on ScrollTop for small-length pages like social-ventures
+	min-height: 1500px; // Allows consistency on ScrollToFilter effect for short pages
 }
 
 .twocols { 
