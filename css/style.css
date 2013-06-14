@@ -143,6 +143,11 @@ a:hover {
 	color:#23aebb;
 }
 
+#filter-focus {
+	position: absolute;
+	top: 280px;
+}
+
 .contentIndex p img { 
 	display:none;
 }
