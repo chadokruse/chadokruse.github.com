@@ -152,6 +152,10 @@ a:hover {
 	display:none;
 }
 
+.contentIndex ul {
+	padding-left: 25px;
+}
+
 .eachpost { 	
 	background-color: #ffffff; 
 	width: 220px;		
