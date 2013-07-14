@@ -45,7 +45,7 @@ $(document).ready(function() {
     });
 
     // Hover gray-out effect
-    /* Unhide if you want to addback the effect
+    /* Unhide if you want to addback the effect...remnant from the original grid-a-licious js
 
     $(".eachpost").jFade({
         trigger: "mouseover",
@@ -81,8 +81,8 @@ $(document).ready(function() {
 
     End of hover gray-out effect comment */
 
-     // Fade effect after grid-a-licious calculates layout TODO: Is it possible to DRY this up? See also AJAX call
-     $(".eachpost").css({opacity: 0});
-     $(".eachpost").fadeTo("slow", 1);
+    // Fade effect after grid-a-licious calculates layout TODO: Is it possible to DRY this up? See also AJAX call
+    $(".eachpost").css({opacity: 0});
+    $(".eachpost").fadeTo("slow", 1);
    
 }); 
