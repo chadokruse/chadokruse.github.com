@@ -8,13 +8,14 @@ You may find this project useful for visually showcasing past work history to co
 ###Usage###
 1. I'm assuming you already know how to get a Jekyll site up and running (I'll add a more detailed tutorial here shortly).
 2. I do things differently than most Jekyll templates because I wanted to control the order of the tiles (there are many ways to do this…I happen to choose this method). 
-3. All of the tiles are _includes (see `_includes/tiles folder`). Create your tiles there.
+3. All of the tiles are _includes (see `_includes/tiles`). Create your tiles there.
 3. Your main landing page is `index.html`. In it you'll find a reference to the `filtered-pages` folder. This folder contains three pages, which correspond to the three filter links in the subnav. In my case, they are `All`, `Social Ventures`, and `Technology Ventures`. Clicking on any of those makes an AJAX call to refresh the tiles without refreshing the whole page. A slightly better user experience IMHO. You can have as many filter tabs as you want.
 4. Create your grid of tiles by listing the appropriate include:  
 `{% include tiles/about.html %}` in the order you want them to appear.
+5. Update the href's in the filter bar (`_includes/header.html`) to match the naming convention in your `filtered-pages` folder. Example: `<li><a class="filter" href="/technology-ventures/">Tech Ventures</a></li>`
 5. Replace my Google Analytics ID with your own in `_includes/body-scripts.html`
 6. Delete the `CNAME` file. If you want a custom domain, follow [the instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-pages) to do so. If you get stuck, read Github's [troubleshooting](suggestions).
-7. Update robots.txt if you care about such things.
+7. Update `robots.txt` if you care about such things.
 
 This section is under development, so stay tuned for more detailed instructions.
 
