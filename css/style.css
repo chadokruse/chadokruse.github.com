@@ -25,6 +25,10 @@ a img {
 	border: none;
 }
 
+a img:hover {
+	opacity: 0.5;
+}
+
 a:hover { 
 	color: #23aebb; 
 	text-decoration: underline; }
