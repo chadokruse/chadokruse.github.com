@@ -6,7 +6,7 @@ You may find this project useful for visually showcasing past work history to co
 *Note: All of the usual blog templates/functionality have been gutted, so if it's a blog you seek, this might not be the right sample project for you.*
 
 ###Usage###
-1. I'm assuming you already know how to get a Jekyll site up and running (I'll add a more detailed tutorial here shortly).
+1. I'm assuming you already know how to get a Jekyll site up and running. I'll try to add a more detailed tutorial shortly, but if you're on a mac here are two good tutorials for installing all the necessary dependencies: [#1](http://andytaylor.me/2012/11/03/installing-ruby-and-jekyll/), [#2](http://brandonbohling.com/2011/08/Installing-Jekyll-on-Mac/). Then, read [this tutorial](http://www.thinkful.com/learn/a-guide-to-using-github-pages/) to get your project up on Github and on the interwebernets.
 2. I do things differently than most Jekyll templates because I wanted to control the order of the tiles (there are many ways to do this…I happen to choose this method). 
 3. All of the tiles are _includes (see `_includes/tiles`). Create your tiles there.
 3. Your main landing page is `index.html`. In it you'll find a reference to the `filtered-pages` folder. This folder contains three pages, which correspond to the three filter links in the subnav. In my case, they are `All`, `Social Ventures`, and `Technology Ventures`. Clicking on any of those makes an AJAX call to refresh the tiles without refreshing the whole page. A slightly better user experience IMHO. You can have as many filter tabs as you want.
