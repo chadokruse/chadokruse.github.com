@@ -5,19 +5,19 @@ Version: 1.0
 Author: <a href="http://www.suprb.com">(c) 2008 Suprb</a>
 */
 
-body { 
-	font-size: 65%; 
-	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+body {
+	font-size: 65%;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 	color:#000000;
-	margin: 0px; 
+	margin: 0px;
 	padding: 0px;
 	/*background-color: #ffffff;*/
 	background: url("../images/bg.png")
 }
 
-a {	
-	color: #666666; 
-	text-decoration: underline; 
+a {
+	color: #666666;
+	text-decoration: underline;
 }
 
 a img {
@@ -29,8 +29,8 @@ a img:hover {
 	opacity: 0.5;
 }
 
-a:hover { 
-	color: #23aebb; 
+a:hover {
+	color: #23aebb;
 	text-decoration: underline; }
 
 #topborder {
@@ -56,9 +56,9 @@ a:hover {
 }
 
 #header {
-	width:940px; 
+	width:940px;
 	height: 217px;
-	margin: 0 auto 30px; 
+	margin: 0 auto 30px;
 	padding-left: 10px;
 	padding-right: 10px;
 	}
@@ -79,12 +79,12 @@ a:hover {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	text-shadow: 0 1px 0 white;
-	
+
 }
 
-#navdiv { 
+#navdiv {
 	width: 97%;
-	height: 30px; 
+	height: 30px;
 	background: #fff;
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #ddd;
@@ -96,7 +96,7 @@ a:hover {
 	margin-bottom: 0px;
 	box-shadow:0px 10px 10px -10px #888;
 	-moz-box-shadow:0px 10px 10px -10px #888;
-	-webkit-box-shadow:0px 10px 10px -10px #888;	
+	-webkit-box-shadow:0px 10px 10px -10px #888;
 
 }
 
@@ -107,7 +107,7 @@ a:hover {
 	font-size: 12px;
 }
 
-#nav ul {	
+#nav ul {
 	padding: 0px;
 	margin:13px 0 0 0px;
 }
@@ -152,7 +152,7 @@ a:hover {
 	top: 280px;
 }
 
-.contentIndex p img { 
+.contentIndex p img {
 	display:none;
 }
 
@@ -160,26 +160,26 @@ a:hover {
 	padding-left: 25px;
 }
 
-.eachpost { 	
-	background-color: #ffffff; 
-	width: 220px;		
+.eachpost {
+	background-color: #ffffff;
+	width: 220px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	position:absolute;
 	_margin-top: 10px;
-	_margin-right: 10px;	 
-	_padding-top: 10px;	 
+	_margin-right: 10px;
+	_padding-top: 10px;
 	_padding-left: 10px;
-	_padding-bottom: 10px;	
+	_padding-bottom: 10px;
 	box-shadow:0px 0px 10px #888;
 	-moz-box-shadow:0px 0px 10px #888;
 	-webkit-box-shadow:0px 0px 10px #888;
 	filter:progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=0),progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=90),progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=180),progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=270);
 }
-			
-.eachpost > div { 
+
+.eachpost > div {
 	padding: 10px;
 	margin: 0px;
-	_width:180px; 
+	_width:180px;
 	_padding:0px;
 }
 
@@ -202,9 +202,9 @@ a:hover {
 	height: 120px;
 	padding-top: 80px;
 }
-	
-#allposts { 
-	margin-left: 20px; 
+
+#allposts {
+	margin-left: 20px;
 	margin-top: 20px;
 	margin-bottom: 0px;
 	margin-right: 0px;
@@ -214,45 +214,59 @@ a:hover {
 	min-height: 1500px; // Allows consistency on ScrollToFilter effect for short pages
 }
 
-.twocols { 
-	background-color: white; 
+.twocols {
+	background-color: white;
 	width: 440px;
-	border-color: #d0d0d0; 
-	border-width: 1px; 
-	border-style: solid; 
-	font-family: Georgia, "Times New Roman", Times, serif; 
+	border-color: #d0d0d0;
+	border-width: 1px;
+	border-style: solid;
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.threecols { 
-	font-family: Georgia, "Times New Roman", Times, serif; 
-	background: white 
+.threecols {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: white
 }
 
-.tileheader { 
-	color: #ff6633; 
+.tileheader {
+	color: #ff6633;
 	margin-bottom: 10px;
-	line-height: 14px; 
-	font-size: 12px; 
-	font-family: Georgia, "Times New Roman", Times, serif; 
+	line-height: 14px;
+	font-size: 12px;
+	font-family: Georgia, "Times New Roman", Times, serif;
 	font-weight: bold;
 }
 
-.tileheader a { 
-	text-decoration: none; 
-	color: #ff6633; 
-	line-height: 14px; 
-	font-size: 11px; 
-	font-family: Georgia, "Times New Roman", Times, serif; 
-	font-weight: bold; 
+.tileheader a {
+	text-decoration: none;
+	color: #ff6633;
+	line-height: 14px;
+	font-size: 11px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
 }
 
-.tileheader a:hover { 
-	text-decoration: none; 
-	color: #23aebb; 
-	line-height: 14px; 
-	font-size: 11px; 
-	font-family: Georgia, "Times New Roman", Times, serif; 
-	font-weight: bold; 
+.tileheader a:hover {
+	text-decoration: none;
+	color: #23aebb;
+	line-height: 14px;
+	font-size: 11px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+}
+
+.avatar {
+  width: 130px;
+  margin-left: 30px;
+  border: 3px solid #fff;
+  z-index: 500;
+  position: relative;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
 }
 
 span.blue { color: #7dc679; }
