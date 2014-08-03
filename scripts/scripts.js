@@ -1,8 +1,24 @@
 $(document).ready(function() {
 
+  var masonry = function () {
+    var $container = document.querySelector('#allposts');
+    // initialize Masonry after all images have loaded
+    imagesLoaded( $container, function() {
+      var msnry = new Masonry( $container, {
+        // options
+        itemSelector: '.eachpost',
+        gutter: 30,
+      });
+    });
+  };
+
+  masonry();
+
+
+
     // Sticky Nav (filter bar sticks to top when reaches top)
     $('#navdiv').scrollToFixed();
- 
+
     // Filter AJAX Call
     $('a.filter').on('click', function(event) {
 
@@ -10,7 +26,7 @@ $(document).ready(function() {
             $('body,html').animate({
                 //scrollTop: 0
                 scrollTop: $('#filter-focus').offset().top
-                }, "fast"); 
+                }, "fast");
         };
         var elem = $("#allposts");
         var url = $(this).attr('href');
@@ -26,20 +42,21 @@ $(document).ready(function() {
             dataType: 'html',
             beforeSend: function(){
                 $("#allposts").fadeOut("slow");
-                scrollToFilter(); 
+                scrollToFilter("slow");
             },
             success: function(data) {
                 $(elem).replaceWith(function() {
                     return $(data).hide().fadeIn();
                 });
                 //$(elem).replaceWith(data).delay(2000);
-                arrange(); // Call grid-a-licious to calculate new layout                                   
+                masonry();
+                //arrange(); // Call grid-a-licious to calculate new layout
              },
              complete: function(){
                 $("#allposts").css({opacity: 0});
-                $("#allposts").fadeTo("slow", 1);  
+                $("#allposts").fadeTo("slow", 1);
              },
-         }); 
+         });
          event.preventDefault();
          event.stopPropagation();
     });
@@ -84,5 +101,5 @@ $(document).ready(function() {
     // Fade effect after grid-a-licious calculates layout TODO: Is it possible to DRY this up? See also AJAX call
     $(".eachpost").css({opacity: 0});
     $(".eachpost").fadeTo("slow", 1);
-   
-}); 
+
+});
