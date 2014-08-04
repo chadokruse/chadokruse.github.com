@@ -11,10 +11,8 @@ $(document).ready(function() {
       });
     });
   };
-
+  // Call Masonry
   masonry();
-
-
 
     // Sticky Nav (filter bar sticks to top when reaches top)
     $('#navdiv').scrollToFixed();
@@ -23,10 +21,13 @@ $(document).ready(function() {
     $('a.filter').on('click', function(event) {
 
         var scrollToFilter = function(){  // Define Scroll-to-filter animation
+          // Only trigger the animation if the user is below the filter bar
+          if ($(window).scrollTop() > 250) {
             $('body,html').animate({
                 //scrollTop: 0
                 scrollTop: $('#filter-focus').offset().top
                 }, "fast");
+          }
         };
         var elem = $("#allposts");
         var url = $(this).attr('href');
