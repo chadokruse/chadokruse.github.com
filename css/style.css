@@ -6,8 +6,8 @@ Author: <a href="http://www.suprb.com">(c) 2008 Suprb</a>
 */
 
 body {
-	font-size: 65%;
-	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 12px;
+	font-family: 'Lato', sans-serif;
 	color:#000000;
 	margin: 0px;
 	padding: 0px;
@@ -31,7 +31,8 @@ a img:hover {
 
 a:hover {
 	color: #23aebb;
-	text-decoration: underline; }
+	text-decoration: underline;
+}
 
 #topborder {
 	height:35px;
@@ -101,11 +102,6 @@ ul.topicons li a img:hover {
 	padding-right: 10px;
 	}
 
-.noscript {
-	color: #FF0000;
-	font-size: 14px;
-}
-
 .intro {
 	margin-bottom:100px;
 	margin-top:-20px;
@@ -165,8 +161,6 @@ ul.topicons li a img:hover {
 }
 
 #nav li a.current {
-	// color:#000000;
-	// color: #7dc679;
 	color: #23aebb;
 	text-decoration: none;
 }
@@ -190,35 +184,43 @@ ul.topicons li a img:hover {
 	top: 280px;
 }
 
-.contentIndex p img {
-	display:none;
-}
-
-.contentIndex ul {
-	padding-left: 25px;
+#allposts {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  padding:0px;
+  background: #eeeeee;
+  background: url("../images/bg.png");
+  min-height: 1500px; // Allows consistency on ScrollToFilter effect for short pages
 }
 
 .eachpost {
+  width: 300px;
+  margin-bottom: 20px; /* Required for vertical spacing with Masonry */
 	background-color: #ffffff;
-	width: 220px;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	position:absolute;
-	_margin-top: 10px;
-	_margin-right: 10px;
-	_padding-top: 10px;
-	_padding-left: 10px;
-	_padding-bottom: 10px;
+  padding: 5px;
 	box-shadow:0px 0px 10px #888;
 	-moz-box-shadow:0px 0px 10px #888;
 	-webkit-box-shadow:0px 0px 10px #888;
 	filter:progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=0),progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=90),progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=180),progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=270);
 }
 
+.eachpost.w-half {
+  width: 135px;
+}
+
 .eachpost > div {
 	padding: 10px;
 	margin: 0px;
-	_width:180px;
-	_padding:0px;
+}
+
+.eachpost img {
+  width: 280px;
+}
+
+.eachpost.w-half img {
+  width: 80px;
 }
 
 .eachpost small a {
@@ -230,70 +232,43 @@ ul.topicons li a img:hover {
 	cursor: default;
 }
 
-.eachpost.solid-color {
-	background-color: red;
-	color: white;
-	font-family: Lato, Arial;
-	font-size: 18px;
-	line-height: 0px;
-	text-align: center;
-	height: 120px;
-	padding-top: 80px;
-}
-
-#allposts {
-	margin-left: 20px;
-	margin-top: 20px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	padding:0px;
-	background: #eeeeee;
-	background: url("../images/bg.png");
-	min-height: 1500px; // Allows consistency on ScrollToFilter effect for short pages
-}
-
-.twocols {
-	background-color: white;
-	width: 440px;
-	border-color: #d0d0d0;
-	border-width: 1px;
-	border-style: solid;
-	font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.threecols {
-	font-family: Georgia, "Times New Roman", Times, serif;
-	background: white
-}
-
 .tileheader {
 	color: #ff6633;
 	margin-bottom: 10px;
 	line-height: 14px;
-	font-size: 12px;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
 	font-weight: bold;
 }
 
 .tileheader a {
 	text-decoration: none;
 	color: #ff6633;
-	line-height: 14px;
-	font-size: 11px;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-weight: bold;
 }
 
 .tileheader a:hover {
 	text-decoration: none;
 	color: #23aebb;
-	line-height: 14px;
-	font-size: 11px;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-weight: bold;
 }
 
-.avatar {
+.contentIndex {
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contentIndex p img {
+  display:none;
+}
+
+.contentIndex ul {
+  padding-left: 25px;
+}
+
+.img-bg-avatar {
+  background: url("/images/img-bg-avatar.jpg");
+  background-position: right center;
+}
+
+.eachpost img.avatar {
   width: 130px;
   margin-left: 30px;
   border: 3px solid #fff;
