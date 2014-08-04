@@ -39,7 +39,45 @@ a:hover {
 	width:100%;
 }
 
-#topcontact {
+ul.topicons {
+  margin: 0 0 0 0px;
+  padding: 0px 30px 0px 0px;
+  height: 35px;
+  float: right;
+  display: inline;
+}
+
+ul.topicons a {
+  text-decoration: none;
+}
+
+ul.topicons a:hover {
+  color: #23aebb !important;
+}
+
+ul.topicons li {
+  margin: 0 0 0 0px;
+  padding: 0px 30px 0px 0px;
+  height: 35px;
+  line-height: 35px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+ul.topicons li.text-link a {
+  color: #7dc679;
+}
+
+ul.topicons li a img {
+  opacity: .5;
+}
+
+ul.topicons li a img:hover {
+  opacity: 1;
+}
+
+.topcontact {
+  display: inline;
 	margin:0 0 0 0px;
 	float: right;
 	padding:0px 30px 0px 0px;
