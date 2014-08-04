@@ -223,6 +223,10 @@ ul.topicons li a img:hover {
   width: 80px;
 }
 
+.eachpost small {
+  color: #bbb;
+}
+
 .eachpost small a {
 	text-decoration: none;
 }
