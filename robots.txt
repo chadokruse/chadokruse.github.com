@@ -11,3 +11,4 @@ Disallow: /kyn/
 Disallow: /10speak/
 Disallow: /cfc/
 Disallow: /smartergiving/
+Disallow: /kyn-dispatch/
