@@ -3,3 +3,5 @@ _site/
 .DS_Store
 *.swp
 server/
+
+_data/resume.json

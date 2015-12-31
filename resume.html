@@ -1,0 +1,178 @@
+---
+layout: resume
+title: Chad Kruse | Resume
+permalink: /resume/
+data_source: resume-public
+---
+{% assign resume = site.data.[page.data_source] %}
+<!-- header -->
+<div class="container">
+  <div class="row">
+    <div class="header">
+      <div class="col-xs-6">
+        <h1 class="name">{{resume.basics.name}}</h1>
+        <h3 class="title">{{resume.basics.label}}</h3>
+      </div>
+      <div class="col-xs-6 contact-info">
+        <ul class="pull-right">
+          <li><strong>Email:</strong> {{resume.basics.email}}</li>
+          <li><strong>Phone:</strong> {{resume.basics.phone}}</li>
+          <li><strong>Website:</strong> {{resume.basics.website}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr style="margin-top: 0;" />
+
+  <!-- Summary / About Me -->
+  <div class="row">
+    <div class="col-xs-2">
+      <h4 class="section-title"> About Me </h4>
+    </div>
+    <div class="col-xs-10">
+      {{resume.basics.summary}}
+    </div>
+  </div>
+  <hr />
+
+  <!-- Skills -->
+  <div class="row">
+    <div class="col-xs-2">
+      <h4 class="section-title"> Skills </h4>
+    </div>
+    <div class="col-xs-10">
+      <div class="row">
+        {% for skill in resume.skills %}
+        <div class="col-sm-4 col-md-3">
+          <span class="skill">{{skill.name}}</span>
+          <hr class="skills-hr">
+          <ul class="list-unstyled">
+            {% for keyword in skill.keywords %}
+            <li>{{keyword}}</li>
+          {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <hr />
+
+  <!-- Experience -->
+  <div class="row">
+    <div class="col-xs-2">
+      <h4 class="section-title"> Experience </h4>
+    </div>
+    <div class="col-xs-10">
+      {% if resume.extras.overview %}
+        <ul class="list-unstyled experience-summary">
+          <span class="company">Overview</span>
+            {% for each in resume.extras.overview %}
+              <li>{{each.role}}: {{each.duration}}</li>
+            {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% assign jobs = (resume.work | where: "category" , "Job") %}
+      {% for job in jobs reversed %}
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="company"> {{job.company}} </div>
+            <div class="company-position"><em>{{job.position}}</em></div>
+            <!--div class="text-muted">{{work.startDate | date: "%b, %Y"}} -
+              {{work.endDate | date: "%b, %Y"}}</div-->
+          </div>
+          <div class="col-xs-6">
+            <div class="company-date pull-right text-right"> {{job.startDate | date: "%b, %Y"}} -
+              {% if job.endDate == "" %} Present{% else %} {{job.endDate | date: "%b, %Y"}}{% endif %}<br>
+              <!--span>
+                {% assign dateDiff = job.endDate| minus: job.startDate %}
+                {% if dateDiff == 1 %}
+                  ({{dateDiff}} year)
+                {% elsif dateDiff > 1 %}
+                  ({{dateDiff}} years)
+                {% elsif dateDiff < 1 %}
+                  (~1 year)
+                {% endif %}
+              </span-->
+            </div>
+          </div>
+        </div>
+        <div class="row company-description">
+          <div class="col-xs-12">
+            <p class="company-summary">{{job.summary}}</p>
+            <ul>
+              {% for highlight in job.highlights %}
+              <li>{{highlight}}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <hr />
+
+  <!-- Education -->
+  <div class="row">
+    <div class="col-xs-2">
+      <h4 class="section-title"> Education </h4>
+    </div>
+    <div class="col-xs-10">
+      {% for each in resume.education %}
+      <div class="row education-section">
+        <div class="col-xs-10">
+          <div class="school"> {{each.institution}} </div>
+          <i class="fa fa-graduation-cap"></i> {{each.studyType}} in {{each.area}}
+        </div>
+        <div class="col-xs-2">
+          <div class="pull-right">
+            {{each.endDate | date: "%b, %Y"}}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <hr />
+
+  <!-- Interests -->
+  {% if resume.interests %}
+  <div class="row">
+    <div class="col-xs-2">
+      <h4 class="section-title"> Interests </h4>
+    </div>
+    <div class="col-xs-10">
+      <div class="row">
+        {% for each in resume.interests %}
+        <div class="col-sm-3 col-md-3">
+          <span class="skill">{{each.name}}</span>
+          <hr class="skills-hr">
+          <ul class="list-unstyled">
+            {% for keyword in each.keywords %}
+            <li>{{keyword}}</li>
+          {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <hr />
+  {% endif %}
+
+  <!-- Profiles -->
+  <div class="row">
+    <div class="col-xs-2">
+      <h4 class="section-title"> Profiles </h4>
+    </div>
+    <div class="col-xs-10">
+      <ul class="list-inline list-profiles">
+        {% for profile in resume.basics.profiles %}
+        <li><i class="fa fa-{{profile.network | downcase}}"></i> <span>|</span> <!--strong>{{profile.network}}:</strong--> <a href="{{profile.url}}">{{profile.username}}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+</div>    <!-- /end container-fluid -->

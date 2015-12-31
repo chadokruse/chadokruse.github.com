@@ -1,0 +1,347 @@
+{
+  "basics": {
+    "name": "Chad Kruse",
+    "label": "Product Strategy & New Markets",
+    "picture": "http://www.chadkruse.com/images/avatar.jpg",
+    "email": "[email protected]",
+    "phone": "[phone protected]",
+    "website": "http://www.chadkruse.com",
+    "summary": "Before launching my own ventures and diving into JavaScript, I was often brought on as the first 'business hire' at startups of all shapes and sizes. I've run development teams, owned product strategy, entered new markets and assessed growth opportunities across the build/buy/partner spectrum. My career started as a strategist and corporate development leader for large tech companies, and I'm often told I have a unique ability to talk shop with programmers, designers, VC's, boards of directors, and everyone in between.",
+    "location": {
+      "address": "[address protected]",
+      "postalCode": "IL 60661",
+      "city": "Chicago",
+      "countryCode": "US",
+      "region": "Midwest"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "chadokruse",
+        "url": "https://github.com/chadokruse"
+      }, {
+        "network": "AngelList",
+        "username": "chadokruse",
+        "url": "https://angel.co/chadokruse"
+      }, {
+        "network": "LinkedIn",
+        "username": "chadokruse",
+        "url": "https://www.linkedin.com/in/chadokruse"
+      }, {
+        "network": "Twitter",
+        "username": "chadkruser",
+        "url": "http://twitter.com/chadkruser"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Columbia Financial Advisors",
+      "position": "Associate Analyst",
+      "website": "http://www.cfai.com/",
+      "startDate": "1997-02-01",
+      "endDate": "1999-01-01",
+      "summary": "My first job out of undergrad. Also the place I got my de-facto MBA thanks to the active and engaged mentoring I received from the firm's partners. Amazing experience working with these nationally-recognized business valuation experts.",
+      "highlights": [
+        "Assessed future prospects of clients through extensive market research and heavy financial modeling.",
+        "Performed business valuations and other investment banking related services.",
+        "Trained new analysts on research strategies and financial modeling."
+      ],
+      "tags": [
+        "Research",
+        "Modeling",
+        "Financial Analysis"
+      ],
+      "category": "Job"
+    }, {
+      "company": "SAIC",
+      "position": "Senior Associate - Acquisitions and Strategic Ventures",
+      "website": "http://www.saic.com/",
+      "startDate": "1999-01-01",
+      "endDate": "2000-04-01",
+      "summary": "Part of a three-member team responsible for all corporate VC and technology commercialization deals for Science Applications International Corporation, then a Fortune 500 company.",
+      "highlights": [
+        "Sourced, analyzed, and executed venture capital investments and growth-oriented mergers and acquisitions to expand the company's reach into commercial markets.",
+        "Placed $90M of early to mezzanine stage venture capital in 15 months (11 transactions).",
+        "Built and evangelized a new valuation model which was ultimately adopted company-wide (40k employees; 600+ business units)"
+      ],
+      "tags": [
+        "Market Assessments",
+        "Corporate VC",
+        "Diligence"
+      ],
+      "category": "Job"
+    }, {
+      "company": "Intuit",
+      "position": "Senior Manager - Corporate & New Market Development",
+      "website": "http://www.intuit.com",
+      "startDate": "2000-04-01",
+      "endDate": "2002-10-31",
+      "summary": "Served as one of four dealmakers for Intuit, the Fortune 500 consumer and SMB-focused technology company. Our group not only explored new growth markets and executed software M&A deals, but also served as internal sound board for business unit leaders while continuing to push for innovation across all levels of the company.",
+      "highlights": [
+        "Explored new avenues for growth, identified and prioritized opportunities, cultivated internal collaboration, developed internal plans, and led internal buy-in and eventual deal execution.",
+        "Developed investment theses (build/buy/partner) and prepared and lead a variety of internal communication activities including presentations to board level audiences.",
+        "Managed large cross-functional teams including outside consultants. Served as lead negotiator for multiple deals, including Intuit's first partnership with Paypal."
+      ],
+      "tags": [
+        "Build-Buy-Partner",
+        "Corporate Development",
+        "Cross-Functional Teams"
+      ],
+      "category": "Job"
+    }, {
+      "company": "Sabbatical",
+      "position": "",
+      "website": "",
+      "startDate": "2002-11-01",
+      "endDate": "2005-06-30",
+      "summary": "Traveled the world and launched Saava.org, a localized, online angel investing network focused on mission-related opportunties (e.g. nonprofits developing for-profit income streams). Ultimately grew the network to 35 accredited investor members, presenting over 60 deals to the community.",
+      "highlights": [
+        "Venture Philanthropy",
+        "World Travel"
+      ],
+      "category": "Other"
+    }, {
+      "company": "Riverlake Partners",
+      "position": "Senior Associate",
+      "website": "http://www.riverlakepartners.com/",
+      "startDate": "2005-07-01",
+      "endDate": "2007-04-30",
+      "summary": "First non-partner hire for Riverlake Partners, a lower middle-market private equity fund. Assisted partners in all aspects of the fund, from modeling to negotiations and portfolio management activities.",
+      "highlights": [
+        "Responsible for deal flow program including sourcing, vetting, assessing, and modeling potential deals. Lead due diligence and deal closing activities.",
+        "Raised debt capital in support of acquisitions, collaborated with funding partners and industry colleagues, and worked extensively with outside attorneys to close transactions.",
+        "Assisted in ongoing portfolio-level improvement activities including the development of add-on acquisition strategies, financing expansion plans, and other ad-hoc projects."
+      ],
+      "tags": [
+        "Operational Improvement",
+        "Financial Engineering",
+        "Debt Fundraising"
+      ],
+      "category": "Job"
+    }, {
+      "company": "Startup Consulting",
+      "position": "COO, Business Advisor & Product Consultant",
+      "website": "http://www.chadkruse.com",
+      "startDate": "2007-05-01",
+      "endDate": "2015-03-31",
+      "summary": "Partnered with domain experts and technical founders to focus, launch, or expand. As a COO-for-hire, my roles ranged from business development and API evangelism to fundraising, product, and corporate strategy.",
+      "highlights": [
+        "Served as product lead and COO for Forkfly, managing the launch of three web applications and two mobile platforms. Transitioned the company from single app to digital advertising platform, tripling the team from 4 to 12 and bringing the company to first revenues.",
+        "Crafted and evangelized the platform strategy for innovative sensor startup GreenGoose resulting in a successful seven-figure fundraise.",
+        "Turned two pilot projects from ecosystem services company WiLD Inc. into an institutional timberland investment management fund.",
+        "Full list of clients and projects available at www.chadkruse.com."
+      ],
+      "tags": [
+        "Business Modeling",
+        "Go-To-Market",
+        "New Market Tax Credits"
+      ],
+      "category": "Job"
+    }, {
+      "company": "NexionDG",
+      "position": "Director, Strategy & Finance",
+      "website": "http://green.blogs.nytimes.com//2009/01/26/old-turbines-get-a-second-wind-through-remanufacturing/",
+      "startDate": "2008-03-01",
+      "endDate": "2008-10-31",
+      "summary": "Helped bring the idea of refurbished wind turbines to life.",
+      "highlights": [
+        "Developed core financial model to assess project ROI",
+        "Assisted the management team with negotiation strategy resulting in their first disassembly deal.",
+        "Identified risks and developed mitigation strategies"
+      ],
+      "tags": [
+        "Business Modeling",
+        "Go-To-Market",
+        "New Market Tax Credits"
+      ],
+      "category": "Advisor"
+    }, {
+      "company": "WiLD",
+      "position": "VP, Corporate Development & Finance",
+      "website": "",
+      "startDate": "2008-07-01",
+      "endDate": "2009-08-30",
+      "summary": "In partnership with one of the most passionate domain experts I have met to date, I played a leadership role with the creation and eventual market launch of WiLD Forests I, L.P., a conservation-based timberland investment management fund.",
+      "highlights": [
+        "Brought focus to the company's historical activities, allowing for drastically improved upside with far less overhead.",
+        "Identified and hired nationally-recognized legal counsel to develop the fund's Confidential Information Memorandum.",
+        "Lead all corporate development, finance, and fundraising activites, from assessing project ROI to pitching institutional investment partners."
+      ],
+      "tags": [
+        "Go-To-Market",
+        "Story Telling",
+        "ROI Analysis"
+      ],
+      "category": "Advisor"
+    }, {
+      "company": "Bonanza",
+      "position": "Consultant",
+      "website": "http://www.bonanza.com/",
+      "startDate": "2009-12-01",
+      "endDate": "2010-04-30",
+      "summary": "One of the first startups involved in social e-commerce, I consulted with Bonanza (formerly Bonanzle) during its bootstrap phase, serving as its first business hire.",
+      "highlights": [
+        "Initiated first partnership discussions with major technology companies including Microsoft, Google, and Amazon",
+        "Assessed new vertical growth opportunities through customer interviews and data mining.",
+        "Lead early API evangelism efforts and managed the company's first ad campaign."
+      ],
+      "category": "Advisor"
+    }, {
+      "company": "Forkfly",
+      "position": "Chief Operating Officer",
+      "website": "https://pando.com/2013/02/19/forkfly-partners-with-the-seattle-times-flips-daily-deals-model-on-its-head/",
+      "startDate": "2010-04-01",
+      "endDate": "2011-03-31",
+      "summary": "Forkfly (now CloudEngage) was an early entrant in the highly competitive location-based mobile space, and as COO I had the honor of serving as product lead, building a rockstar development team from the ground up, and leading overall strategy development.",
+      "highlights": [
+        "Lead the company through a major pivot, transitioning from a single app to digital advertising platform.",
+        "Served as product lead through the launch of three web applications and two mobile platforms.",
+        "Solely funded by angels, I brought the company to first revenues, growing the team from 4 to 12."
+      ],
+      "tags": [
+        "Team Building",
+        "Product",
+        "Agile"
+      ],
+      "category": "Advisor"
+    }, {
+      "company": "GreenGoose",
+      "position": "Chief Operating Officer",
+      "website": "http://radar.oreilly.com/2011/12/stickers-as-sensors.html",
+      "startDate": "2011-05-01",
+      "endDate": "2011-10-31",
+      "summary": "Served as COO for innovative wireless sensor startup GreenGoose during a critical time in the company's history, partnering with the solo founder after a successful seed round but still during the prototype phase.",
+      "highlights": [
+        "Assessed, discussed, and synthesized the myriad opportunities into a clear execution strategy.",
+        "Worked with contract developers to launch production mobile apps in support of platform strategy.",
+        "Lead discussions with inbound Fortune 500 biz dev inquiries, and set groundwork for API evangelism.",
+        "Fielded all investor inquiries, eventually leading and closing a successful bridge round."
+      ],
+      "tags": [
+        "Fundraising",
+        "Fortune 100 BizDev",
+        "Hardware",
+        "Go-To-Market"
+      ],
+      "category": "Advisor"
+    }, {
+      "company": "10Speak",
+      "position": "Founder, CEO",
+      "website": "http://www.chadkruse.com/10speak/",
+      "startDate": "2011-11-01",
+      "endDate": "2012-05-31",
+      "summary": "My first incubated startup, we picked apart the core assumptions behind current time, calendaring, and scheduling tools piece by piece and set out to rebuild them from the ground up.",
+      "highlights": [
+        "Took first commercial product from idea and no team to a public launch in just three months.",
+        "Recruited A-list alpha customers including many prominent VCs.",
+        "Responsible for overall product strategy, UI/UX, and the bulk of front-end development."
+      ],
+      "category": "Other"
+    }, {
+      "company": "SmarterGiving",
+      "position": "Founder, CEO",
+      "website": "https://smartergiving.org/",
+      "startDate": "2012-11-01",
+      "endDate": "",
+      "summary": "Conceptualized, created, and launched SmarterGiving, a prototype studio focused on market opportunities throughout the 'charity stack'. Our MVPs and prototypes explored specific pain points across the philanthropic spectrum, from online donations and donor cultivation to nonprofit discovery and social networks.",
+      "highlights": [
+        "Drove multiple products from concept to launch using agile and lean startup principles.",
+        "Heavy emphasis on customer development, from interviews and follow-me-homes to analytics.",
+        "First product went from idea to first revenues on a net out-of-pocket investment of just $90."
+      ],
+      "tags": [
+        "Product",
+        "Lean Startup",
+        "Rapid Prototyping",
+        "MeteorJS"
+      ],
+      "category": "Job"
+    }
+  ],
+  "education": [{
+    "institution": "University of Iowa",
+    "area": "Finance",
+    "studyType": "Bachelor of Business Administration",
+    "startDate": "1993-08-01",
+    "endDate": "1996-12-31",
+    "gpa": ""
+  }],
+  "skills": [
+    {
+      "name": "Strategy",
+      "level": "Master",
+      "keywords": [
+        "Go-To-Market",
+        "Business Cases",
+        "Market Research",
+        "Customer Interviews",
+        "Opportunity Assessments"
+        ]
+    }, {
+      "name": "Product",
+      "level": "Master",
+      "keywords": [
+        "Rapid Prototyping",
+        "Lean Methodology",
+        "Agile Development",
+        "Product Roadmaps",
+        "Data & Analytics"
+      ]
+    }, {
+      "name": "Technical",
+      "level": "Practitioner",
+      "keywords": [
+        "JavaScript",
+        "MeteorJS",
+        "MongoDB/NoSQL",
+        "HTML/CSS/JQuery",
+        "Github Workflow"
+      ]
+    }
+  ],
+  "languages": [{
+    "language": "English",
+    "fluency": "Native speaker"
+  }],
+  "interests": [
+    {
+      "name": "Intersection of Philanthropy and Technology",
+      "keywords": [
+        "Charity Stack",
+        "Philanthrotech"
+      ]
+    }, {
+      "name": "Mountaineering",
+      "keywords": [
+        "Former Volunteer Instructor - Mazamas Climbing Club"
+      ]
+    }, {
+      "name": "Open Source Contributor",
+      "keywords": [
+        "FOSS",
+        "Github"
+      ]
+    }, {
+      "name": "Self-Taught Developer",
+      "keywords": [
+        "MeteorJS",
+        "MongoDB"
+      ]
+    }
+  ],
+  "extras": {
+    "overview": [
+      {
+        "role": "Corporate Development",
+        "duration": "7 Years"
+      }, {
+        "role": "Startup COO & Advisor",
+        "duration": "6 Years"
+      }, {
+        "role": "Entrepreneur",
+        "duration": "4 Years"
+      }
+    ]
+  }
+}
