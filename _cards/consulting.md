@@ -5,7 +5,7 @@ image_href:
 header: Consulting
 tags:
   - Consulting
-  - BusinessModels
+  - StartupCOO
   - Strategy
 sort: 22
 ---

@@ -1,12 +1,4 @@
 User-agent: *
-Disallow: /social-ventures.html
-Disallow: /technology-ventures.html
-Disallow: /all.html
-Disallow: /social-ventures/
-Disallow: /technology-ventures/
-Disallow: /philanthrotech/
-Disallow: /2000/
-Disallow: /all/
 Disallow: /kyn/
 Disallow: /10speak/
 Disallow: /cfc/

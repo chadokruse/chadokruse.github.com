@@ -11,3 +11,6 @@ safe: true
 
 collections:
   - cards
+
+#Misc Settings
+google_analytics_id: UA-10850167-1
