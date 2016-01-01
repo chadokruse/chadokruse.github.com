@@ -1,0 +1,29 @@
+<div class="eachpost {% for each in card.tags %}{{each}} {% endfor %}">
+
+  <div class="card-image">
+    {% if card.image_href %}
+      <a href="{{ card.image_href }}" target="_blank"><img src="/images/{{ card.image }}"/></a>
+    {% else %}
+      <img src="/images/{{ card.image }}"/>
+    {% endif %}
+  </div>
+
+  <div class="card-header">
+    {{ card.header }}
+  </div>
+
+  <div class="card-body">
+    {{ card.content }}
+  </div>
+
+  <div class="card-footer">
+    <small>
+      <ul class="list-inline">
+        {% for each in card.tags %}
+          <li><a class="card-tags" href="">#{{ each }}</a></li>
+        {% endfor %}
+      </ul>
+    </small>
+  </div>
+
+</div><!-- eachpost div -->

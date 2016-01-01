@@ -1,3 +1,13 @@
-markdown: rdiscount
-pygments: true
-permalink: pretty
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - CNAME
+
+#Ensure capatibility with Github Pages
+safe: true
+
+collections:
+  - cards
