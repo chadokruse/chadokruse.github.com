@@ -1,6 +1,6 @@
 ---
 name: forkfly
-image: forkfly2.jpg
+image: forkfly.jpg
 image_href: 
 header: Chief Operating Officer & Product Lead
 tags:

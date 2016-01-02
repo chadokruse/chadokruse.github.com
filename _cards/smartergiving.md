@@ -1,6 +1,6 @@
 ---
 name: smartergiving
-image: smartergiving.jpg
+image: smartergiving-dark.jpg
 image_href: https://smartergiving.org
 header: Building the Internet's Donate Button
 tags:

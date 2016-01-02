@@ -2,9 +2,10 @@
 name: bonanzle
 image: ecomm.jpg
 image_href: https://www.bonanza.com
-header: Consulting | Social E-Commerce
+header: Consulting - Social E-Commerce
 tags:
   - StartupCOO
+  - Consulting
   - ECommerce
 sort: 16
 ---

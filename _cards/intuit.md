@@ -1,6 +1,6 @@
 ---
 name: intuit
-image: intuit.jpg
+image: intuit-dark.jpg
 image_href: 
 header: Corporate Development & Strategy
 tags:

@@ -2,7 +2,7 @@
 name: chronicle
 image: chronicle.jpg
 image_href: http://www.chronicle.net.au/
-header: Advisor, Digital Storytelling Platform
+header: Advisor - Digital Storytelling Platform
 tags:
   - StartupCOO
   - Consulting

@@ -20,7 +20,7 @@
     <small>
       <ul class="list-inline">
         {% for each in card.tags %}
-          <li><a class="card-tags" href="">#{{ each }}</a></li>
+          <li><a class="card-tags js-filter" data-filter=".{{ each }}">#{{ each }}</a></li>
         {% endfor %}
       </ul>
     </small>

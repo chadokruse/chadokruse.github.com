@@ -2,7 +2,7 @@
 name: revisu
 image: revisu.jpg
 image_href: 
-header: Advisor, Revisu
+header: Advisor - Revisu
 tags:
   - StartupCOO
   - Advisor
