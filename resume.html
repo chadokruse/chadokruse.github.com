@@ -59,27 +59,31 @@ data_source: resume-public
   <hr />
 
   <!-- Experience Summary -->
+  {% if resume.extras.overview %}
   <div class="row">
     <div class="col-xs-2">
       <h4 class="section-title"> Experience </h4>
     </div>
     <div class="col-xs-10">
-      {% if resume.extras.overview %}
         <ul class="list-unstyled experience-summary">
           <!--span class="company">Overview</span-->
             {% for each in resume.extras.overview %}
               <li>{{each.role}}: {{each.duration}}</li>
             {% endfor %}
         </ul>
-      {% endif %}
     </div>
   </div>
   <hr />
+  {% endif %}
 
   <!-- Experience Detail -->
   <div class="row">
     <div class="col-xs-2">
-      <h4 class="section-title"> Detail </h4>
+      {% unless resume.extras.overview %}
+        <h4 class="section-title"> Experience </h4>
+      {% else %}
+        <h4 class="section-title"> Detail </h4>
+      {% endunless %}
     </div>
     <div class="col-xs-10">
       {% assign jobs = (resume.work | where: "category" , "Job") %}
