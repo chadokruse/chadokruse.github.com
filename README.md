@@ -1,7 +1,8 @@
 ## A Jekyll-Powered Portfolio Site  
-This is the source code used to power my personal site ([demo](http://www.chadkruse.com)). It takes advantage of Jekyll's `_data` and `category` features and has two primary components:
-1. Isotope.js: Card-based layout with animated filtering
-2. JSON Resume: A liquid-based theme for the JSONResume spec.
+This is the source code used to power my personal site ([demo](http://www.chadkruse.com)). It takes advantage of Jekyll's `_data` and `category` features and has two primary components:  
+
+1. Isotope.js: Card-based layout with animated filtering  
+2. JSON Resume: A liquid-based theme for the JSONResume spec.  
 
 **Screenshots**  
 
@@ -54,7 +55,7 @@ Delete the `CNAME` file if you don't need a custom domain. If you want a custom 
 #### Robots.txt
 Update `robots.txt` if you care about such things.
 
-### TODOs 
+### TODOs
 ---
 - [ ] Mobile filter bar (in process - see `_sass` folder)  
 - [ ] Upload template to JSONResume.org
