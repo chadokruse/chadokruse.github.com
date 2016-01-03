@@ -24,7 +24,7 @@ data_source: resume-public
   </div>
   <hr style="margin-top: 0;" />
 
-  <!-- Summary / About Me -->
+  <!-- About Me -->
   <div class="row">
     <div class="col-xs-2">
       <h4 class="section-title"> About Me </h4>
@@ -44,7 +44,7 @@ data_source: resume-public
       <div class="row">
         {% for skill in resume.skills %}
         <div class="col-sm-4 col-md-3">
-          <span class="skill">{{skill.name}}</span>
+          <div class="skill">{{skill.name}}</div>
           <hr class="skills-hr">
           <ul class="list-unstyled">
             {% for keyword in skill.keywords %}
@@ -58,7 +58,7 @@ data_source: resume-public
   </div>
   <hr />
 
-  <!-- Experience -->
+  <!-- Experience Summary -->
   <div class="row">
     <div class="col-xs-2">
       <h4 class="section-title"> Experience </h4>
@@ -66,13 +66,22 @@ data_source: resume-public
     <div class="col-xs-10">
       {% if resume.extras.overview %}
         <ul class="list-unstyled experience-summary">
-          <span class="company">Overview</span>
+          <!--span class="company">Overview</span-->
             {% for each in resume.extras.overview %}
               <li>{{each.role}}: {{each.duration}}</li>
             {% endfor %}
         </ul>
       {% endif %}
+    </div>
+  </div>
+  <hr />
 
+  <!-- Experience Detail -->
+  <div class="row">
+    <div class="col-xs-2">
+      <h4 class="section-title"> Detail </h4>
+    </div>
+    <div class="col-xs-10">
       {% assign jobs = (resume.work | where: "category" , "Job") %}
       {% for job in jobs reversed %}
         <div class="row">
