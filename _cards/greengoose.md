@@ -1,7 +1,7 @@
 ---
 name: greengoose
 image: ggoose.jpg
-image_href: http://www.wired.com/beyond_the_beyond/2011/12/spime-watch-green-goose-stickers/
+image_href: http://www.wired.com/2011/12/spime-watch-green-goose-stickers/
 header: Chief Operating Officer
 tags:
   - StartupCOO
