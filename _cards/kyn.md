@@ -1,7 +1,7 @@
 ---
 name: kyn
 image: kyn.jpg
-image_href: http://kyn.me
+image_href: https://kyn.github.io/
 header: Democratizing Philanthropy
 tags:
   - Founder
