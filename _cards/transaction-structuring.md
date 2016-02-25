@@ -5,7 +5,7 @@ image_href:
 header: Transaction Structuring & Modeling
 tags:
   - Consulting
-  - FinancialEngineering
+  - StrategyOfNumbers
   - Excel
 sort: 32
 ---

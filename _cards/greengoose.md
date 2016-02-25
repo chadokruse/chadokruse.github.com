@@ -5,6 +5,7 @@ image_href: http://www.wired.com/2011/12/spime-watch-green-goose-stickers/
 header: Chief Operating Officer
 tags:
   - StartupCOO
+  - BusinessDevelopment
   - IoT
 sort: 3
 ---

@@ -6,7 +6,7 @@ header: Advisor - Digital Storytelling Platform
 tags:
   - StartupCOO
   - Consulting
-  - DigitalStorytelling
+  - Product
 sort: 10
 ---
 Incredible team, incredible vision, domain expertise, traction...Chronicle is an astonishingly high potential startup poised to become the defacto thought leader in digital storytelling.

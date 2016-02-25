@@ -5,6 +5,7 @@ image_href:
 header: Chief Operating Officer & Product Lead
 tags:
   - StartupCOO
+  - Product
   - Mobile
 sort: 4
 ---

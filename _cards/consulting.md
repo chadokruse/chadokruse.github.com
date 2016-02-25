@@ -7,6 +7,7 @@ tags:
   - Consulting
   - StartupCOO
   - Strategy
+  - Product
 sort: 22
 ---
 **Execution:** I'm a firm believer that ideas are cheap, execution is everything. I enjoy partnering with growth-oriented organizations and other domain experts to help turn ideas into reality.

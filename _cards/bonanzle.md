@@ -4,9 +4,9 @@ image: ecomm.jpg
 image_href: https://www.bonanza.com
 header: Consulting - Social E-Commerce
 tags:
-  - StartupCOO
   - Consulting
-  - ECommerce
+  - StartupCOO
+  - Product
 sort: 16
 ---
 One of the first startups involved in social commerce, I consulted with Bonanza (formerly Bonanzle) during its bootstrap phase. I served the role of "business guy" with duties generally focused on business partnerships and API evangelism, but also included product management, strategy, data mining, and managing the company's first ad campaign.

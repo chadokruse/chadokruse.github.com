@@ -5,7 +5,7 @@ image_href: http://green.blogs.nytimes.com//2009/01/26/old-turbines-get-a-second
 header: Refurbished Wind Turbines
 tags:
   - StartupCOO
-  - SocialVenture
+  - SocialEnterprise
 sort: 27
 ---
 Worked with a dedicated entrepreneur to bring the idea of refurbished wind turbines to life.
