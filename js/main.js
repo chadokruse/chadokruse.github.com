@@ -1,16 +1,13 @@
 $( function() {
 
-  var $container = $('#allposts');
+  var $container = $('#allcards');
 
   $container.imagesLoaded( function(){
     //$container.fadeIn(1000).isotope({
     $('#loading').hide();
     $container.animate({opacity:1},1000).isotope({
       layoutMode: 'packery',
-      itemSelector: '.eachpost',
-      packery: {
-        gutter: 30
-      }
+      itemSelector: '.eachcard'
     });
   });
 
@@ -19,7 +16,7 @@ $( function() {
 
     //Sort cards
     var filterValue = $(this).attr('data-filter');
-    $('#allposts').isotope({ filter: filterValue });
+    $container.isotope({ filter: filterValue });
 
     //Scroll back to filter bar if user if below bar
     var scrollToFilter = function(){
@@ -39,23 +36,10 @@ $( function() {
   });
 
   // Sticky Nav (filter bar sticks to top when reaches top)
-  $('.filter-bar').scrollToFixed();
-
-  // Open/Close Filter Sidebar
-  /* Not using yet
-  $('.js-filter-sidebar').on('click', function(){
-    triggerFilter(true);
+  $('#filter-bar').affix({
+      offset: {
+        top: $('.header-wrapper').height()
+      }
   });
-  $('.cd-filter .cd-close').on('click', function(){
-    triggerFilter(false);
-  });
-
-  function triggerFilter($bool) {
-    var elementsToTrigger = $([$('.js-filter-sidebar'), $('.cd-filter'), $('.cd-tab-filter'), $('.cd-gallery')]);
-    elementsToTrigger.each(function(){
-      $(this).toggleClass('filter-is-visible', $bool);
-    });
-  }
-  */
 
 });

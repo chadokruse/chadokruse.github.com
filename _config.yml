@@ -1,16 +1,16 @@
+# Site Settings
+collections:
+  - cards
 
+google_analytics_id: UA-10850167-1
+
+# Build Settings
+sass:
+  sass_dir: css/_sass
+  
 markdown: kramdown
 kramdown:
   input: GFM
 
 exclude:
   - CNAME
-
-#Ensure capatibility with Github Pages
-safe: true
-
-collections:
-  - cards
-
-#Misc Settings
-google_analytics_id: UA-10850167-1

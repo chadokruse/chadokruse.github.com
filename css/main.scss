@@ -1,25 +1,64 @@
 ---
 ---
 /*********************************************************************************/
-/* Filter Sidebar                                                                */
+/* Bootstrap Grid                                                                */
 /*********************************************************************************/
 
-//@import "filter";
+@import "bootstrap";
 
 /*********************************************************************************/
-/* Define Variables                                                              */
+/* Variables                                                                     */
 /*********************************************************************************/
 
-$green:         #7dc679;
-$blue:          #23aebb;
-$orange:        #ff6633;
-$gray:          #707070;
+$green:            #7dc679;
+$blue:             #23aebb;
+$orange:           #ff6633;
+$gray:             #707070;
 
-$text-color:    #333333;
+$text-color:       #333333;
+$background-color: #f5f5f5;
+
+$link-color:       #666666;
+$link-hover-color: $blue;
+
+$box-shadow:       0 2px 0 0 #e5e5e5;
+
+// Media query breakpoints
+// Extra small screen / phone
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// X-Large screen / widescreen desktop
+$screen-xl:                  1800px !default;
+$screen-xl-min:              $screen-xl !default;
+$screen-xl-desktop:          $screen-xl-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+$screen-lg-max:              ($screen-xl-min - 1) !default;
 
 /*********************************************************************************/
-/* Custom CSS                                                                    */
+/* Site Defaults                                                                 */
 /*********************************************************************************/
+
 html {
   font-size: 12px;
 }
@@ -27,19 +66,19 @@ html {
 body {
   font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
-  color: $text-color;
   margin: 0px;
   padding: 0px;
-  background: url("../images/bg.png")
+  background-color: $background-color;
+  color: $text-color;
 }
 
 a {
-  color: #666666;
+  color: $link-color;
   text-decoration: underline;
 }
 
 a:hover {
-  color: $blue;
+  color: $link-hover-color;
   text-decoration: underline;
 }
 
@@ -52,7 +91,15 @@ a img:hover {
   opacity: 0.5;
 }
 
-#topborder {
+/*********************************************************************************/
+/* Header & Hero                                                                 */
+/*********************************************************************************/
+
+.header-wrapper {
+  height: 100%;
+}
+
+header {
   height:35px;
   background-color: #1a1a1a;
   width:100%;
@@ -130,53 +177,63 @@ ul.header-icons li a img:hover {
 /* Filter Bar                                                                    */
 /*********************************************************************************/
 
-.filter-bar {
-  min-height: 45px;
-  line-height: 45px;
+#filter-bar {
+  z-index: 100;
+  &.affix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+.navbar-filters {
   background-color: #ffffff;
-  padding: 0 1em;
-  margin: 0 20px;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #ddd;
-  border-radius: 3px;
-  box-shadow: 0px 10px 10px -10px #888;
-  -moz-box-shadow: 0px 10px 10px -10px #888;
-  -webkit-box-shadow: 0px 10px 10px -10px #888;
+  margin: 0px 15px;
+  box-shadow: $box-shadow;
+  z-index: 100;
+  @media (max-width: $screen-sm-max) {
+    margin: 0;
+    .resume {
+      display: none;
+    }
+  }
+  li a {
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      background-color: transparent;
+    }
+    &.current {
+      color: $blue;
+    }
+  }
+  .navbar-brand {
+    font-size: 1em;
+    font-weight: bold;
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
+  }
 }
 
-.filter-bar ul.navbar-left {
+.navbar-filters .navbar-toggle {
   float: left;
 }
 
-.filter-bar ul.navbar-right {
-  float: right;
+.navbar-filters .navbar-toggle .icon-bar {
+  background-color: $text-color;
 }
 
-.filter-bar a {
-  text-decoration: none;
-  padding: 0 1em;
-  cursor: pointer;
-  &.current {
-    color: $blue;
-    cursor: default;
-  }
+.navbar-toggle .icon-bar+.icon-bar {
+  margin-top: 4px;
 }
 
-@media (max-width: 700px) {
-  .filter-bar ul.navbar-left {
-    border-bottom: 1px solid #e7e7e7;
-  }
-  .filter-bar ul.navbar-left, .filter-bar ul.navbar-right {
-    float: none;
-  }
-  .filter-bar ul.list-inline > li {
-    display: list-item;
-    line-height: 3em;
-  }
-  //TEMP HACK: hide filter bar on mobile
-  .filter-bar {
-    display: none;
-  }
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  margin-right: 10px;
 }
 
 #loading {
@@ -194,26 +251,20 @@ ul.header-icons li a img:hover {
 /* Cards                                                                         */
 /*********************************************************************************/
 
-#allposts {
+#allcards {
   opacity: 0;
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  padding:0px;
-  background: #eeeeee;
-  background: url("../images/bg.png");
 }
 
-.eachpost {
-  width: 290px;
+.eachcard {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.card-wrapper {
   background-color: #ffffff;
   padding: 15px;
   border-radius: 3px;
-  box-shadow:0px 0px 10px #888;
-  -moz-box-shadow:0px 0px 10px #888;
-  -webkit-box-shadow:0px 0px 10px #888;
-  filter:progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=0),progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=90),progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=180),progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=270);
+  box-shadow: 0 2px 0 0 #e5e5e5;
 }
 
 .card-image img {
@@ -266,39 +317,3 @@ ul.list-inline > li {
   margin-top: 50px;
   font-size: 1.5rem;
 }
-
-/*********************************************************************************/
-/* Filter Sidebar Overrides                                                      */
-/*********************************************************************************/
-
-/* Not yet used
-.cd-main-content {
-  min-height: inherit;
-}
-
-.cd-tab-filter li:first-child {
-  display: inline-block;
-}
-
-.cd-tab-filter a, a.cd-filter-trigger {
-  text-decoration: none;
-  text-transform: none;
-}
-
-a.cd-filter-trigger {
-  background: transparent url("/images/icons/cd-icon-filter.svg") no-repeat center center;
-  left: auto;
-}
-
-.cd-filter::before {
-  background-color: $blue;
-}
-
-.cd-filter .cd-close {
-  background: #888;
-}
-
-.cd-filter-block .checkbox-label::after {
-  background: url("/images/icons/cd-icon-check.svg") no-repeat center center;
-}
-*/

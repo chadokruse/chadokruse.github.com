@@ -3,5 +3,6 @@ _site/
 .DS_Store
 *.swp
 server/
+.sass-cache/
 
 _data/resume.json

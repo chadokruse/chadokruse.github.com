@@ -1,31 +1,92 @@
 ---
-layout: isotope
+layout: default
 title: Chad Kruse | Product Strategist
 ---
-{% include header-isotope.html %}
+<div class="header-wrapper">
+  <header>
+    <ul class="header-icons">
+      <li><a href="https://twitter.com/chadkruser" target="_blank"><img src="/images/icons/twitter.png" alt="Twitter" title="Twitter"></a></li>
+      <li><a href="https://www.linkedin.com/in/chadokruse/" target="_blank"><img src="/images/icons/linkedin.png" alt="LinkedIn" title="LinkedIn"></a></li>
+      <li><a href="https://angel.co/chadokruse" target="_blank"><img src="/images/icons/angellist.png" alt="AngelList" title="AngelList"></a></li>
+      <li><a href="https://github.com/chadokruse" target="_blank"><img src="/images/icons/github.png" alt="Github" title="Github"></a></li>
+      <li class="text-link"><a href="mailto:ck@chadkruse.com" title="Get in touch"><b>Chad Kruse</b></a></li>
+    </ul>
+  </header>
+  <div class="hero">
+    <img class="logo" src="{{ site.baseurl }}/images/logo.jpg" alt="Logo">
+    <span class="noscript"><noscript>You have Javascript turned off. This site requires Javascript to be viewed properly.</noscript></span>
+    <div class="hero-text">
+      Current Status:<br>
+      <span>Hacking on Philanthropy</span>
+    </div>
+  </div>
+</div>
+
+<nav id="filter-bar" class="navbar navbar-filters">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#filters" aria-expanded="false">
+        <span class="sr-only">Toggle filters</span>
+        <span class="pull-left">
+          <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </span>
+        <span class="pull-right">
+          Filter
+        </span>
+      </button>
+      <span class="navbar-brand" href="#">Filter By:</span>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div id="filters" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a class="js-filter current" data-filter="*">All</a></li>
+        <li><a class="js-filter" data-filter=".CorpDev">Corporate Development</a></li>
+        <li><a class="js-filter" data-filter=".Founder">Founder</a></li>
+        <li><a class="js-filter" data-filter=".StartupCOO">Startup COO &amp; Advisor</a></li>
+      </ul>
+      <ul class="nav pull-right navbar-nav resume">
+        <li>
+          <a href="{{ site.baseurl }}/resume"> Resume</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="filter-focus"></div>
 
 <div id="loading" class="text-center">
   <p>Loading...</p>
 </div>
 
-<div id="allposts">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+      <div id="allcards">
 
-  <!-- Intro Tiles -->
-  {% include static-cards/intro-all.html %}
-  {% include static-cards/about.html %}
+        <!-- Intro Cards -->
+        {% include static-cards/intro-all.html %}
+        {% include static-cards/about.html %}
 
-  <!-- Main Tiles -->
-  {% assign cards = site.cards | sort: 'sort' %}
-  {% for card in cards %}
-    {% include card-template.html %}
-  {% endfor %}
+        <!-- Main Cards -->
+        {% assign cards = site.cards | sort: 'sort' %}
+        {% for card in cards %}
+          {% include card-template.html %}
+        {% endfor %}
 
-  <!-- Copyright Tile -->
-  {% include static-cards/cc-license.html %}
+        <!-- Copyright Card -->
+        {% include static-cards/cc-license.html %}
 
-</div>
+      </div>
 
-<div class="landing-cta">
-  <p>Prefer a traditional resume? <a href="/resume">Here you go</a></p>
+      <div class="landing-cta">
+        <p>Looking for a traditional resume? <a href="/resume">Here you go</a></p>
+      </div>
+    </div>
+  </div>
 </div>
 
