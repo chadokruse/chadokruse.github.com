@@ -8,7 +8,7 @@ tags:
   - OpenSource
   - Coding
   - Product
-sort: 7
+item_sort: 7
 ---
 I'm an active open source contributor and huge proponent of FOSS.
 

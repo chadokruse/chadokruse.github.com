@@ -7,6 +7,6 @@ tags:
   - StartupCOO
   - Product
   - Mobile
-sort: 4
+item_sort: 4
 ---
 Forkfly (now CloudEngage) was an early entrant in the highly competitive location-based mobile space, and as COO I had the honor of building a rockstar development team from the ground up, managing and launching three web apps and two mobile platforms, prioritizing a seemingly endless feature list, bringing the company to first revenue, and helping lead overall strategy development.

@@ -8,7 +8,7 @@ tags:
   - M&A
   - VC
   - PrivateEquity
-sort: 21
+item_sort: 21
 ---
 **Venture Capital**
   1. Nuance - Speech Recognition

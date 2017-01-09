@@ -7,7 +7,7 @@ tags:
   - Consulting
   - StrategyOfNumbers
   - Excel
-sort: 32
+item_sort: 32
 ---
 The bulk of my "offline" consulting work focused on transaction structuring and creating financial models.
 

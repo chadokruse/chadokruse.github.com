@@ -7,7 +7,7 @@ tags:
   - SideProject
   - WeekendHack
   - LessonsLearned
-sort: 24
+item_sort: 24
 ---
 Are you sick of all those books that tell you how a startup succeeded (our eyes are on you Founders at Work)? They are good reads, but we thought it was time to focus on the screwups. Much like the American Alpine Club publishes their annual journal chronicling mountaineering accidents, we created this site to show people what NOT to do. People have made the mistake already; let's honor them by not repeating it.
 

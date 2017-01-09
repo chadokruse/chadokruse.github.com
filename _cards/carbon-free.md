@@ -7,6 +7,6 @@ tags:
   - Consulting
   - RenewableEnergy
   - Sustainability
-sort: 26
+item_sort: 26
 ---
 Part of the core team of analysts behind this groundbreaking report covering the Pacific Northwest cleantech sector. I lead all econometrics-related work.

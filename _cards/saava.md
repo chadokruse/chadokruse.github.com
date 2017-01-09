@@ -7,7 +7,7 @@ tags:
   - Founder
   - Product
   - SocialEnterprise
-sort: 12
+item_sort: 12
 ---
 Saava was part experiment, part informal network of individual investors, foundations, lenders, and resource providers. Members explored investment opportunities in mission-related organizations, using the Saava website to collaborate with other like-minded investors.
 

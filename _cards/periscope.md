@@ -6,7 +6,7 @@ header: Periscope GIS
 tags:
   - SideProject
   - GPS
-sort: 23
+item_sort: 23
 ---
 PeriscopeGIS was an online application that intends to make large GIS datasets useful to the 80% of GIS users with little to no formal GIS training.
 

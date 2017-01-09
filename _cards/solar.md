@@ -6,7 +6,7 @@ header: Utility Scale Solar Using NMTCs
 tags:
   - Consulting
   - NewMarketTaxCredits
-sort: 28
+item_sort: 28
 ---
 I was hired to assist a solar company explore the feasibility of using New Market Tax Credits (NMTCs) on a utility scale solar project in Eastern Oregon.
 

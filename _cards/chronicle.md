@@ -7,7 +7,7 @@ tags:
   - StartupCOO
   - Consulting
   - Product
-sort: 10
+item_sort: 10
 ---
 Incredible team, incredible vision, domain expertise, traction...Chronicle is an astonishingly high potential startup poised to become the defacto thought leader in digital storytelling.
 

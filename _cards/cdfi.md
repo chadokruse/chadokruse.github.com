@@ -7,6 +7,6 @@ tags:
   - Consulting
   - StrategyOfNumbers
   - SocialEnterprise
-sort: 30
+item_sort: 30
 ---
 I was hired to assist a local CDFI (community development financial institution) explore the investment merits behind a community wind development.

@@ -7,7 +7,7 @@ tags:
   - SideProject
   - Sustainability
   - Someday
-sort: 19
+item_sort: 19
 ---
 This was a spin-out idea stemming from my work in conservation-based forestry. The beauty of working with offline businesses is uncovering countless opportunities to apply technology...this was one of those scenarios. With a focus on the small forestland landowner, we developed a system that intended to leverage LIDAR and satellite technologies to inventory ecosystem assets on ALL non-industrial, private forestlands in OR &amp; WA (we're talking millions of acres here). If successful, the platform could disrupt the entire forest products supply chain in Western North America.
 

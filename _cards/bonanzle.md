@@ -7,7 +7,7 @@ tags:
   - Consulting
   - StartupCOO
   - Product
-sort: 16
+item_sort: 16
 ---
 One of the first startups involved in social commerce, I consulted with Bonanza (formerly Bonanzle) during its bootstrap phase. I served the role of "business guy" with duties generally focused on business partnerships and API evangelism, but also included product management, strategy, data mining, and managing the company's first ad campaign.
 

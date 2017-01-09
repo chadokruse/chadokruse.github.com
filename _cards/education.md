@@ -7,6 +7,6 @@ tags:
   - Education
   - BBA
   - Finance
-sort: 36
+item_sort: 36
 ---
 I received my B.B.A from the University of Iowa with a major in Finance, graduating in 3 1/2 years.

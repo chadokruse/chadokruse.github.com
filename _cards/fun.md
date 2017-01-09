@@ -6,7 +6,7 @@ header: What I do for fun...
 tags:
   - About
   - Fun
-sort: 37
+item_sort: 37
 ---
 The stuff I do for fun usually requires a helmet. Mountaineering during spring, mountain biking during summer and fall, and skiing during winter.
 

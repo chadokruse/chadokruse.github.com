@@ -73,7 +73,7 @@ title: Chad Kruse | Product Strategist
         {% include static-cards/about.html %}
 
         <!-- Main Cards -->
-        {% assign cards = site.cards | sort: 'sort' %}
+        {% assign cards = site.cards | sort: 'item_sort' %}
         {% for card in cards %}
           {% include card-template.html %}
         {% endfor %}

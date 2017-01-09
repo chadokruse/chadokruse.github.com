@@ -7,6 +7,6 @@ tags:
   - Consulting
   - Excel
   - StrategyOfNumbers
-sort: 36
+item_sort: 36
 ---
 Worked with the staff of an Australian municipality to model and explore the potential for alternative funding mechansims on certain transit-oriented developments. 

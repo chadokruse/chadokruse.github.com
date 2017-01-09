@@ -6,7 +6,7 @@ header: DailyViva
 tags:
   - SideProject
   - WeekendHack
-sort: 11
+item_sort: 11
 ---
 DailyViva is my Meteor.js playground. Sure, I use it personally to create daily routines (no coffee!), but it's mostly a sandbox to try out intermediate to advanced Meteor features. Meteor.wrapAsync anyone?!?
 

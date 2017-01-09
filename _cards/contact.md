@@ -5,6 +5,6 @@ image_href: mailto:ck@chadkruse.com
 header: Contact
 tags:
   - About
-sort: 9999
+item_sort: 9999
 ---
 [ck@chadkruse.com](mailto:ck@chadkruse.com)
