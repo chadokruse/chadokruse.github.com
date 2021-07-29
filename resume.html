@@ -67,7 +67,7 @@ data_source: resume-public
     <div class="col-xs-10">
         <ul class="list-unstyled experience-summary">
           <!--span class="company">Overview</span-->
-            {% for each in resume.extras.overview reversed %}
+            {% for each in resume.extras.overview %}
               <li>{{each.role}}: {{each.duration}}</li>
             {% endfor %}
         </ul>
