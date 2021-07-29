@@ -6,3 +6,4 @@ server/
 .sass-cache/
 
 _data/resume.json
+.jekyll-cache/
