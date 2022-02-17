@@ -7,3 +7,4 @@ server/
 
 _data/resume.json
 .jekyll-cache/
+.jekyll-metadata
