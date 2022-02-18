@@ -1,25 +1,25 @@
-<div class="eachcard col-xs-12 col-sm-6 col-md-4 col-lg-3 {% for each in card.tags %}{{each}} {% endfor %}">
+<div class="eachcard col-xs-12 col-sm-6 col-md-4 col-lg-3 {% for each in card.data.tags %}{{each}} {% endfor %}">
   <div class="card-wrapper">
     <div class="card-image">
-      {% if card.image_href %}
-        <a href="{{ card.image_href }}" target="_blank"><img src="/images/{{ card.image }}"/></a>
+      {% if card.data.image_href %}
+        <a href="{{ card.data.image_href }}" target="_blank"><img src="/images/{{ card.data.image }}"/></a>
       {% else %}
-        <img src="/images/{{ card.image }}"/>
+        <img src="/images/{{ card.data.image }}"/>
       {% endif %}
     </div>
 
     <div class="card-header">
-      {{ card.header }}
+      {{ card.data.header }}
     </div>
 
     <div class="card-body">
-      {{ card.content }}
+      {{ card.templateContent }}
     </div>
 
     <div class="card-footer">
       <small>
         <ul class="list-inline">
-          {% for each in card.tags %}
+          {% for each in card.data.tags %}
             <li><a class="card-tags js-filter" data-filter=".{{ each }}">#{{ each }}</a></li>
           {% endfor %}
         </ul>

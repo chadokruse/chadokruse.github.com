@@ -1,0 +1,28 @@
+{
+  "name": "ckdotcom",
+  "version": "2.0.0",
+  "description": "This is the source code used to power my personal site ([demo](http://www.chadkruse.com)). It takes advantage of Jekyll's `_data` and `category` features and has two primary components:",
+  "main": "postcss.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve:dev": "ELEVENTY_ENV=development npx @11ty/eleventy --serve",
+    "build:prod": "ELEVENTY_ENV=production npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadokruse/chadokruse.github.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chadokruse/chadokruse.github.com/issues"
+  },
+  "homepage": "https://github.com/chadokruse/chadokruse.github.com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.23"
+  }
+}

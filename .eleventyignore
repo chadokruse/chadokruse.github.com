@@ -1,0 +1,8 @@
+README.md
+CNAME
+
+# Jekyll related
+# These should eventually be removed
+.jekyll-cache
+.sass-cache
+_config.yml
