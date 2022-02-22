@@ -1,7 +1,14 @@
 module.exports = {
-  content: [],
+  content: [
+    './_includes/**/*.{html,js}',
+    './_layouts/**/*.{html,js}',
+    './index.html',
+  ],
   theme: {
     extend: {},
   },
-  plugins: [],
-}
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('flowbite/plugin'),
+  ],
+};

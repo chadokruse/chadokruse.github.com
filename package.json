@@ -4,9 +4,13 @@
   "description": "This is the source code used to power my personal site ([demo](http://www.chadkruse.com)). It takes advantage of Jekyll's `_data` and `category` features and has two primary components:",
   "main": "postcss.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve:dev": "ELEVENTY_ENV=development npx @11ty/eleventy --serve",
-    "build:prod": "ELEVENTY_ENV=production npx @11ty/eleventy"
+    "dev:postcss": "postcss css/main.css -o _site/css/main.css --watch --verbose",
+    "dev:11ty": "eleventy --serve --watch",
+    "build:postcss": "NODE_ENV=production postcss src/_assets/stylesheets/styles.css -o src/_includes/styles.min.css",
+    "build:11ty": "ELEVENTY_ENV=production eleventy",
+    "build:scripts": "esbuild src/_assets/scripts/app.js --bundle --minify --outfile=dist/static/app.min.js",
+    "start": "run-p dev:*",
+    "build": "run-s clean build:*"
   },
   "repository": {
     "type": "git",
@@ -21,8 +25,15 @@
   "homepage": "https://github.com/chadokruse/chadokruse.github.com#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
+    "@tailwindcss/typography": "^0.5.2",
     "autoprefixer": "^10.4.2",
+    "cssnano": "^5.0.17",
+    "flowbite": "^1.3.4",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.6",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.0.2",
     "tailwindcss": "^3.0.23"
-  }
+  },
+  "dependencies": {}
 }

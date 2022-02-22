@@ -7,6 +7,14 @@ module.exports = function(eleventyConfig) {
   // Passthrough static items
   eleventyConfig.addPassthroughCopy('favicon.ico');
   eleventyConfig.addPassthroughCopy('images');
+  // eleventyConfig.addPassthroughCopy('css');
+  eleventyConfig.addPassthroughCopy('js');
+  eleventyConfig.addPassthroughCopy({'./node_modules/flowbite/dist/flowbite.js': './js/flowbite.js'});
+
+  // Watch for css and config changes
+  eleventyConfig.addWatchTarget('./tailwind.config.js');
+  eleventyConfig.addWatchTarget('./css/tailwind.css');
+  eleventyConfig.addWatchTarget('./css/main.css');
 
   
   eleventyConfig.addCollection('cards', function(collectionApi) {

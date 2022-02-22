@@ -11,4 +11,4 @@ vendor/
 # Ignore project-specific files
 .DS_Store
 _data/resume.json
-node_modules
+node_modules/
