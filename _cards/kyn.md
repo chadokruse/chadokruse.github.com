@@ -6,6 +6,7 @@ header: Democratizing Philanthropy
 tags:
   - Founder
   - Product
+  - Developer
   - SocialEnterprise
 item_sort: 2
 ---

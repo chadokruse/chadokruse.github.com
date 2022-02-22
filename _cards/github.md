@@ -6,7 +6,7 @@ header: Open Source All The Things!
 tags:
   - About
   - OpenSource
-  - Coding
+  - Developer
   - Product
 item_sort: 7
 ---

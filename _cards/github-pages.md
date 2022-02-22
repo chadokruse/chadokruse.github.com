@@ -4,7 +4,7 @@ image: githubpages.jpg
 image_href: https://github.com/chadokruse/chadokruse.github.com
 header: Github Pages
 tags:
-  - Coding
+  - Developer
   - OpenSource
 item_sort: 33
 ---

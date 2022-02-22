@@ -6,7 +6,7 @@ header: Founder
 tags:
   - Founder
   - Product
-  - Coder
+  - Developer
   - SocialEnterprise
 item_sort: 1
 ---

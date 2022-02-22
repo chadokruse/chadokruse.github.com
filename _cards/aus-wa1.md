@@ -9,4 +9,4 @@ tags:
   - StrategyOfNumbers
 item_sort: 36
 ---
-Worked with the staff of an Australian municipality to model and explore the potential for alternative funding mechansims on certain transit-oriented developments. 
+Worked with the staff of an Australian municipality to model and explore the potential for alternative funding mechanisms on certain transit-oriented developments. 

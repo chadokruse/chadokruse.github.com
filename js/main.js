@@ -1,45 +1,80 @@
-$( function() {
+/* global imagesLoaded Isotope */
+function ready(fn) {
+  if (document.attachEvent ? document.readyState === 'complete' : document.readyState !== 'loading') {
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}
 
-  var $container = $('#allcards');
+ready(function() {
+  const cards = document.getElementById('allcards');
+  const loading = document.getElementById('loading');
+  let iso;
 
-  $container.imagesLoaded( function(){
-    //$container.fadeIn(1000).isotope({
-    $('#loading').hide();
-    $container.animate({opacity:1},1000).isotope({
+  // Isotope - initial layout
+  imagesLoaded(cards, function() {
+    // Hide loading element
+    loading.style.display = 'none';
+
+    // Init Isotope now that all images have loaded
+    iso = new Isotope(cards, {
       layoutMode: 'packery',
-      itemSelector: '.eachcard'
+      itemSelector: '.eachcard',
     });
+    // Set initial Isotope layout
+    // iso.layout();
+    
+    // Fade in all cards
+    cards.style.transition = 'opacity 1s ease-in-out';
+    cards.style.opacity = 1;
   });
 
   // Isotope - filter items on click
-  $('a.js-filter').on( 'click', function() {
+  const filters = document.querySelectorAll('a.js-filter');
+  filters.forEach(filter => {
+    filter.addEventListener('click', (e) => {
+      const filterValue = e.target.dataset.filter;
 
-    //Sort cards
-    var filterValue = $(this).attr('data-filter');
-    $container.isotope({ filter: filterValue });
+      // Create new Isotope layout
+      iso.arrange({ 'filter': filterValue });
 
-    //Scroll back to filter bar if user if below bar
-    var scrollToFilter = function(){
-      if ($(window).scrollTop() > 250) {
-        $('body,html').animate({
-            //scrollTop: 0
-            scrollTop: $('#filter-focus').offset().top
-            }, "fast");
+      // If user below filter bar, reset scroll position
+      function scrollToFilter() {
+        const focusAnchor = document.getElementById('filter-focus');
+        let scrollTop = window.pageYOffset;
+        if (scrollTop > 250) {
+          window.scrollTo({
+            'top': focusAnchor.offsetTop,
+            'left': 0,
+            'behavior': 'auto',
+          });
+        }
       }
-    };
-    scrollToFilter();
+      scrollToFilter();
 
-    // Highlight current subnav link
-    $('a.js-filter').removeClass('current');
-    $(this).addClass('current');
-
+      // Highlight current subnav link
+      filters.forEach(el => {
+        el.classList.remove('current');
+      });
+      e.target.classList.add('current');
+    });
   });
 
-  // Sticky Nav (filter bar sticks to top when reaches top)
-  $('#filter-bar').affix({
-      offset: {
-        top: $('.header-wrapper').height()
-      }
+  // Sticky Filter Bar
+  // Mimics Bootstrap v3 affix functionality
+  const filterBar = document.getElementById('filter-bar');
+  const headerWrapper = document.querySelector('.header-wrapper');
+  window.addEventListener('scroll', e => {
+    affix(e);
   });
-
+ 
+  function affix() {
+    const headerWrapperHeight = headerWrapper.offsetHeight;
+    if (window.pageYOffset >= headerWrapperHeight) {
+      filterBar.classList.add('affix');
+    } else {
+      filterBar.classList.remove('affix');
+    }
+  }
 });
