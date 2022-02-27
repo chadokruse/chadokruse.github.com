@@ -1,0 +1,30 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Change default link color */
+.prose a {
+  @apply text-indigo-600 no-underline hover:text-indigo-900
+}
+
+/* Cards - Improve nested list spacing */
+@media screen(sm) {
+  .prose ul li {
+    padding: 0;
+  }
+  .prose ul li a {
+    @apply text-base
+  }
+}
+@media screen(md) {
+  .prose ul li a {
+    @apply text-xs
+  }
+}
+/* Filter bar buttons */
+.nav-btn {
+  @apply px-3 py-2 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-indigo-100
+}
+.nav-btn.current {
+  @apply px-3 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700
+}

@@ -1,12 +1,10 @@
 module.exports = {
   content: [
-    './_includes/**/*.{html,js}',
-    './_layouts/**/*.{html,js}',
-    './index.html',
+    './src/_includes/**/*.{html,js}',
+    './src/_layouts/**/*.{html,js}',
+    './src/index.html',
+    './src/resume.html',
   ],
-  theme: {
-    extend: {},
-  },
   plugins: [
     require('@tailwindcss/typography'),
     require('flowbite/plugin'),

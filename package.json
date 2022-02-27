@@ -4,14 +4,14 @@
   "description": "This is the source code used to power my personal site ([demo](http://www.chadkruse.com)). It takes advantage of Jekyll's `_data` and `category` features and has two primary components:",
   "main": "postcss.config.js",
   "scripts": {
-    "dev:postcss": "postcss css/main.css -o _site/css/main.css --watch --verbose",
-    "dev:11ty": "eleventy --serve --watch",
-    "build:postcss": "NODE_ENV=production postcss src/_assets/stylesheets/styles.css -o src/_includes/styles.min.css",
-    "build:11ty": "ELEVENTY_ENV=production eleventy",
-    "build:scripts": "esbuild src/_assets/scripts/app.js --bundle --minify --outfile=dist/static/app.min.js",
-    "start": "run-p dev:*",
-    "build": "run-s clean build:*"
-  },
+    "clean": "rm -rf dist",
+    "dev:postcss": "postcss src/css/main.css -o dist/css/main.css --verbose --watch",
+    "dev:11ty": "npx @11ty/eleventy --serve --watch",
+    "dev": "npm-run-all clean --parallel dev:*",
+    "build:postcss": "postcss src/css/main.css -o dist/css/main.css",
+    "build:11ty": "npx @11ty/eleventy",
+    "build": "NODE_ENV=production npm-run-all clean --parallel build:*"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chadokruse/chadokruse.github.com.git"

@@ -5,16 +5,15 @@ module.exports = function(eleventyConfig) {
   });
 
   // Passthrough static items
-  eleventyConfig.addPassthroughCopy('favicon.ico');
-  eleventyConfig.addPassthroughCopy('images');
-  // eleventyConfig.addPassthroughCopy('css');
-  eleventyConfig.addPassthroughCopy('js');
+  eleventyConfig.addPassthroughCopy('./src/favicon.ico');
+  eleventyConfig.addPassthroughCopy('./src/robots.txt');
+  eleventyConfig.addPassthroughCopy('./src/images');
+  eleventyConfig.addPassthroughCopy('./src/js');
   eleventyConfig.addPassthroughCopy({'./node_modules/flowbite/dist/flowbite.js': './js/flowbite.js'});
 
   // Watch for css and config changes
   eleventyConfig.addWatchTarget('./tailwind.config.js');
-  eleventyConfig.addWatchTarget('./css/tailwind.css');
-  eleventyConfig.addWatchTarget('./css/main.css');
+  eleventyConfig.addWatchTarget('./src/css/main.css');
 
   
   eleventyConfig.addCollection('cards', function(collectionApi) {
@@ -22,24 +21,12 @@ module.exports = function(eleventyConfig) {
       // Side-step tags and do your own filtering
       return 'item_sort' in item.data;
     });
-  });
-
-  /* Works 
-  eleventyConfig.addCollection("cards", function(collectionApi) {
-    return collectionApi.getAll();
-  });
-  */
-  
-
-  /* Does not work
-  eleventyConfig.addCollection('cards', collection => {
-    return collection.getAll('cards');
-  });
-  */
-  
+  });  
 
   return {
     dir: {
+      input: 'src',
+      output: 'dist',
       layouts: '_layouts'
     }
   }
