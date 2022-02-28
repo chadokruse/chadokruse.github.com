@@ -23,7 +23,7 @@
 }
 
 /* Filter bar buttons */
-/* Scroll-m classes ensure anchor clicks scroll to proper place
+/* Scroll-m classes ensure anchor clicks scroll to proper place */
 .nav-btn {
   @apply px-3 py-2 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-indigo-100
 }
