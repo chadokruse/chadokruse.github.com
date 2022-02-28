@@ -16,12 +16,19 @@ ready(function() {
   const hashToFilter = location.hash.replace('#', '.');
   let iso;
 
-  // Prevent auto scroll to anchor tag if hash exists on initial page load
-  // This allows a new user following a link to view the hero
+  // Adjust filter button styling based on presence of url hash on page load
   if (hash) {
+    // Reset default active state
+    document.getElementById('all').classList.remove('active');
+
+    // Prevent auto scroll to anchor tag if hash exists
+    // This allows a new user following a link to view the hero
     window.addEventListener('onbeforeunload', (e) => {
       e.preventDefault();
     });
+  } else {
+    // Add styling to 'All' filter button to mimic default :target handling
+    document.getElementById('all').classList.add('active');
   }
 
   // Isotope - initial layout
@@ -67,10 +74,11 @@ ready(function() {
 
   // Isotope - filter items on click
   filterButtons.forEach(filter => {
-    // Handle filter bar button clicks
     filter.addEventListener('click', (e) => {
-      // e.preventDefault();
       const filterValue = e.target.dataset.filter;
+
+      // Remove default active class added to 'All' button
+      document.getElementById('all').classList.remove('active');
 
       // Create new Isotope layout
       iso.arrange({ 'filter': filterValue });
