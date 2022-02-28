@@ -1,6 +1,6 @@
 ---
 name: grantmakers
-image: grantmakers.png
+image: grantmakers_reduced.png
 image_href: https://www.grantmakers.io
 header: Creator
 tags:
