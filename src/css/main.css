@@ -22,5 +22,5 @@
   @apply outline-none;
 }
 .nav-btn:target, .active {
-  @apply scroll-m-[3.75rem] scroll-p-0 md:scroll-m-1 px-3 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700;
+  @apply scroll-m-[3.75rem] scroll-p-0 md:scroll-m-1.5 px-3 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700;
 }
