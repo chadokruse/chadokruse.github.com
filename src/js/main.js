@@ -57,9 +57,10 @@ ready(function() {
       if (count < 1) {
         count++;
         console.log('%cHello you glorious recruiter!', 'font-size:1.25rem');
-        console.log('Thanks for testing to see if resizing adjusts the layout.');
-        console.log('It does, except on xs screen sizes. It\'s a limitation of the plugin I use, which does not support flexbox.');
-        console.log('I look forward to discussing why I still think it\'s a good fit for this personal site 😉');
+        console.log('I see you jumped into dev tools. Good onya!');
+        console.log('Did you notice the edge case layout error when resizing?');
+        console.log('If not, great, that\'s why it\'s a `wontfix` 😉');
+        console.log('If you did, I\'m looking forward to discussing my decision for leaving it in 🙌');
       }
     }
   });
