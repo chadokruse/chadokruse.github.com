@@ -7,29 +7,20 @@
   @apply text-indigo-600 no-underline hover:text-indigo-900
 }
 
-/* Cards - Improve nested list spacing */
-@media screen(sm) {
-  .prose ul li {
-    padding: 0;
-  }
-  .prose ul li a {
-    @apply text-base
-  }
-}
-@media screen(md) {
-  .prose ul li a {
-    @apply text-xs
-  }
+/* Cards - Improve nested list styling */
+/* See also use of span class in markdown file to suppress p tag */
+.prose ul li a {
+  @apply text-current;
 }
 
 /* Filter bar buttons */
 /* Scroll-m classes ensure anchor clicks scroll to proper place */
 .nav-btn {
-  @apply px-3 py-2 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-indigo-100
+  @apply px-3 py-2 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-indigo-100;
 }
 .nav-btn:focus, .nav-btn:hover {
-  @apply outline-none
+  @apply outline-none;
 }
 .nav-btn:target, .active {
-  @apply scroll-m-[3.75rem] scroll-p-0 md:scroll-m-1 px-3 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700
+  @apply scroll-m-[3.75rem] scroll-p-0 md:scroll-m-1 px-3 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700;
 }
