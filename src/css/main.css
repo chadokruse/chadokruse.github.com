@@ -21,10 +21,11 @@
     @apply text-xs
   }
 }
+
 /* Filter bar buttons */
 .nav-btn {
   @apply px-3 py-2 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-indigo-100
 }
-.nav-btn.current {
-  @apply px-3 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700
+.nav-btn:target {
+  @apply scroll-m-1 px-3 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700
 }

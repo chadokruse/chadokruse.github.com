@@ -8,13 +8,21 @@ function ready(fn) {
 }
 
 ready(function() {
-  const filterBarButtons = document.querySelectorAll('a.js-filter');
+  const filterButtons = document.querySelectorAll('a.js-filter');
   const filterBarHeight = document.getElementById('filter-bar').offsetHeight;
   const cards = document.getElementById('allcards');
   const loading = document.getElementById('loading');
   const hash = location.hash;
   const hashToFilter = location.hash.replace('#', '.');
   let iso;
+
+  // Prevent auto scroll to anchor tag if hash exists on initial page load
+  // This allows a new user following a link to view the hero
+  if (hash) {
+    window.addEventListener('onbeforeunload', (e) => {
+      e.preventDefault();
+    });
+  }
 
   // Isotope - initial layout
   imagesLoaded(cards, function() {
@@ -57,52 +65,31 @@ ready(function() {
   });
 
   // Isotope - filter items on click
-  filterBarButtons.forEach(filter => {
-    // Adjust filter bar button styling if needed
-    if (hash && hashToFilter === filter.dataset.filter) {
-      filter.classList.add('current');
-    }
-    if (hash && hashToFilter !== filter.dataset.filter) {
-      filter.classList.remove('current');
-    }
-    // The way Isotope handles filters requires one final scenario
-    if (hash && hash === '#all' && filter.dataset.filter === '*') {
-      filter.classList.add('current');
-    }
-
+  filterButtons.forEach(filter => {
     // Handle filter bar button clicks
     filter.addEventListener('click', (e) => {
+      // e.preventDefault();
       const filterValue = e.target.dataset.filter;
 
       // Create new Isotope layout
       iso.arrange({ 'filter': filterValue });
 
       // If user is below filter bar, reset scroll position
+      // Note: This works in combination with:
+      // 1) Anchor tag IDs set in the filter bar HTML
+      // 2) Use of the :target pseudo element (for highlighting based on url hash)
       scrollToFilter();
-
-      // Highlight current subnav link
-      filterBarButtons.forEach(el => {
-        el.classList.remove('current');
-      });
-      e.target.classList.add('current');
-
-      // Handle 'All' button clicks
-      // 'All' button has no href - see 'index.html'
-      if (filterValue === '*') {
-        location.hash = '#all';
-      }
     });
   });
 
   function scrollToFilter() {
+    // Note: the :target pseudo element causes the initial jump when filter bar is not yet fixed to top
     const focusAnchor = document.getElementById('filter-focus');
-    const focusAnchorPosition = focusAnchor.offsetTop;
-    const currentScrollPosition = window.pageYOffset;
-    if (currentScrollPosition > focusAnchorPosition) {
+    if (window.scrollY > focusAnchor.offsetTop) {
       window.scrollTo({
-        'top': focusAnchorPosition - filterBarHeight,
-        'left': 0,
-        'behavior': 'auto',
+        top: focusAnchor.offsetTop - filterBarHeight,
+        left: 0,
+        behavior: 'auto',
       });
     }
   }
