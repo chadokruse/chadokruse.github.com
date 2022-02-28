@@ -64,10 +64,9 @@ ready(function() {
       if (count < 1) {
         count++;
         console.log('%cHello you glorious recruiter!', 'font-size:1.25rem');
-        console.log('I see you jumped into dev tools. Good onya!');
-        console.log('Did you notice the edge case layout error when resizing?');
-        console.log('If not, great, that\'s why it\'s a `wontfix` 😉');
-        console.log('If you did, I\'m looking forward to discussing my decision for leaving it in 🙌');
+        console.log('Not a recruiter and just exploring the site in dev tools?');
+        console.log('That\'s great! Don\'t forget, the site is open source and on Github.');
+        console.log('Just fork and go. https://github.com/chadokruse/chadokruse.github.com 🙌');
       }
     }
   });
