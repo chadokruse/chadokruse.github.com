@@ -1,9 +1,0 @@
-_drafts/
-_site/
-.DS_Store
-*.swp
-server/
-.sass-cache/
-
-_data/resume.json
-.jekyll-cache/

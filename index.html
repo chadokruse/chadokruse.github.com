@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Chicago-based full-stack developer, product builder, and recovering corporate development guy." />
+    <title>Chad Kruse | Full Stack Developer</title>
+    <meta name="author" content="Chad Kruse" />
+    <link rel="icon" type="image/png" href="/images/logos/logo.png" />
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+
+    <!-- Homepage CSS -->
+    <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection" />
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- JS -->
+    <script defer type="text/javascript" src="/js/imagesloaded.pkgd.min.js"></script>
+    <script defer type="text/javascript" src="/js/isotope.pkgd.min.js"></script>
+    <script defer type="text/javascript" src="/js/packery-mode.pkgd.min.js"></script>
+    <script defer type="text/javascript" src="/js/flowbite.js"></script>
+    <script defer type="text/javascript" src="/js/main.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-10850167-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body class="bg-gray-100">
+    <div id="body-wrapper">
+      <nav class="bg-gray-900 px-2 sm:px-4 py-2.5 rounded-bl rounded-br dark:bg-gray-800">
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+    <div class="flex">
+      <a href="/" title="Refresh Homepage">
+        <svg class="mr-3 h-10" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20Z" fill="#6366F1"/>
+          <path d="M16.84 25.6308H17.5297C16.8191 28.0654 15.0428 29.2826 12.2008 29.2826C10.3722 29.2826 8.83102 28.6609 7.57716 27.4175C6.33375 26.1741 5.71205 24.5284 5.71205 22.4805C5.71205 20.3803 6.386 18.6771 7.73389 17.371C9.08179 16.0649 10.6752 15.4118 12.5142 15.4118C13.6218 15.4118 14.6406 15.6574 15.5705 16.1485C16.5005 16.6291 16.9654 17.2195 16.9654 17.9196C16.9654 18.1808 16.8766 18.4263 16.699 18.6562C16.5318 18.8861 16.2862 19.001 15.9623 19.001C15.2727 19.001 14.8495 18.5987 14.6928 17.7942C14.5674 17.1881 14.3741 16.765 14.1129 16.5246C13.8412 16.2843 13.3136 16.1642 12.5299 16.1642C11.1298 16.1642 10.0744 16.65 9.36391 17.6218C8.66384 18.5935 8.3138 20.0563 8.3138 22.0103C8.3138 24.0269 8.68996 25.6047 9.44227 26.7436C10.205 27.8825 11.3544 28.452 12.8904 28.452C14.9592 28.452 16.2758 27.5116 16.84 25.6308Z" fill="white"/>
+          <path d="M26.7769 15.9291H31.949V16.65C30.9982 16.6709 29.7234 17.3814 28.1248 18.7816C27.6128 19.2204 26.8187 19.863 25.7424 20.7094L30.319 26.0696C31.0086 26.8742 31.552 27.4019 31.949 27.6526C32.3461 27.893 32.7536 28.0236 33.1715 28.0445V28.7654H26.7769V28.0445C27.8426 28.0236 28.3755 27.7937 28.3755 27.3548C28.3755 27.1563 28.0255 26.6495 27.3254 25.8345L24.034 22.0103L23.3601 22.5118V24.3613C23.3601 25.7301 23.3758 26.5921 23.4071 26.9473C23.4489 27.2921 23.6004 27.5638 23.8616 27.7623C24.1229 27.9504 24.5774 28.0445 25.2252 28.0445V28.7654H18.7208V28.0445H19.2067C19.959 28.0445 20.4449 27.94 20.6643 27.731C20.8942 27.5116 21.0248 27.2556 21.0561 26.963C21.0875 26.66 21.1032 25.7927 21.1032 24.3613V11.4935C21.1032 10.2501 20.983 9.45602 20.7427 9.11121C20.5128 8.7664 19.9486 8.59399 19.05 8.59399V7.87302C19.6664 7.87302 20.4031 7.79988 21.2599 7.6536C22.1271 7.50731 22.7175 7.36103 23.031 7.21475H23.3601V21.6498L24.708 20.7094C26.8918 19.163 27.9837 18.0502 27.9837 17.371C27.9837 16.9112 27.5814 16.6709 26.7769 16.65V15.9291Z" fill="white"/>
+        </svg>
+      </a>
+      <span class="self-center text-lg font-semibold whitespace-nowrap dark:text-white text-indigo-100">Chad Kruse</span>
+    </div>
+    <div class="block w-auto" id="mobile-menu">
+      <ul class="flex mt-0 flex-row md:space-x-8 text-sm font-medium border-0">
+        <li>
+          <a href="https://github.com/chadokruse" target="_blank" class="block py-2 pr-4 pl-3 md:pr-2 md:pl-1 hover:bg-transparent border-0 hover:text-blue-700 p-0 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:hover:bg-transparent dark:border-gray-700">
+            <svg class="w-6 h-6" fill="white" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Github</title>
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/chadkruser" target="_blank" class="block py-2 pr-4 pl-3 md:px-1 hover:bg-transparent border-0 hover:text-blue-700 p-0 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:hover:bg-transparent dark:border-gray-700">
+            <svg class="w-6 h-6" fill="white" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Twitter</title>
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/chadokruse/" target="_blank" class="block py-2 pr-4 pl-3 md:px-1 hover:bg-transparent border-0 hover:text-blue-700 p-0 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:hover:bg-transparent dark:border-gray-700">
+            <svg class="w-6 h-6" fill="white" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>LinkedIn</title>
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:ck@chadkruse.com" target="_blank" class="block py-2 pr-4 pl-3 md:px-1 hover:bg-transparent border-0 hover:text-blue-700 p-0 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:hover:bg-transparent dark:border-gray-700">
+            <svg class="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Email</title>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="mt-10 mb-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:mb-12 sm:px-6 md:mt-16 md:mb-16 lg:mt-20 lg:mb-20 lg:px-8 xl:mt-28 xl:mb-28">
+  <div class="sm:text-center lg:text-left">
+    <span class="noscript"><noscript>You have Javascript turned off. This site requires Javascript to be viewed properly.</noscript></span>
+    <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+      <span class="inline">Current Status:</span><br>
+      <span class="text-indigo-600 inline">Hacking on Philanthropy</span>
+    </h1>
+    <p class="mt-3 text-base text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+      👋 Hi! I'm Chad Kruse, a <span class="text-gray-800 font-bold">full stack developer</span> with a background in strategy and finance.
+    </p>
+    <p class="mt-3 text-base text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+      I have a unique ability to talk shop with programmers, VC's, designers, boards of directors, philanthropists and everyone in between.
+    </p>
+  </div>
+</main>
+
+<nav id="filter-bar" class="bg-white px-2 sm:px-4 py-2.5 rounded border-gray-200 shadow-md sticky top-0 z-50">
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+    <button data-collapse-toggle="mobile-filter-menu" type="button" class="inline-flex items-center p-2 ml-3 text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+      <span class="sr-only">Open filter menu</span>
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      <span class="pl-1 font-bold">Filter</span>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="mobile-filter-menu">
+      <ul class="flex mt-4 flex-row justify-center md:justify-start space-x-2 md:mt-0 md:text-sm md:font-medium">
+        <li class="font-bold hidden md:list-item leading-6">
+          Filter By:
+        </li>
+        <li><a href="#all" id="all" class="js-filter nav-btn" data-filter="*">All</a></li>
+        <li><a href="#advisor" id="advisor" class="js-filter nav-btn" data-filter=".advisor">Advisor</a></li>
+        <li><a href="#consulting" id="consulting" class="js-filter nav-btn hidden md:inline" data-filter=".consulting">Consultant</a></li>
+        <li><a href="#founder" id="founder" class="js-filter nav-btn" data-filter=".founder">Founder</a></li>
+        <li><a href="#developer" id="developer" class="js-filter nav-btn" data-filter=".developer">Developer</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="filter-focus" class="scroll-m-0"></div>
+<div id="allcards" class="flex flex-wrap m-2 md:m-4 min-h-screen transition-opacity duration-1000 ease-in-out opacity-0">
+
+  <!-- Intro Cards -->
+  
+
+  <!-- Main Cards -->
+  
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 about ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/chicago.jpg" alt="About Me">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">About Me</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#about" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".about">About</a-->
+          <a href="#about" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".about">About</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>Before launching my own ventures and teaching myself to code, I was often brought on as the first &quot;business hire&quot; at startups of all shapes and sizes. I've run development teams, owned product strategy, raised venture, seed, debt, and philanthropic capital, and closed business development deals with companies both large and small. I'm a generalist through and through.</p>
+<p>My career started as a strategist and dealmaker for large tech companies.</p>
+<p>My head is in SF, my heart is in Bend, Oregon, and my body is currently in Chicago.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 founder product developer ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <a href="https://www.grantmakers.io"><img class="w-full mx-auto border-none rounded-t-lg" src="/images/grantmakers_reduced.png" alt="Creator"></a>
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Creator</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#founder" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".founder">Founder</a-->
+          <a href="#founder" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".founder">Founder</a>
+          
+          <!--a href="#product" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a-->
+          <a href="#product" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a>
+          
+          <!--a href="#developer" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".developer">Developer</a-->
+          <a href="#developer" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".developer">Developer</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>Since its creation in 2016, Grantmakers.io has become one of the largest free sources of searchable philanthropic data on the Internet.</p>
+<p>The site levels the playing field for nonprofits by providing access to grants information once locked behind expensive paywalls. Fully open source and forever free.</p>
+<p><a href="https://www.grantmakers.io/">Visit Site →</a><br>
+<a href="https://github.com/grantmakers/grantmakers.github.io">View Code →</a></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 founder product developer ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <a href="https://smartergiving.org"><img class="w-full mx-auto border-none rounded-t-lg" src="/images/smartergiving-dark.jpg" alt="Philanthropy Innovation"></a>
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Philanthropy Innovation</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#founder" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".founder">Founder</a-->
+          <a href="#founder" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".founder">Founder</a>
+          
+          <!--a href="#product" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a-->
+          <a href="#product" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a>
+          
+          <!--a href="#developer" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".developer">Developer</a-->
+          <a href="#developer" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".developer">Developer</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>What does it take to triple charitable giving in the US to $1 trillion?</p>
+<p>The hypothesis: It has little to do with tax policy and everything to do with improving trust throughout the system.</p>
+<p><a href="https://smartergiving.org/">Learn more →</a></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 founder product developer ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <a href="https://kyn.github.io/"><img class="w-full mx-auto border-none rounded-t-lg" src="/images/kyn.jpg" alt="Social Giving"></a>
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Social Giving</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#founder" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".founder">Founder</a-->
+          <a href="#founder" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".founder">Founder</a>
+          
+          <!--a href="#product" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a-->
+          <a href="#product" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a>
+          
+          <!--a href="#developer" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".developer">Developer</a-->
+          <a href="#developer" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".developer">Developer</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>You shouldn't need to recreate the infrastructure of the Gates Foundation to be an effective philanthropist.</p>
+<p>At The Kyn Project, we rethought modern philanthropy systems to bring simplicity, passion, and a personal connection to each and every charitable gift.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 coo product mobile ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/forkfly.jpg" alt="Chief Operating Officer & Product Lead">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Chief Operating Officer & Product Lead</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#coo" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".coo">COO</a-->
+          <a href="#coo" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".coo">COO</a>
+          
+          <!--a href="#product" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a-->
+          <a href="#product" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a>
+          
+          <!--a href="#mobile" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".mobile">Mobile</a-->
+          <a href="#mobile" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".mobile">Mobile</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>Forkfly (now CloudEngage) was an early entrant in the highly competitive location-based mobile space, and as COO I had the honor of building a rockstar development team from the ground up, managing and launching three web apps and two mobile platforms, prioritizing a seemingly endless feature list, bringing the company to first revenue, and helping lead overall strategy development.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 coo business-development ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <a href="http://www.wired.com/2011/12/spime-watch-green-goose-stickers/"><img class="w-full mx-auto border-none rounded-t-lg" src="/images/ggoose.jpg" alt="Chief Operating Officer"></a>
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Chief Operating Officer</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#coo" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".coo">COO</a-->
+          <a href="#coo" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".coo">COO</a>
+          
+          <!--a href="#business-development" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".business-development">Business Development</a-->
+          <a href="#business-development" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".business-development">Business Development</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>I served as COO for innovative sensor startup GreenGoose during a critical time in the company's history, partnering with the solo founder after a successful seed round but still during the prototype phase.</p>
+<p>My role changed on a daily (if not hourly) basis, but ranged from crafting the go-to-market strategy and product definition, to early business development and fundraising.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 corporate-development strategy m-and-a business-development ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/intuit-dark.jpg" alt="Corporate Development & Strategy">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Corporate Development & Strategy</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#corporate-development" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".corporate-development">Corporate Development</a-->
+          <a href="#corporate-development" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".corporate-development">Corporate Development</a>
+          
+          <!--a href="#strategy" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".strategy">Strategy</a-->
+          <a href="#strategy" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".strategy">Strategy</a>
+          
+          <!--a href="#m-and-a" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".m-and-a">M&A</a-->
+          <a href="#m-and-a" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".m-and-a">M&A</a>
+          
+          <!--a href="#business-development" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".business-development">Business Development</a-->
+          <a href="#business-development" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".business-development">Business Development</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>Served as one of four dealmakers for Intuit, the Fortune 500 consumer and SMB-focused technology company. Our group not only executed software M&amp;A deals and explored new growth markets, but also served as internal sound board for business unit leaders while continuing to push for innovation across all levels of the company.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 corporate-development vc ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/saic.jpg" alt="Corporate VC">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Corporate VC</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#corporate-development" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".corporate-development">Corporate Development</a-->
+          <a href="#corporate-development" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".corporate-development">Corporate Development</a>
+          
+          <!--a href="#vc" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".vc">VC</a-->
+          <a href="#vc" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".vc">VC</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>Part of a three-member team responsible for all corporate VC and technology commercialization deals for Science Applications International Corporation, then a Fortune 500 company.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 about open-source developer product ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <a href="https://github.com/chadokruse"><img class="w-full mx-auto border-none rounded-t-lg" src="/images/octocat.jpg" alt="Open Source"></a>
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Open Source</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#about" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".about">About</a-->
+          <a href="#about" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".about">About</a>
+          
+          <!--a href="#open-source" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".open-source">Open Source</a-->
+          <a href="#open-source" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".open-source">Open Source</a>
+          
+          <!--a href="#developer" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".developer">Developer</a-->
+          <a href="#developer" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".developer">Developer</a>
+          
+          <!--a href="#product" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a-->
+          <a href="#product" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>I'm an active open source contributor and huge proponent of FOSS.</p>
+<span>
+My popular repos include:
+<ul>
+<li><a href="https://github.com/grantmakers/grantmakers.github.io">Grantmakers.io</a></li>
+<li><a href="https://github.com/smartergiving/free-nonprofit-starter-website">Nonprofit Starter Website</a></li>
+<li><a href="https://github.com/chadokruse/rails-prelaunch-signup-1click">Rails Prelaunch Signup 1Click</a></li>
+<li><a href="https://github.com/chadokruse/meteor-coming-soon-email-capture">Meteor Coming Soon Email Capture</a></li>
+</ul>
+</span>
+<p>This site, of course, is also open source.</p>
+<p><a href="https://github.com/chadokruse">Github Profile →</a></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 advisor process-improvement ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/g5.jpg" alt="CTOs Office">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">CTOs Office</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#advisor" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".advisor">Advisor</a-->
+          <a href="#advisor" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".advisor">Advisor</a>
+          
+          <!--a href="#process-improvement" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".process-improvement">Process Improvement</a-->
+          <a href="#process-improvement" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".process-improvement">Process Improvement</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>Hired by the founding CTO of this fast-growing enterprise SaaS company to help him assume the product management function and take the team from good to great.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 about developer ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <a href="https://www.meteor.com/"><img class="w-full mx-auto border-none rounded-t-lg" src="/images/meteor.jpg" alt="MeteorJS"></a>
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">MeteorJS</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#about" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".about">About</a-->
+          <a href="#about" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".about">About</a>
+          
+          <!--a href="#developer" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".developer">Developer</a-->
+          <a href="#developer" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".developer">Developer</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>Meteor is a JavaScript framework and the reason I fell in love with developing apps in the first place. It's single-stack approach made it crazy simple for self-taught folks like myself to quickly develop and launch web apps.</p>
+<p>I particularly found it useful for those times I couldn't convince a SaaS startup with an API to create a feature. <a href="https://github.com/chadokruse/sprintly-visualizer">Just create it yourself</a> :)</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 advisor product ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <a href="https://www.bonanza.com"><img class="w-full mx-auto border-none rounded-t-lg" src="/images/ecomm.jpg" alt="Social E-Commerce"></a>
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Social E-Commerce</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#advisor" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".advisor">Advisor</a-->
+          <a href="#advisor" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".advisor">Advisor</a>
+          
+          <!--a href="#product" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a-->
+          <a href="#product" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>One of the first startups involved in social commerce, I consulted with Bonanza (formerly Bonanzle) during its bootstrap phase. I served the role of &quot;business guy&quot; with duties generally focused on business partnerships and API evangelism, but also included product management, strategy, data mining, and managing the company's first ad campaign.</p>
+<p>Great working relationship with the technical co-founder, offloading certain tasks to allow him to fully concentrate on the user experience. The company subsequently raised a $1M first round from a variety of Seattle-based VCs and super angels.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 product developer writing ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <a href="https://medium.com/@chadkruser/bootstrapping-with-meteor-js-a63665cc7335"><img class="w-full mx-auto border-none rounded-t-lg" src="/images/bootstrapping.jpg" alt="Bootstrapping with Meteor.js"></a>
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bootstrapping with Meteor.js</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#product" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a-->
+          <a href="#product" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a>
+          
+          <!--a href="#developer" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".developer">Developer</a-->
+          <a href="#developer" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".developer">Developer</a>
+          
+          <!--a href="#writing" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".writing">Writing</a-->
+          <a href="#writing" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".writing">Writing</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>My most popular post on Medium, I explain how I used Meteor.js and lean startup principles to reach first revenues on a net out of pocket investment of just $90.</p>
+<p><a href="https://medium.com/@chadkruser/bootstrapping-with-meteor-js-a63665cc7335">Read Article →</a></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 developer weekend-hack ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/dailyviva.jpg" alt="DailyViva">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">DailyViva</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#developer" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".developer">Developer</a-->
+          <a href="#developer" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".developer">Developer</a>
+          
+          <!--a href="#weekend-hack" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".weekend-hack">Weekend Hack</a-->
+          <a href="#weekend-hack" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".weekend-hack">Weekend Hack</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>DailyViva was my Meteor.js playground. Sure, I used it personally to create daily routines (no coffee!), but it was mostly a sandbox to try out intermediate to advanced Meteor features. Meteor.wrapAsync anyone?!?</p>
+<p><a href="https://github.com/chadokruse/dailyviva">Github repo →</a></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 founder business-development ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/saava2.jpg" alt="Saava.org">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Saava.org</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#founder" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".founder">Founder</a-->
+          <a href="#founder" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".founder">Founder</a>
+          
+          <!--a href="#business-development" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".business-development">Business Development</a-->
+          <a href="#business-development" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".business-development">Business Development</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>Saava was part experiment, part informal network of individual investors, foundations, lenders, and resource providers. Members explored investment opportunities in mission-related organizations, using the Saava website to collaborate with other like-minded investors.</p>
+<p>I incubated and launched the project while on sabbatical, eventually reaching 35 local, accredited investors. The organization facilitated the review of over 60 Portland-based organizations seeking capital, from smart growth real estate funds to cleantech upstarts and non-profits developing earned-income streams.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting speaking ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/oz.jpg" alt="Innovation Talks">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Innovation Talks</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#consulting" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a-->
+          <a href="#consulting" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a>
+          
+          <!--a href="#speaking" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".speaking">Speaking</a-->
+          <a href="#speaking" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".speaking">Speaking</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>In late 2013 I was invited to give a series of talks on innovation in and around Perth, Australia (also known as the most remote capital city in the world). The message: innovation can happen anywhere.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 weekend-hack open-source ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <a href="https://github.com/chadokruse/inception"><img class="w-full mx-auto border-none rounded-t-lg" src="/images/inception.jpg" alt="Hackers + Ideas = Effective Philanthropy"></a>
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Hackers + Ideas = Effective Philanthropy</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#weekend-hack" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".weekend-hack">Weekend Hack</a-->
+          <a href="#weekend-hack" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".weekend-hack">Weekend Hack</a>
+          
+          <!--a href="#open-source" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".open-source">Open Source</a-->
+          <a href="#open-source" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".open-source">Open Source</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>The Hypothesis: Hackers might focus on fixing more of society's greatest challenges if they simply knew where to start. Inception brought out ideas and pain points from practitioners in the charitable world and shares them with the developer community.</p>
+<p>I built the site over a holiday weekend to scratch an itch and explore MeteorJS.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 about ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/flower2.jpg" alt="Do Good | Do Well">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Do Good | Do Well</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#about" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".about">About</a-->
+          <a href="#about" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".about">About</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>Making money and making the world a better place shouldn't be mutually exclusive. I have been involved at the intersection of philanthropy and investing since 2003 (see also Saava.org).</p>
+<p>Call it double or triple bottom line, mission or social investing, MRIs, PRIs, blended value...it simply makes sense.</p>
+<p>I use this lens when approaching any business, be it startups, fund advisors, nonprofits, or manufacturing companies.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 advisor product ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/chronicle.jpg" alt="Digital Storytelling Platform">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Digital Storytelling Platform</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#advisor" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".advisor">Advisor</a-->
+          <a href="#advisor" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".advisor">Advisor</a>
+          
+          <!--a href="#product" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a-->
+          <a href="#product" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>Incredible team, incredible vision, domain expertise, and traction. I helped the company transition from their initial high-touch model to a scalable digital platform, including defining an MVP and mapping out the go-to-market strategy.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 founder product ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/10speak.jpg" alt="Founder">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Founder</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#founder" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".founder">Founder</a-->
+          <a href="#founder" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".founder">Founder</a>
+          
+          <!--a href="#product" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a-->
+          <a href="#product" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>My first incubated startup, we picked apart the core assumptions behind current time, calendaring, and scheduling tools piece by piece and set out to rebuild them from the ground up.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 advisor ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/revisu.jpg" alt="Revisu">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Revisu</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#advisor" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".advisor">Advisor</a-->
+          <a href="#advisor" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".advisor">Advisor</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>Served as an advisor to Revisu, a seed-stage startup that went on to participate in the inaugural class of PIE, Wieden + Kennedy's incubator based in Portland.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 side-project ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/lidar.jpg" alt="Applying Technology to Offline Markets">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Applying Technology to Offline Markets</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#side-project" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".side-project">Side Project</a-->
+          <a href="#side-project" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".side-project">Side Project</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>This was a spin-out idea stemming from my work in conservation-based forestry. The beauty of working with offline businesses is uncovering countless opportunities to apply technology...this was one of those scenarios. With a focus on the small forestland landowner, we developed a system that intended to leverage LIDAR and satellite technologies to inventory ecosystem assets on ALL non-industrial, private forestlands in OR &amp; WA (we're talking millions of acres here). If successful, the platform could disrupt the entire forest products supply chain in Western North America.</p>
+<p>That's the good news. The bad news is the technology behind the data sets isn't quite there yet, at least not in a way that scales (but lots of smart people are cranking on it as we speak).</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 corporate-development private-equity m-and-a vc ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/tombstone.jpg" alt="Representative Transactions">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Representative Transactions</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#corporate-development" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".corporate-development">Corporate Development</a-->
+          <a href="#corporate-development" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".corporate-development">Corporate Development</a>
+          
+          <!--a href="#private-equity" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".private-equity">Private Equity</a-->
+          <a href="#private-equity" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".private-equity">Private Equity</a>
+          
+          <!--a href="#m-and-a" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".m-and-a">M&A</a-->
+          <a href="#m-and-a" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".m-and-a">M&A</a>
+          
+          <!--a href="#vc" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".vc">VC</a-->
+          <a href="#vc" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".vc">VC</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p><strong>Venture Capital</strong></p>
+<ol>
+<li>Nuance - Speech Recognition</li>
+<li>Vocal Data - Hosted IP Telephony</li>
+<li>Conita - Virtual Assistant</li>
+<li>CosmoCom - IP Contact Center Technology</li>
+<li>DigiLens - Switchable Hologram Technology</li>
+<li>Solect - IP Billing</li>
+</ol>
+<p><strong>M&amp;A + Partnerships</strong></p>
+<ol>
+<li>American Fundware - Nonprofit Accounting</li>
+<li>Eclipse - Wholesaler Accounting</li>
+<li>Apps.com - Marketplace Software</li>
+<li>Paypal - Payments</li>
+<li>Princeton eCom - Billpay</li>
+</ol>
+<p><strong>Private Equity</strong></p>
+<ol>
+<li>O'Currance Teleservices - Inbound Call Center</li>
+<li>Laidlaw - Mfg of Industrial Products</li>
+<li>Pinnacle Exhibits - Custom Tradeshow Exhibits</li>
+</ol>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 advisor strategy product ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/bulb.jpg" alt="Advisory Work">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Advisory Work</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#advisor" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".advisor">Advisor</a-->
+          <a href="#advisor" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".advisor">Advisor</a>
+          
+          <!--a href="#strategy" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".strategy">Strategy</a-->
+          <a href="#strategy" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".strategy">Strategy</a>
+          
+          <!--a href="#product" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a-->
+          <a href="#product" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".product">Product</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p><strong>Execution:</strong> I'm a firm believer that ideas are cheap, execution is everything. I enjoy partnering with growth-oriented organizations and other domain experts to help turn ideas into reality.</p>
+<p><strong>Roadmaps &amp; Strategy:</strong> I help organizations ensure they're building the right things for the right reasons. For existing businesses, my value-add is centered on exploring new markets - intrapreneurship can be incredibly powerful when done right.</p>
+<p><strong>Seed Stage Companies:</strong> My advisory work with seed-stage founders centers on creating business models and developing paths to that first customer (or investor, or partner).</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting strategy-of-numbers ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/calculations.jpg" alt="Consulting Work">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Consulting Work</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#consulting" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a-->
+          <a href="#consulting" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a>
+          
+          <!--a href="#strategy-of-numbers" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".strategy-of-numbers">Strategy of Numbers</a-->
+          <a href="#strategy-of-numbers" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".strategy-of-numbers">Strategy of Numbers</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>I'm an expert in connecting dots. At its most abstract level, I help people fill in missing holes.  and am often hired when these dots are murky at best.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 side-project gps ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/periscope.jpg" alt="Periscope GIS">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Periscope GIS</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#side-project" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".side-project">Side Project</a-->
+          <a href="#side-project" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".side-project">Side Project</a>
+          
+          <!--a href="#gps" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".gps">GPS</a-->
+          <a href="#gps" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".gps">GPS</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>PeriscopeGIS was an online application that intended to make large GIS datasets useful to the 80% of GIS users with little to no formal GIS training.</p>
+<p>We leveraged the ubiquity of Google Earth, the cost-effectiveness of AWS, and a little proprietary magic to drastically improve the user experience when accessing large, complicated GIS datasets.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 weekend-hack ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/ifvckedup.jpg" alt="iFvckedUp.org">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">iFvckedUp.org</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#weekend-hack" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".weekend-hack">Weekend Hack</a-->
+          <a href="#weekend-hack" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".weekend-hack">Weekend Hack</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>Are you sick of all those books that tell you how a startup succeeded (our eyes are on you Founders at Work)? They are good reads, but we thought it was time to focus on the screwups. Much like the American Alpine Club publishes their annual journal chronicling mountaineering accidents, we created this site to show people what NOT to do. People have made the mistake already; let's honor them by not repeating it.</p>
+<p>The site was launched in a weekend with a fellow local entrepreneur. It was shut down a week later after we realized how hard it was to film yourself talking about your screw-ups. Fail fast.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 coo business-development strategy-of-numbers ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/wilddoc.jpg" alt="Conservation-Based Forestry">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Conservation-Based Forestry</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#coo" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".coo">COO</a-->
+          <a href="#coo" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".coo">COO</a>
+          
+          <!--a href="#business-development" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".business-development">Business Development</a-->
+          <a href="#business-development" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".business-development">Business Development</a>
+          
+          <!--a href="#strategy-of-numbers" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".strategy-of-numbers">Strategy Of Numbers</a-->
+          <a href="#strategy-of-numbers" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".strategy-of-numbers">Strategy Of Numbers</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>In partnership with one of the most passionate domain experts I have met to date, I played a leadership role with the creation and eventual market launch of WiLD Forests I, L.P., a conservation-based timberland investment management fund. I lead corporate development, finance, and fundraising.</p>
+<p>The firm uses a unique approach to forest management, leveraging carbon offsets, conservation easements, and other &quot;ecosystem services&quot; to monetize lands while maintaining healthy forests.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting clean-energy ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <a href="http://cleanedge.com/reports/Carbon-Free-Prosperity-2025"><img class="w-full mx-auto border-none rounded-t-lg" src="/images/carbonfree.gif" alt="Carbon Free Prosperity 2025"></a>
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Carbon Free Prosperity 2025</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#consulting" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a-->
+          <a href="#consulting" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a>
+          
+          <!--a href="#clean-energy" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".clean-energy">Clean Energy</a-->
+          <a href="#clean-energy" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".clean-energy">Clean Energy</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>Part of the core team of analysts behind this groundbreaking report covering the Pacific Northwest cleantech sector. I lead all econometrics-related work.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 coo corporate-development clean-energy ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <a href="http://green.blogs.nytimes.com//2009/01/26/old-turbines-get-a-second-wind-through-remanufacturing/"><img class="w-full mx-auto border-none rounded-t-lg" src="/images/windbw.jpg" alt="Refurbished Wind Turbines"></a>
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Refurbished Wind Turbines</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#coo" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".coo">COO</a-->
+          <a href="#coo" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".coo">COO</a>
+          
+          <!--a href="#corporate-development" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".corporate-development">Corporate Development</a-->
+          <a href="#corporate-development" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".corporate-development">Corporate Development</a>
+          
+          <!--a href="#clean-energy" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".clean-energy">Clean Energy</a-->
+          <a href="#clean-energy" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".clean-energy">Clean Energy</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>Worked with a dedicated entrepreneur to bring the idea of refurbished wind turbines to life.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting clean-energy ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/solar.jpg" alt="Utility Scale Solar Using NMTCs">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Utility Scale Solar Using NMTCs</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#consulting" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a-->
+          <a href="#consulting" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a>
+          
+          <!--a href="#clean-energy" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".clean-energy">Clean Energy</a-->
+          <a href="#clean-energy" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".clean-energy">Clean Energy</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>I was hired to assist a solar company explore the feasibility of using New Market Tax Credits (NMTCs) on a utility scale solar project in Eastern Oregon.</p>
+<p>Produced an intricate financial model which outlines risk sharing opportunities.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting clean-energy ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/opportunity.jpg" alt="Value Proposition">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Value Proposition</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#consulting" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a-->
+          <a href="#consulting" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a>
+          
+          <!--a href="#clean-energy" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".clean-energy">Clean Energy</a-->
+          <a href="#clean-energy" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".clean-energy">Clean Energy</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>I assisted a large engineering services firm assess their cleantech value proposition and develop market entry strategies.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting strategy-of-numbers clean-energy ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/sbec.jpg" alt="CDFI Underwriting">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">CDFI Underwriting</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#consulting" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a-->
+          <a href="#consulting" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a>
+          
+          <!--a href="#strategy-of-numbers" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".strategy-of-numbers">Strategy Of Numbers</a-->
+          <a href="#strategy-of-numbers" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".strategy-of-numbers">Strategy Of Numbers</a>
+          
+          <!--a href="#clean-energy" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".clean-energy">Clean Energy</a-->
+          <a href="#clean-energy" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".clean-energy">Clean Energy</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>I was hired to assist a local CDFI (community development financial institution) explore the investment merits behind a community wind development.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 corporate-development private-equity m-and-a ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/rlp.jpg" alt="Private Equity &amp; Leveraged Buyouts">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Private Equity &amp; Leveraged Buyouts</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#corporate-development" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".corporate-development">Corporate Development</a-->
+          <a href="#corporate-development" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".corporate-development">Corporate Development</a>
+          
+          <!--a href="#private-equity" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".private-equity">Private Equity</a-->
+          <a href="#private-equity" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".private-equity">Private Equity</a>
+          
+          <!--a href="#m-and-a" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".m-and-a">M&A</a-->
+          <a href="#m-and-a" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".m-and-a">M&A</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>I was a senior associate for a Portland-based private equity firm. Incredible experience learning from three partners, all of whom have extensive, real-world operating experience. This is the place I learned the true value of a private equity firm...hint, the transaction is the easy part. It's what you do with the company post-close that matters.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting strategy-of-numbers clean-energy ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/excel.jpg" alt="Transaction Structuring & Modeling">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Transaction Structuring & Modeling</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#consulting" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a-->
+          <a href="#consulting" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a>
+          
+          <!--a href="#strategy-of-numbers" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".strategy-of-numbers">Strategy Of Numbers</a-->
+          <a href="#strategy-of-numbers" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".strategy-of-numbers">Strategy Of Numbers</a>
+          
+          <!--a href="#clean-energy" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".clean-energy">Clean Energy</a-->
+          <a href="#clean-energy" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".clean-energy">Clean Energy</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>The bulk of my &quot;offline&quot; consulting work focused on transaction structuring and creating financial models.</p>
+<p>Most often, these involved renewable energy projects, forestry deals, and other deals requiring creative financing. Just before returning to the tech startup world, I helped a number of firms explore the use of New Market Tax Credits (NMTCs) as a potential financing tool.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 developer open-source ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <a href="https://github.com/chadokruse/chadokruse.github.com"><img class="w-full mx-auto border-none rounded-t-lg" src="/images/githubpages.jpg" alt="Github Pages"></a>
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Github Pages</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#developer" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".developer">Developer</a-->
+          <a href="#developer" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".developer">Developer</a>
+          
+          <!--a href="#open-source" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".open-source">Open Source</a-->
+          <a href="#open-source" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".open-source">Open Source</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>This website is fully open source and hosted by Github Pages. Help yourself!</p>
+<p><a href="https://github.com/chadokruse/chadokruse.github.com">Github repo →</a></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting excel strategy-of-numbers ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/sh.png" alt="Business Case Creation">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Business Case Creation</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#consulting" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a-->
+          <a href="#consulting" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a>
+          
+          <!--a href="#excel" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".excel">Excel</a-->
+          <a href="#excel" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".excel">Excel</a>
+          
+          <!--a href="#strategy-of-numbers" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".strategy-of-numbers">Strategy Of Numbers</a-->
+          <a href="#strategy-of-numbers" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".strategy-of-numbers">Strategy Of Numbers</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>Assisted a large international developer model and explore the business case for sustainable development.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting excel strategy-of-numbers ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/yanchep.jpg" alt="Modeling Framework">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Modeling Framework</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#consulting" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a-->
+          <a href="#consulting" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a>
+          
+          <!--a href="#excel" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".excel">Excel</a-->
+          <a href="#excel" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".excel">Excel</a>
+          
+          <!--a href="#strategy-of-numbers" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".strategy-of-numbers">Strategy Of Numbers</a-->
+          <a href="#strategy-of-numbers" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".strategy-of-numbers">Strategy Of Numbers</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>Hired by the developers of the largest private landholding in Western Australia to develop a modeling/valuation framework for assessing potential cleantech-related deals. The development is positioning itself to be a model, ground-up sustainable community.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 corporate-development business-valuations ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/cfai.jpg" alt="Where It All Started">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Where It All Started</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#corporate-development" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".corporate-development">Corporate Development</a-->
+          <a href="#corporate-development" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".corporate-development">Corporate Development</a>
+          
+          <!--a href="#business-valuations" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".business-valuations">Business Valuations</a-->
+          <a href="#business-valuations" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".business-valuations">Business Valuations</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>My first job out of undergrad. Also the place I got my de-facto MBA thanks to the active and engaged mentoring I received from the firm's partners. Amazing experience working with these nationally-recognized business valuation experts.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting excel strategy-of-numbers ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/wa1.jpg" alt="Value Uplift">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Value Uplift</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#consulting" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a-->
+          <a href="#consulting" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".consulting">Consulting</a>
+          
+          <!--a href="#excel" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".excel">Excel</a-->
+          <a href="#excel" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".excel">Excel</a>
+          
+          <!--a href="#strategy-of-numbers" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".strategy-of-numbers">Strategy Of Numbers</a-->
+          <a href="#strategy-of-numbers" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".strategy-of-numbers">Strategy Of Numbers</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>Worked with the staff of an Australian municipality to model and explore the potential for alternative funding mechanisms on certain transit-oriented developments.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 education bba finance ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/college.jpg" alt="Education">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Education</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#education" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".education">Education</a-->
+          <a href="#education" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".education">Education</a>
+          
+          <!--a href="#bba" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".bba">BBA</a-->
+          <a href="#bba" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".bba">BBA</a>
+          
+          <!--a href="#finance" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".finance">Finance</a-->
+          <a href="#finance" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".finance">Finance</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>I received my B.B.A from the University of Iowa with a major in Finance, graduating in 3 1/2 years.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 about fun ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/helmets.jpg" alt="What I do for fun...">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">What I do for fun...</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#about" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".about">About</a-->
+          <a href="#about" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".about">About</a>
+          
+          <!--a href="#fun" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".fun">Fun</a-->
+          <a href="#fun" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".fun">Fun</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>The stuff I do for fun usually requires a helmet. Mountaineering during spring, mountain biking during summer and fall, and skiing during winter.</p>
+<p>In town, you can usually find me at a coffee shop or brewpub pretending that I'm still in Bend, OR.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 about ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <a href="mailto:ck@chadkruse.com"><img class="w-full mx-auto border-none rounded-t-lg" src="/images/contact.jpg" alt="Contact"></a>
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Contact</h2>
+      <div class="mb-3 font-normal">
+        
+          <!--a href="#about" class="js-filter text-indigo-700 bg-indigo-100 hover:bg-indigo-200 text-xs font-semibold my-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".about">About</a-->
+          <a href="#about" class="js-filter inline-block text-gray-900 bg-gray-200 hover:bg-gray-300 text-xs mr-2 mb-2 px-2.5 py-0.5 rounded whitespace-nowrap" data-filter=".about">About</a>
+          
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p><a href="mailto:ck@chadkruse.com">ck@chadkruse.com</a></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  <!-- Copyright Card -->
+  <div class="eachcard w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div class="p-5">
+      <div class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+          <img alt="Creative Commons License" class="block m-auto border-none" src="/images/by-sa.png" /></a>
+          <br />
+          This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div id="loading" class="flex items-start justify-center absolute bg-white bg-opacity-60 z-10 h-full w-full transition-opacity duration-100 ease-in-out opacity-100">
+    <div class="flex items-center mt-20">
+      <span class="text-3xl mr-4">Loading</span>
+      <svg class="animate-spin h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+        viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor"
+          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+        </path>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- Add back resume -->
+<div class="hidden landing-cta m-20 text-xl text-center">
+  <p>Looking for a traditional resume? <a href="/resume">Here you go</a></p>
+</div>
+
+
+    </div>
+  </body>
+</html>

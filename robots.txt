@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /kyn/
+Disallow: /10speak/
+Disallow: /cfc/
+Disallow: /smartergiving/
+Disallow: /kyn-dispatch/
+Disallow: /kyn-domain/
+Disallow: /domain-parking-page-flippa/
