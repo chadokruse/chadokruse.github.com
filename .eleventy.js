@@ -1,4 +1,12 @@
 module.exports = function(eleventyConfig) {
+  // Create cards collection
+  // Note: See the _cards/11tydata .js file in the _cards directory
+  // Current best practice appears to be setting 'permalink: false' there
+  // Yet, having settings for that collection in two places feels strange
+  eleventyConfig.addCollection('cards', function(collectionApi) {
+    return collectionApi.getFilteredByGlob('src/_cards/*.md');
+  });
+
   // Make Liquid capable of rendering "partials"
   eleventyConfig.setLiquidOptions({
     dynamicPartials: false,
@@ -14,14 +22,6 @@ module.exports = function(eleventyConfig) {
   // Watch for css and config changes
   eleventyConfig.addWatchTarget('./tailwind.config.js');
   eleventyConfig.addWatchTarget('./src/css/main.css');
-
-  
-  eleventyConfig.addCollection('cards', function(collectionApi) {
-    return collectionApi.getAll().filter(function(item) {
-      // Side-step tags and do your own filtering
-      return 'item_sort' in item.data;
-    });
-  });  
 
   return {
     dir: {
