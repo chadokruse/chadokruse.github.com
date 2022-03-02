@@ -1,5 +1,4 @@
 ---
-layout: card
 name: 10speak
 image: 10speak.jpg
 image_href: 
