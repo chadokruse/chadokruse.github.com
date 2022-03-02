@@ -10,7 +10,7 @@
     "dev": "npm-run-all clean --parallel dev:*",
     "build:postcss": "postcss src/css/main.css -o dist/css/main.css",
     "build:11ty": "npx @11ty/eleventy",
-    "build": "NODE_ENV=production npm-run-all clean --parallel build:*"
+    "build": "NODE_ENV=production npm-run-all clean --sequential build:*"
   },
   "repository": {
     "type": "git",
