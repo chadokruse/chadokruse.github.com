@@ -6,7 +6,7 @@ This is the source code used to power my personal site ([demo](http://www.chadkr
 
 **Screenshots**  
 
-![Screenshot](https://github.com/chadokruse/chadokruse.github.com/blob/main/images/screenshot.jpg "Screenshot")
+![Screenshot](https://github.com/chadokruse/chadokruse.github.com/blob/main/src/images/screenshot.png?raw=true "Screenshot")
 
 You may find this project useful for visually showcasing past work history to complement your LinkedIn profile or resume. Might work for photography and design portfolios as well.  
 
