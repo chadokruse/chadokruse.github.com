@@ -47,6 +47,15 @@ ready(function() {
       itemSelector: '.eachcard',
       percentPosition: true,
       filter: hash && hash !== '#all' ? hashToFilter : '*',
+      transitionDuration: '0.2s',
+      hiddenStyle: {
+        opacity: 0,
+        transform: 'scale(0.001)',
+      },
+      visibleStyle: {
+        opacity: 1,
+        transform: 'scale(1)',
+      },
     });
 
     // Fade in cards
@@ -54,21 +63,6 @@ ready(function() {
     loading.classList.remove('opacity-100');
     cards.classList.add('opacity-100');
     loading.classList.add('hidden');
-
-    // Hello you glorious recruiters
-    // Handle resizing error edge case
-    // Cause: IsoTope does not support flexbox
-    window.addEventListener('resize', resizeContent);
-    let count = 0;
-    function resizeContent() {
-      if (count < 1) {
-        count++;
-        console.log('%cHello you glorious recruiter!', 'font-size:1.25rem');
-        console.log('Not a recruiter and just exploring the site in dev tools?');
-        console.log('That\'s great! Don\'t forget, the site is open source and on Github.');
-        console.log('Just fork and go. https://github.com/chadokruse/chadokruse.github.com 🙌');
-      }
-    }
   });
 
   // Isotope - filter items on click

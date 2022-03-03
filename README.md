@@ -61,6 +61,7 @@ I currently use Github Actions to deploy to Github Pages, but you can use any ho
 Update `robots.txt` if you care about such things.
 
 ## TODOs 
+- [ ] Refactor scroll handling for filter bar clicks
 - [ ] Swap out imagesLoaded and Isotope plugins for native JS and CSS Grid
 - [ ] Convert `resume.html` to use Tailwind (instead of the legacy Bootstrap 3(!) css)
 
