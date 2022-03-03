@@ -8,7 +8,7 @@ function ready(fn) {
 }
 
 ready(function() {
-  const filterButtons = document.querySelectorAll('a.js-filter');
+  const filterButtons = document.querySelectorAll('a[data-filter]');
   const filterBarHeight = document.getElementById('filter-bar').offsetHeight;
   const cards = document.getElementById('allcards');
   const loading = document.getElementById('loading');
