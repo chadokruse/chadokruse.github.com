@@ -1395,7 +1395,6 @@ input[type=file]::file-selector-button:hover {
 }
 .nav-btn:target, .active {
   scroll-margin: 0.5rem;
-  scroll-padding: 0px;
   border-radius: 0.375rem;
   border-width: 1px;
   border-color: transparent;
@@ -1414,12 +1413,6 @@ input[type=file]::file-selector-button:hover {
 .nav-btn:target:hover, .active:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(81 69 205 / var(--tw-bg-opacity));
-}
-@media (min-width: 768px) {
-
-  .nav-btn:target, .active {
-    scroll-margin: 0.25rem;
-  }
 }
 .hover\:bg-transparent:hover {
   background-color: transparent;
