@@ -10,8 +10,7 @@ This is the source code used to power my personal site ([demo](http://www.chadkr
 
 You may find this project useful for visually showcasing past work history to complement your LinkedIn profile or resume. Might work for photography and design portfolios as well.  
 
-## Usage  
----   
+## Usage
 I'm assuming you already know how to get an Eleventy site up and running with Tailwind. If not, Google will be your friend.
 
 > Looking for the old Jekyll site? It's archived on the [old-jekyll](https://github.com/chadokruse/chadokruse.github.com/tree/old-jekyll) branch.
@@ -61,13 +60,11 @@ I currently use Github Actions to deploy to Github Pages, but you can use any ho
 ### Robots.txt   
 Update `robots.txt` if you care about such things.
 
-## TODOs
----   
+## TODOs 
 - [ ] Swap out imagesLoaded and Isotope plugins for native JS and CSS Grid
 - [ ] Convert `resume.html` to use Tailwind (instead of the legacy Bootstrap 3(!) css)
 
 ## Licenses  
----   
 ### Content   
 Except brand logos, all content is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
