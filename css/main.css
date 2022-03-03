@@ -997,17 +997,6 @@ input[type=file]::file-selector-button:hover {
 .prose > :where(:last-child):not(:where([class~="not-prose"] *)) {
   margin-bottom: 0;
 }
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
 .absolute {
   position: absolute;
 }
@@ -1023,6 +1012,9 @@ input[type=file]::file-selector-button:hover {
 }
 .z-10 {
   z-index: 10;
+}
+.m-1 {
+  margin: 0.25rem;
 }
 .m-2 {
   margin: 0.5rem;
@@ -1051,12 +1043,6 @@ input[type=file]::file-selector-button:hover {
 }
 .mt-3 {
   margin-top: 0.75rem;
-}
-.ml-3 {
-  margin-left: 0.75rem;
-}
-.mt-4 {
-  margin-top: 1rem;
 }
 .mt-20 {
   margin-top: 5rem;
@@ -1137,9 +1123,6 @@ input[type=file]::file-selector-button:hover {
   -webkit-animation: spin 1s linear infinite;
           animation: spin 1s linear infinite;
 }
-.scroll-m-0 {
-  scroll-margin: 0px;
-}
 .flex-row {
   flex-direction: row;
 }
@@ -1162,6 +1145,9 @@ input[type=file]::file-selector-button:hover {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.self-start {
+  align-self: flex-start;
 }
 .self-center {
   align-self: center;
@@ -1220,9 +1206,6 @@ input[type=file]::file-selector-button:hover {
 .p-0 {
   padding: 0px;
 }
-.p-2 {
-  padding: 0.5rem;
-}
 .p-4 {
   padding: 1rem;
 }
@@ -1250,9 +1233,6 @@ input[type=file]::file-selector-button:hover {
 }
 .pl-3 {
   padding-left: 0.75rem;
-}
-.pl-1 {
-  padding-left: 0.25rem;
 }
 .text-center {
   text-align: center;
@@ -1336,10 +1316,6 @@ input[type=file]::file-selector-button:hover {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
@@ -1360,9 +1336,6 @@ input[type=file]::file-selector-button:hover {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.filter {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .transition-opacity {
   transition-property: opacity;
@@ -1421,7 +1394,7 @@ input[type=file]::file-selector-button:hover {
   outline-offset: 2px;
 }
 .nav-btn:target, .active {
-  scroll-margin: 3.75rem;
+  scroll-margin: 0.5rem;
   scroll-padding: 0px;
   border-radius: 0.375rem;
   border-width: 1px;
@@ -1445,15 +1418,11 @@ input[type=file]::file-selector-button:hover {
 @media (min-width: 768px) {
 
   .nav-btn:target, .active {
-    scroll-margin: 0.375rem;
+    scroll-margin: 0.25rem;
   }
 }
 .hover\:bg-transparent:hover {
   background-color: transparent;
-}
-.hover\:bg-gray-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 .hover\:bg-indigo-600:hover {
   --tw-bg-opacity: 1;
@@ -1466,19 +1435,6 @@ input[type=file]::file-selector-button:hover {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-.focus\:ring-2:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-.focus\:ring-gray-200:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(229 231 235 / var(--tw-ring-opacity));
 }
 .prose-p\:leading-snug :is(:where(p):not(:where([class~="not-prose"] *))) {
   line-height: 1.375;
@@ -1512,10 +1468,6 @@ input[type=file]::file-selector-button:hover {
 .dark .dark\:hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.dark .dark\:focus\:ring-gray-600:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(75 85 99 / var(--tw-ring-opacity));
 }
 @media (min-width: 640px) {
 
@@ -1590,24 +1542,12 @@ input[type=file]::file-selector-button:hover {
     margin-top: 0px;
   }
 
-  .md\:block {
-    display: block;
-  }
-
   .md\:inline {
     display: inline;
   }
 
   .md\:list-item {
     display: list-item;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
-
-  .md\:w-auto {
-    width: auto;
   }
 
   .md\:w-1\/2 {
