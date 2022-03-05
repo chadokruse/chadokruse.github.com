@@ -1,15 +1,15 @@
 {
   "basics": {
     "name": "Chad Kruse",
-    "label": "Product Strategy & New Markets",
+    "label": "Software Developer",
     "picture": "http://www.chadkruse.com/images/avatar.jpg",
     "email": "[email protected]",
     "phone": "[phone protected]",
-    "website": "http://www.chadkruse.com",
-    "summary": "Before launching my own ventures and diving into JavaScript, I was often brought on as the first 'business hire' at startups of all shapes and sizes. I've run development teams, owned product strategy, entered new markets and assessed growth opportunities across the build/buy/partner spectrum. My career started as a strategist and corporate development leader for large tech companies, and I'm often told I have a unique ability to talk shop with programmers, designers, VC's, boards of directors, and everyone in between.",
+    "website": "https://www.chadkruse.com",
+    "summary": "Seeking a full-stack software developer position that fully utilizes my past product and entrepreneurial experience. Fun to work with and forever curious, I'm often told I have a unique ability to talk shop with programmers, designers, VCs, boards of directors, philanthropists, and everyone in between.",
     "location": {
       "address": "[address protected]",
-      "postalCode": "IL 60661",
+      "postalCode": "IL 60611",
       "city": "Chicago",
       "countryCode": "US",
       "region": "Midwest"
@@ -20,17 +20,9 @@
         "username": "chadokruse",
         "url": "https://github.com/chadokruse"
       }, {
-        "network": "AngelList",
-        "username": "chadokruse",
-        "url": "https://angel.co/chadokruse"
-      }, {
         "network": "LinkedIn",
         "username": "chadokruse",
         "url": "https://www.linkedin.com/in/chadokruse"
-      }, {
-        "network": "Twitter",
-        "username": "chadkruser",
-        "url": "http://twitter.com/chadkruser"
       }
     ]
   },
@@ -120,8 +112,8 @@
       ],
       "category": "Job"
     }, {
-      "company": "Startup Consulting",
-      "position": "COO, Business Advisor & Product Consultant",
+      "company": "Consulting",
+      "position": "Startup COO, Business Advisor & Strategist",
       "website": "http://www.chadkruse.com",
       "startDate": "2007-05-01",
       "endDate": "2015-03-31",
@@ -129,7 +121,6 @@
       "highlights": [
         "Served as product lead and COO for Forkfly, managing the launch of three web applications and two mobile platforms. Transitioned the company from single app to digital advertising platform, tripling the team from 4 to 12 and bringing the company to first revenues.",
         "Crafted and evangelized the platform strategy for innovative sensor startup GreenGoose resulting in a successful seven-figure fundraise.",
-        "Turned two pilot projects from ecosystem services company WiLD Inc. into an institutional timberland investment management fund.",
         "Full list of clients and projects available at www.chadkruse.com."
       ],
       "tags": [
@@ -244,18 +235,40 @@
       "website": "https://smartergiving.org/",
       "startDate": "2012-11-01",
       "endDate": "",
-      "summary": "Conceptualized, created, and launched SmarterGiving, a prototype studio focused on market opportunities throughout the 'charity stack'. Our MVPs and prototypes explored specific pain points across the philanthropic spectrum, from online donations and donor cultivation to nonprofit discovery and social networks.",
+      "summary": "Conceptualized, created, and launched SmarterGiving, a prototype studio focused on market opportunities throughout the 'charity stack'. MVPs and prototypes explored specific pain points across the philanthropic spectrum, from online donations and donor cultivation to nonprofit discovery and social networks.",
       "highlights": [
         "Drove multiple products from concept to launch using agile and lean startup principles.",
         "Heavy emphasis on customer development, from interviews and follow-me-homes to analytics.",
         "First product went from idea to first revenues on a net out-of-pocket investment of just $90.",
-        "Reached product/market fit with Grantmakers.io."
+        "Preferred prototype tech stack included Jekyll (static), MeteorJS (dynamic), and Bootstrap."
       ],
       "tags": [
         "Product",
         "Lean Startup",
         "Rapid Prototyping",
         "MeteorJS"
+      ],
+      "category": "Job"
+    }, {
+      "company": "Grantmakers.io",
+      "position": "Creator",
+      "website": "https://www.grantmakers.io/",
+      "startDate": "2016-09-01",
+      "endDate": "",
+      "summary": "Grantmakers.io makes a machine-readable IRS dataset useful for nonprofit professionals. Built for purpose, not profit, the site has become one of the largest free sources of searchable philanthropic data on the Internet.",
+      "highlights": [
+        "Brought Grantmakers.io to market as the sole developer, personally responsible for the entire Software Development Life Cycle.",
+        "Innovative use of Jamstack technology, layering in dynamic components via third-party APIs. Highly cost-effective.",
+        "Extensive use of Algolia search API, using customer feedback and A/B testing to fine-tune search algorithms and optimize the UX.",
+        "Architected and developed robust data pipelines using bash scripts, Node.js, the AWS S3 SDK, and Google Cloud Platform.",
+        "Open source from day one, I was responsible for evangelizing the technology and exploring business development deals.",
+        "Github repo: https://github.com/grantmakers/grantmakers.github.io"
+      ],
+      "tags": [
+        "Developer",
+        "Product",
+        "Rapid Prototyping",
+        "Node.js"
       ],
       "category": "Job"
     }
@@ -284,20 +297,21 @@
       "level": "Master",
       "keywords": [
         "Rapid Prototyping",
-        "Lean Methodology",
         "Agile Development",
         "Product Roadmaps",
-        "Data & Analytics"
+        "Data & Analytics",
+        "Github Workflow"
       ]
     }, {
       "name": "Technical",
       "level": "Practitioner",
       "keywords": [
-        "JavaScript",
-        "MeteorJS",
-        "MongoDB/NoSQL",
-        "HTML/CSS/JQuery",
-        "Github Workflow"
+        "JavaScript, Node.js, Vue.js",
+        "Materialize, Tailwind, Sass",
+        "Jamstack, Jekyll",
+        "Google Cloud Platform",
+        "Bash, CI/CD, Data Pipelines",
+        "MongoDB, MongoDB Realm"        
       ]
     }
   ],
@@ -313,36 +327,28 @@
         "Philanthrotech"
       ]
     }, {
-      "name": "Mountaineering",
-      "keywords": [
-        "Former Volunteer Instructor - Mazamas Climbing Club"
-      ]
-    }, {
       "name": "Open Source Contributor",
       "keywords": [
         "FOSS",
         "Github"
-      ]
-    }, {
-      "name": "Self-Taught Developer",
-      "keywords": [
-        "MeteorJS",
-        "MongoDB"
       ]
     }
   ],
   "extras": {
     "overview": [
       {
-        "role": "Corporate Development",
-        "duration": "8 Years"
+        "role": "Developer",
+        "duration": "5 Years"
+      }, {
+        "role": "Consultant",
+        "duration": "10 Years"
       }, {
         "role": "Startup COO & Advisor",
         "duration": "5 Years"
-      }, {
-        "role": "Entrepreneur",
-        "duration": "10 Years"
-      }
+      },{
+        "role": "Corporate Development",
+        "duration": "8 Years"
+      } 
     ]
   }
 }

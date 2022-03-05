@@ -11,6 +11,11 @@ permalink: /resume/
       <div class="col-xs-6">
         <h1 class="name">{{resume.basics.name}}</h1>
         <h3 class="title">{{resume.basics.label}}</h3>
+        <ul class="list-inline list-profiles">
+          {% for profile in resume.basics.profiles %}
+          <li><i class="fa fa-{{profile.network | downcase}}"></i> <span>|</span> <!--strong>{{profile.network}}:</strong--> <a href="{{profile.url}}">{{profile.username}}</a></li>
+          {% endfor %}
+        </ul>
       </div>
       <div class="col-xs-6 contact-info">
         <ul class="pull-right">
@@ -23,10 +28,10 @@ permalink: /resume/
   </div>
   <hr style="margin-top: 0;" />
 
-  <!-- About Me -->
+  <!-- Objective -->
   <div class="row">
     <div class="col-xs-2">
-      <h4 class="section-title"> About Me </h4>
+      <h4 class="section-title"> Objective </h4>
     </div>
     <div class="col-xs-10">
       {{resume.basics.summary}}
@@ -41,14 +46,18 @@ permalink: /resume/
     </div>
     <div class="col-xs-10">
       <div class="row">
-        {% for skill in resume.skills %}
+        {% for skill in resume.skills reversed %}
+        {% if skill.name == 'Technical' %}
+        <div class="col-sm-4 col-md-4">
+        {% else %}
         <div class="col-sm-4 col-md-3">
+        {% endif %}
           <div class="skill">{{skill.name}}</div>
           <hr class="skills-hr">
           <ul class="list-unstyled">
             {% for keyword in skill.keywords %}
             <li>{{keyword}}</li>
-          {% endfor %}
+            {% endfor %}
           </ul>
         </div>
         {% endfor %}
@@ -57,34 +66,18 @@ permalink: /resume/
   </div>
   <hr />
 
-  <!-- Experience Summary -->
-  {% if resume.extras.overview %}
+  <!-- Experience Detail -->
   <div class="row">
     <div class="col-xs-2">
       <h4 class="section-title"> Experience </h4>
     </div>
     <div class="col-xs-10">
-        <ul class="list-unstyled experience-summary">
-          <!--span class="company">Overview</span-->
-            {% for each in resume.extras.overview %}
-              <li>{{each.role}}: {{each.duration}}</li>
-            {% endfor %}
-        </ul>
-    </div>
-  </div>
-  <hr />
-  {% endif %}
-
-  <!-- Experience Detail -->
-  <div class="row">
-    <div class="col-xs-2">
-      {% unless resume.extras.overview %}
-        <h4 class="section-title"> Experience </h4>
-      {% else %}
-        <h4 class="section-title"> Detail </h4>
-      {% endunless %}
-    </div>
-    <div class="col-xs-10">
+      <ul class="list-unstyled list-inline experience-summary">
+        {% for each in resume.extras.overview %}
+        <li><strong>{{each.role}}</strong>: {{each.duration}}</li>
+        {% endfor %}
+      </ul>
+      <hr />
       {% assign jobs = resume.work | where: "category" , "Job" %}
       {% for job in jobs reversed %}
         <div class="row">
@@ -135,7 +128,7 @@ permalink: /resume/
       <div class="row education-section">
         <div class="col-xs-10">
           <div class="school"> {{each.institution}} </div>
-          <i class="fa fa-graduation-cap"></i> {{each.studyType}} in {{each.area}}
+          {{each.studyType}} in {{each.area}}
         </div>
         <div class="col-xs-2">
           <div class="pull-right">
@@ -156,35 +149,15 @@ permalink: /resume/
     </div>
     <div class="col-xs-10">
       <div class="row">
-        {% for each in resume.interests %}
-        <div class="col-sm-3 col-md-3">
-          <span class="skill">{{each.name}}</span>
-          <hr class="skills-hr">
-          <ul class="list-unstyled">
-            {% for keyword in each.keywords %}
-            <li>{{keyword}}</li>
+        <div class="col-sm-12">
+          {% for each in resume.interests %} 
+            {{ each.name }}{% unless forloop.last %},{% endunless %}
           {% endfor %}
-          </ul>
         </div>
-        {% endfor %}
       </div>
     </div>
   </div>
   <hr />
   {% endif %}
 
-  <!-- Profiles -->
-  <div class="row">
-    <div class="col-xs-2">
-      <h4 class="section-title"> Profiles </h4>
-    </div>
-    <div class="col-xs-10">
-      <ul class="list-inline list-profiles">
-        {% for profile in resume.basics.profiles %}
-        <li><i class="fa fa-{{profile.network | downcase}}"></i> <span>|</span> <!--strong>{{profile.network}}:</strong--> <a href="{{profile.url}}">{{profile.username}}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-
-</div>    <!-- /end container-fluid -->
+</div>
