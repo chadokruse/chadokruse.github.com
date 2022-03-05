@@ -9,19 +9,19 @@ permalink: /resume/
   <div class="row">
     <div class="header">
       <div class="col-xs-6">
-        <h1 class="name">{{resume.basics.name}}</h1>
-        <h3 class="title">{{resume.basics.label}}</h3>
+        <h1 class="name">{{ resume.basics.name }}</h1>
+        <h3 class="title">{{ resume.basics.label }}</h3>
         <ul class="list-inline list-profiles">
           {% for profile in resume.basics.profiles %}
-          <li><i class="fa fa-{{profile.network | downcase}}"></i> <span>|</span> <!--strong>{{profile.network}}:</strong--> <a href="{{profile.url}}">{{profile.username}}</a></li>
+          <li><i class="fa fa-{{ profile.network | downcase }}"></i> <span>|</span> <!--strong>{{ profile.network }}:</strong--> <a href="{{ profile.url }}">{{ profile.username }}</a></li>
           {% endfor %}
         </ul>
       </div>
       <div class="col-xs-6 contact-info">
         <ul class="pull-right">
-          <li><strong>Email:</strong> {{resume.basics.email}}</li>
-          <li><strong>Phone:</strong> {{resume.basics.phone}}</li>
-          <li><strong>Website:</strong> {{resume.basics.website}}</li>
+          <li><strong>Email:</strong> {{ resume.basics.email }}</li>
+          <li><strong>Phone:</strong> {{ resume.basics.phone }}</li>
+          <li><strong>Website:</strong> {{ resume.basics.website }}</li>
         </ul>
       </div>
     </div>
@@ -34,7 +34,7 @@ permalink: /resume/
       <h4 class="section-title"> Objective </h4>
     </div>
     <div class="col-xs-10">
-      {{resume.basics.summary}}
+      {{ resume.basics.summary }}
     </div>
   </div>
   <hr />
@@ -52,11 +52,11 @@ permalink: /resume/
         {% else %}
         <div class="col-sm-4 col-md-3">
         {% endif %}
-          <div class="skill">{{skill.name}}</div>
+          <div class="skill">{{ skill.name }}</div>
           <hr class="skills-hr">
           <ul class="list-unstyled">
             {% for keyword in skill.keywords %}
-            <li>{{keyword}}</li>
+            <li>{{ keyword }}</li>
             {% endfor %}
           </ul>
         </div>
@@ -74,7 +74,7 @@ permalink: /resume/
     <div class="col-xs-10">
       <ul class="list-unstyled list-inline experience-summary">
         {% for each in resume.extras.overview %}
-        <li><strong>{{each.role}}</strong>: {{each.duration}}</li>
+        <li><strong>{{ each.role }}</strong>: {{ each.duration }}</li>
         {% endfor %}
       </ul>
       <hr />
@@ -82,33 +82,21 @@ permalink: /resume/
       {% for job in jobs reversed %}
         <div class="row">
           <div class="col-xs-6">
-            <div class="company"> {{job.company}} </div>
-            <div class="company-position"><em>{{job.position}}</em></div>
-            <!--div class="text-muted">{{work.startDate | date: "%b, %Y"}} -
-              {{work.endDate | date: "%b, %Y"}}</div-->
+            <div class="company"> {{ job.company }} </div>
+            <div class="company-position"><em>{{ job.position }}</em></div>
           </div>
           <div class="col-xs-6">
-            <div class="company-date pull-right text-right"> {{job.startDate | date: "%b, %Y"}} -
-              {% if job.endDate == "" %} Present{% else %} {{job.endDate | date: "%b, %Y"}}{% endif %}<br>
-              <!--span>
-                {% assign dateDiff = job.endDate| minus: job.startDate %}
-                {% if dateDiff == 1 %}
-                  ({{dateDiff}} year)
-                {% elsif dateDiff > 1 %}
-                  ({{dateDiff}} years)
-                {% elsif dateDiff < 1 %}
-                  (~1 year)
-                {% endif %}
-              </span-->
+            <div class="company-date pull-right text-right"> {{ job.startDate | date: "%b, %Y" }} -
+              {% if job.endDate == "" %} Present{% else %} {{ job.endDate | date: "%b, %Y" }}{% endif %}<br>
             </div>
           </div>
         </div>
         <div class="row company-description">
           <div class="col-xs-12">
-            <p class="company-summary">{{job.summary}}</p>
+            <p class="company-summary">{{ job.summary }}</p>
             <ul>
               {% for highlight in job.highlights %}
-              <li>{{highlight}}</li>
+              <li>{{ highlight }}</li>
               {% endfor %}
             </ul>
           </div>
@@ -127,12 +115,12 @@ permalink: /resume/
       {% for each in resume.education %}
       <div class="row education-section">
         <div class="col-xs-10">
-          <div class="school"> {{each.institution}} </div>
-          {{each.studyType}} in {{each.area}}
+          <div class="school"> {{ each.institution }} </div>
+          {{ each.studyType }} in {{ each.area }}
         </div>
         <div class="col-xs-2">
           <div class="pull-right">
-            {{each.endDate | date: "%b, %Y"}}
+            {{ each.endDate | date: "%b, %Y" }}
           </div>
         </div>
       </div>
