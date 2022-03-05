@@ -47,7 +47,7 @@ ready(function() {
       itemSelector: '.eachcard',
       percentPosition: true,
       filter: hash && hash !== '#all' ? hashToFilter : '*',
-      transitionDuration: '0.2s',
+      transitionDuration: '0.4s',
       hiddenStyle: {
         opacity: 0,
         transform: 'scale(0.001)',

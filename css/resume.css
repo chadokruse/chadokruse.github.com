@@ -35,6 +35,9 @@ hr {
 .section-title {
   font-size: 1.2rem;
 }
+.section-title {
+  margin-top: 0;
+}
 
 .skill {
   font-weight: bold;
