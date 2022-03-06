@@ -1,8 +1,5 @@
 ## An Eleventy and Tailwind-Powered Portfolio Site  
-This is the source code used to power my personal site ([demo](http://www.chadkruse.com)). It takes advantage of Eleventy's Data Cascade and has two primary components:  
-
-1. Isotope.js: Card-based layout with animated filtering  
-2. JSON Resume: A liquid-based theme for the JSONResume spec.  
+This is the source code used to power my personal site ([demo](http://www.chadkruse.com)). It takes advantage of Eleventy's Data Cascade and Isotope.js to produce a filterable, masonry-like layout of portfolio items.
 
 **Screenshots**  
 
@@ -42,11 +39,11 @@ The `item_sort` option in the markdown files provides a mechanism to force a spe
 Note: Tags have a special meaning in Eleventy if used a certain way. I do NOT use the Eleventy tags feature.
 
 ### Resume   
-The resume is compatible with the [JSONResume](https://jsonresume.org/) spec and can be found in the `_data` folder. Simply replace the JSON file with your own.
+The resume is compatible with an older version of the [JSONResume](https://jsonresume.org/) spec and can be found in the `_data` folder. Simply replace the JSON file with your own. If you're using a more recent version of the spec, you may need to make adjustments to `resume.html` template at root.
 
 If you change the name of the JSON file from `resume-public.json`, be sure to update `data_source` in `resume.html`'s YAML front matter.
 
-*Note: The resume template is not yet uploaded to the JSON Resume template server, so you won't be able to use their cli tool to generate a PDF. As an interim fix, simply print the generated HTML page.*
+*Note: The resume template is not uploaded to the JSON Resume template server, so you won't be able to use their cli tool to generate a PDF. To create a PDF of your resume, simply print the generated HTML page.*
 
 ### Google Analytics   
 Please delete my Google Analytics ID in `_config.yml` and enter your own (or leave blank).
@@ -55,15 +52,16 @@ Please delete my Google Analytics ID in `_config.yml` and enter your own (or lea
 Delete the `CNAME` file if you don't need a custom domain. If you want a custom domain follow [these instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
 
 ### Deploy   
-I currently use Github Actions to deploy to Github Pages, but you can use any host.
+I currently use Github Actions to deploy to Github Pages, but you can use any host. Github Actions builds the Eleventy site from the `main` branch, and publishes the `dist` output folder directly to the `gh-pages` branch for publication.
 
 ### Robots.txt   
 Update `robots.txt` if you care about such things.
 
 ## TODOs 
-- [ ] Refactor scroll handling for filter bar clicks
-- [ ] Swap out imagesLoaded and Isotope plugins for native JS and CSS Grid
-- [ ] Convert `resume.html` to use Tailwind (instead of the legacy Bootstrap 3(!) css)
+- [ ] Remove remaining legacy code
+  - [ ] Refactor scroll handling for filter bar clicks
+  - [ ] Swap out imagesLoaded and Isotope plugins for native JS and CSS Grid
+  - [ ] Convert `resume.html` to use Tailwind (instead of the legacy Bootstrap 3(!) css)
 
 ## Licenses  
 ### Content   
