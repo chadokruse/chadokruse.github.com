@@ -30,10 +30,10 @@ permalink: /resume/
 
   <!-- Objective -->
   <div class="row">
-    <div class="col-xs-2">
+    <div class="col-xs-2 col-sm-2">
       <h4 class="section-title"> Objective </h4>
     </div>
-    <div class="col-xs-10">
+    <div class="col-xs-10 col-xs-offset-2 col-sm-10">
       {{ resume.basics.summary }}
     </div>
   </div>
@@ -41,10 +41,10 @@ permalink: /resume/
 
   <!-- Skills -->
   <div class="row">
-    <div class="col-xs-2">
+    <div class="col-xs-2 col-sm-2">
       <h4 class="section-title"> Skills </h4>
     </div>
-    <div class="col-xs-10">
+    <div class="col-xs-10 col-xs-offset-2 col-sm-10">
       <div class="row">
         {% for skill in resume.skills reversed %}
         {% if skill.name == 'Technical' %}
@@ -68,10 +68,10 @@ permalink: /resume/
 
   <!-- Experience Detail -->
   <div class="row">
-    <div class="col-xs-2">
+    <div class="col-xs-2 col-sm-2">
       <h4 class="section-title"> Experience </h4>
     </div>
-    <div class="col-xs-10">
+    <div class="col-xs-10 col-xs-offset-2 col-sm-10">
       <ul class="list-unstyled list-inline experience-summary">
         {% for each in resume.extras.overview %}
         <li><strong>{{ each.role }}</strong>: {{ each.duration }}</li>
@@ -108,10 +108,10 @@ permalink: /resume/
 
   <!-- Education -->
   <div class="row">
-    <div class="col-xs-2">
+    <div class="col-xs-2 col-sm-2">
       <h4 class="section-title"> Education </h4>
     </div>
-    <div class="col-xs-10">
+    <div class="col-xs-10 col-xs-offset-2 col-sm-10">
       {% for each in resume.education %}
       <div class="row education-section">
         <div class="col-xs-10">
@@ -132,17 +132,13 @@ permalink: /resume/
   <!-- Interests -->
   {% if resume.interests %}
   <div class="row">
-    <div class="col-xs-2">
+    <div class="col-xs-2 col-sm-2">
       <h4 class="section-title"> Interests </h4>
     </div>
-    <div class="col-xs-10">
-      <div class="row">
-        <div class="col-sm-12">
-          {% for each in resume.interests %} 
-            {{ each.name }}{% unless forloop.last %},{% endunless %}
-          {% endfor %}
-        </div>
-      </div>
+    <div class="col-xs-10 col-xs-offset-2 col-sm-10">
+      {% for each in resume.interests %} 
+        {{ each.name }}{% unless forloop.last %},{% endunless %}
+      {% endfor %}
     </div>
   </div>
   <hr />
