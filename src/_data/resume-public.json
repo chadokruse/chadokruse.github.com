@@ -6,7 +6,7 @@
     "email": "[email protected]",
     "phone": "[phone protected]",
     "website": "https://www.chadkruse.com",
-    "summary": "Seeking a full-stack software developer position that fully utilizes my past product and entrepreneurial experience. Fun to work with and forever curious, I'm often told I have a unique ability to talk shop with programmers, designers, VCs, boards of directors, philanthropists, and everyone in between.",
+    "summary": "Seeking a full-stack software developer position that fully utilizes my past product and entrepreneurial experience. Fun to work with, forever curious, and driven to continue growing as a software engineer.",
     "location": {
       "address": "[address protected]",
       "postalCode": "IL 60611",
@@ -51,11 +51,11 @@
       "website": "http://www.saic.com/",
       "startDate": "1999-01-01",
       "endDate": "2000-04-01",
-      "summary": "Part of a three-member team responsible for all corporate VC and technology commercialization deals for Science Applications International Corporation, then a Fortune 500 company.",
+      "summary": "Part of a three-member team responsible for all corporate VC and technology commercialization deals for Science Applications International Corporation, a Fortune 500 company.",
       "highlights": [
         "Sourced, analyzed, and executed venture capital investments and growth-oriented mergers and acquisitions to expand the company's reach into commercial markets.",
         "Placed $90M of early to mezzanine stage venture capital in 15 months (11 transactions).",
-        "Built and evangelized a new valuation model which was ultimately adopted company-wide (40k employees; 600+ business units)"
+        "Built and evangelized a new valuation model which was ultimately adopted company-wide (40k employees; 600+ business units)."
       ],
       "tags": [
         "Market Assessments",
@@ -71,9 +71,10 @@
       "endDate": "2002-10-31",
       "summary": "Served as one of four dealmakers for Intuit, the Fortune 500 consumer and SMB-focused technology company. Our group not only explored new growth markets and executed software M&A deals, but also served as internal sound board for business unit leaders while continuing to push for innovation across all levels of the company.",
       "highlights": [
+        "Recognized by CEO for my leadership in driving large, cross-functional teams of internal and external resources to quickly and efficiently close complicated and dynamic deals.",
+        "Led the company's first partnership with Paypal, ultimately resulting in $1B of value creation for the company.",
         "Explored new avenues for growth, identified and prioritized opportunities, cultivated internal collaboration, developed internal plans, and led internal buy-in and eventual deal execution.",
-        "Developed investment theses (build/buy/partner) and prepared and lead a variety of internal communication activities including presentations to board level audiences.",
-        "Managed large cross-functional teams including outside consultants. Served as lead negotiator for multiple deals, including Intuit's first partnership with Paypal."
+        "Developed investment theses (build/buy/partner) and prepared and lead a variety of internal communication activities including presentations to board level audiences."
       ],
       "tags": [
         "Build-Buy-Partner",
@@ -235,12 +236,11 @@
       "website": "https://smartergiving.org/",
       "startDate": "2012-11-01",
       "endDate": "",
-      "summary": "Conceptualized, created, and launched SmarterGiving, a prototype studio focused on market opportunities throughout the 'charity stack'. MVPs and prototypes explored specific pain points across the philanthropic spectrum, from online donations and donor cultivation to nonprofit discovery and social networks.",
+      "summary": "Conceptualized, created, and launched SmarterGiving, a prototype studio focused on market opportunities across the \"charity stack\".",
       "highlights": [
-        "Drove multiple products from concept to launch using agile and lean startup principles.",
-        "Heavy emphasis on customer development, from interviews and follow-me-homes to analytics.",
-        "First product went from idea to first revenues on a net out-of-pocket investment of just $90.",
-        "Preferred prototype tech stack included Jekyll (static), MeteorJS (dynamic), and Bootstrap."
+        "Architected and developed robust data pipelines using bash, Node.js, AWS S3 SDK, and Google Cloud Platform.",
+        "Leveraged and explored various machine learning (ML) and natural language processing (NLP) APIs to bring advanced classification algorithms in-house.",
+        "Drove multiple products from concept to launch using agile and lean startup principles."
       ],
       "tags": [
         "Product",
@@ -255,14 +255,12 @@
       "website": "https://www.grantmakers.io/",
       "startDate": "2016-09-01",
       "endDate": "",
-      "summary": "Grantmakers.io makes a machine-readable IRS dataset useful for nonprofit professionals. Built for purpose, not profit, the site has become one of the largest free sources of searchable philanthropic data on the Internet.",
+      "summary": "Grantmakers.io has grown into one of the largest free sources of searchable philanthropic data on the Internet. Built for purpose, not profit, the site makes a large, public IRS dataset useful to nonprofits.",
       "highlights": [
-        "Brought Grantmakers.io to market as the sole developer, personally responsible for the entire Software Development Life Cycle.",
-        "Innovative use of Jamstack technology, layering in dynamic components via third-party APIs. Highly cost-effective.",
-        "Extensive use of Algolia search API, using customer feedback and A/B testing to fine-tune search algorithms and optimize the UX.",
-        "Architected and developed robust data pipelines using bash scripts, Node.js, the AWS S3 SDK, and Google Cloud Platform.",
-        "Open source from day one, I was responsible for evangelizing the technology and exploring business development deals.",
-        "Github repo: https://github.com/grantmakers/grantmakers.github.io"
+        "Brought project to market as the sole founder and developer, owning the entire Software Development Life Cycle.",
+        "Innovative use of Jamstack and serverless technologies minimized ongoing costs while maximizing the ability to deliver new dynamic features quickly and cost-effectively.",
+        "Extensive use of Algolia search API, using customer feedback and A/B testing to optimize the UX.",
+        "Evangelized the technology and explored business development deals with industry-leading organizations, earning recognition from world-renowned experts in the field."
       ],
       "tags": [
         "Developer",
@@ -321,13 +319,13 @@
   }],
   "interests": [
     {
-      "name": "Intersection of Philanthropy and Technology",
+      "name": "Intersection of philanthropy and technology",
       "keywords": [
         "Charity Stack",
         "Philanthrotech"
       ]
     }, {
-      "name": "Open Source Contributor",
+      "name": "Active open source contributor",
       "keywords": [
         "FOSS",
         "Github"
@@ -338,16 +336,16 @@
     "overview": [
       {
         "role": "Developer",
-        "duration": "5 Years"
+        "duration": "3-5 Yrs"
       }, {
         "role": "Consultant",
-        "duration": "10 Years"
+        "duration": "10 Yrs"
       }, {
-        "role": "Startup COO & Advisor",
-        "duration": "5 Years"
+        "role": "COO-for-Hire",
+        "duration": "5 Yrs"
       },{
         "role": "Corporate Development",
-        "duration": "8 Years"
+        "duration": "8 Yrs"
       } 
     ]
   }
