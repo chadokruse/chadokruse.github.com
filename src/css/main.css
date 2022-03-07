@@ -12,6 +12,9 @@
 .prose ul li a {
   @apply text-current;
 }
+.corporate-development .prose p {
+  @apply mb-1
+}
 
 /* Filter bar buttons */
 /* Scroll-m classes ensure anchor clicks scroll to proper place */
