@@ -90,17 +90,30 @@ permalink: /resume/
       <hr />
       {% assign jobs = resume.work | where: "category" , "Job" %}
       {% for job in jobs reversed %}
+      {% unless job.company == "Riverlake Partners" %}
         <div class="row">
-          <div class="col-xs-6">
+      {% else %}
+        <div class="row pagebreak">
+      {% endunless %}
+          <div class="col-xs-12 col-sm-6">
             <div class="company"> {{ job.company }} </div>
           </div>
-          <div class="col-xs-6">
-            <div class="company-date pull-right text-right"> {{ job.startDate | date: "%b, %Y" }} -
-              {% if job.endDate == "" %} Present{% else %} {{ job.endDate | date: "%b, %Y" }}{% endif %}<br>
+          <div class="hidden-xs col-sm-6">
+            <div class="company-date pull-right text-right">
+              <span>{{ job.startDate | date: "%b, %Y" }}</span>
+              <span>{% if job.endDate == "" %}- Present{% else %}- {{ job.endDate | date: "%b, %Y" }}{% endif %}</span>
             </div>
           </div>
           <div class="col-xs-12">
-            <div class="company-position"><em>{{ job.position }}</em></div>
+            <div class="company-position">{{ job.position }}</div>
+          </div>
+          <div class="hidden col-xs-12 visible-xs-block italic">
+            <div class="company-date hidden-print">
+              <em>
+              <span>({{ job.startDate | date: "%b, %Y" }}</span>
+              <span>{% if job.endDate == "" %}- Present{% else %}- {{ job.endDate | date: "%b, %Y" }}{% endif %})</span>
+            </em>
+            </div>
           </div>
         </div>
         <div class="row company-description">

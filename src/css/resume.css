@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 
 hr {
@@ -95,11 +95,12 @@ hr {
 }
 
 .company-position {
-
+  font-style: normal;
 }
-
-.company-date span {
-  font-style: italic;
+@media screen and (min-width: 768px) {
+  .company-position {
+    font-style: italic;
+  }
 }
 
 .company-summary {
@@ -132,6 +133,12 @@ hr {
 /*********************************************************************************/
 
 @media print {
+  .pagebreak { 
+    page-break-before: always; 
+  }
+  .company-position {
+    font-style: italic;
+  }
   .list-profiles img {
     width: 11px;
     height: 11px;
@@ -144,6 +151,7 @@ hr {
   .list-profiles a{
     content: attr(data-print);
   }
+  
 }
 @media print {
   html {
