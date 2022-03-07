@@ -11,17 +11,20 @@ permalink: /resume/
       <div class="col-xs-6">
         <h1 class="name">{{ resume.basics.name }}</h1>
         <h3 class="title">{{ resume.basics.label }}</h3>
-        <ul class="list-inline list-profiles">
-          {% for profile in resume.basics.profiles %}
-          <li><i class="fa fa-{{ profile.network | downcase }}"></i> <span>|</span> <!--strong>{{ profile.network }}:</strong--> <a href="{{ profile.url }}">{{ profile.username }}</a></li>
-          {% endfor %}
-        </ul>
       </div>
       <div class="col-xs-6 contact-info">
         <ul class="pull-right">
           <li><strong>Email:</strong> {{ resume.basics.email }}</li>
           <li><strong>Phone:</strong> {{ resume.basics.phone }}</li>
-          <li><strong>Website:</strong> {{ resume.basics.website }}</li>
+          <li><strong>Website:</strong> <a href="{{ resume.basics.website }}">{{ resume.basics.website | split: "https://" | last }}</a></li>
+          <ul class="list-inline list-profiles">
+            {% for profile in resume.basics.profiles %}
+            <li>
+              <img src="/images/icons/{{ profile.network | downcase }}.svg" alt="{{ profile.network }}" width="14px" height="14px">
+              <a href="{{ profile.url }}" data-print="{{ profile.url | split: 'https://' | last}}"">{{ profile.username }}</a>
+            </li>
+            {% endfor %}
+          </ul>
         </ul>
       </div>
     </div>
@@ -29,52 +32,59 @@ permalink: /resume/
   <hr style="margin-top: 0;" />
 
   <!-- Objective -->
-  <div class="row">
-    <div class="col-xs-2 col-sm-2">
+  <div class="row" id="objective">
+    <div class="col-xs-12 col-sm-2">
       <h4 class="section-title"> Objective </h4>
     </div>
-    <div class="col-xs-10 col-xs-offset-2 col-sm-10 col-sm-offset-0 col-sm-offset-0">
+    <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-0 col-sm-offset-0">
       {{ resume.basics.summary }}
     </div>
   </div>
   <hr />
 
   <!-- Skills -->
-  <div class="row">
-    <div class="col-xs-2 col-sm-2">
+  <div class="row" id="skills">
+    <div class="col-xs-12 col-sm-2">
       <h4 class="section-title"> Skills </h4>
     </div>
-    <div class="col-xs-10 col-xs-offset-2 col-sm-10 col-sm-offset-0">
-      <div class="row">
-        {% for skill in resume.skills reversed %}
-        {% if skill.name == 'Technical' %}
-        <div class="col-sm-4 col-md-4">
+    <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-0">
+      <div class="row row-flex-stretch">
+      {% for skill in resume.skills reversed %}
+        <div class="col-xs-12 col-flex-stretch">
+        {% if skill.name == 'Strategy' %}
+          <span class="hidden-sm hidden-md hidden-lg">Full list available in printed resume.</span>
+          <div class="skill hidden-xs">{{ skill.name }}</div>
+          <hr class="skills-hr hidden-xs">
+          <ul class="hidden-xs">
+          {% for keyword in skill.keywords %}
+            <li>{{ keyword }}</li>
+          {% endfor %}
+          </ul>
         {% else %}
-        <div class="col-sm-4 col-md-3">
-        {% endif %}
           <div class="skill">{{ skill.name }}</div>
           <hr class="skills-hr">
-          <ul class="list-unstyled">
-            {% for keyword in skill.keywords %}
+          <ul>
+          {% for keyword in skill.keywords %}
             <li>{{ keyword }}</li>
-            {% endfor %}
+          {% endfor %}
           </ul>
+        {% endif %}
         </div>
-        {% endfor %}
+      {% endfor %}
       </div>
     </div>
   </div>
   <hr />
 
   <!-- Experience Detail -->
-  <div class="row">
-    <div class="col-xs-2 col-sm-2">
+  <div class="row" id="experience">
+    <div class="col-xs-12 col-sm-2">
       <h4 class="section-title"> Experience </h4>
     </div>
-    <div class="col-xs-10 col-xs-offset-2 col-sm-10 col-sm-offset-0">
+    <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-0">
       <ul class="list-unstyled list-inline experience-summary">
         {% for each in resume.extras.overview %}
-        <li><strong>{{ each.role }}</strong>: {{ each.duration }}</li>
+        <li>{{ each.role }}: {{ each.duration }}</li>
         {% endfor %}
       </ul>
       <hr />
@@ -83,12 +93,14 @@ permalink: /resume/
         <div class="row">
           <div class="col-xs-6">
             <div class="company"> {{ job.company }} </div>
-            <div class="company-position"><em>{{ job.position }}</em></div>
           </div>
           <div class="col-xs-6">
             <div class="company-date pull-right text-right"> {{ job.startDate | date: "%b, %Y" }} -
               {% if job.endDate == "" %} Present{% else %} {{ job.endDate | date: "%b, %Y" }}{% endif %}<br>
             </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="company-position"><em>{{ job.position }}</em></div>
           </div>
         </div>
         <div class="row company-description">
@@ -96,6 +108,7 @@ permalink: /resume/
             <p class="company-summary">{{ job.summary }}</p>
             <ul>
               {% for highlight in job.highlights %}
+              <!-- TODO Capture url addresses and make clickable -->
               <li>{{ highlight }}</li>
               {% endfor %}
             </ul>
@@ -107,11 +120,11 @@ permalink: /resume/
   <hr />
 
   <!-- Education -->
-  <div class="row">
-    <div class="col-xs-2 col-sm-2">
+  <div class="row" id="education">
+    <div class="col-xs-12 col-sm-2">
       <h4 class="section-title"> Education </h4>
     </div>
-    <div class="col-xs-10 col-xs-offset-2 col-sm-10 col-sm-offset-0">
+    <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-0">
       {% for each in resume.education %}
       <div class="row education-section">
         <div class="col-xs-10">
@@ -131,17 +144,22 @@ permalink: /resume/
 
   <!-- Interests -->
   {% if resume.interests %}
-  <div class="row">
+  <div class="row" id="interests">
     <div class="col-xs-2 col-sm-2">
       <h4 class="section-title"> Interests </h4>
     </div>
-    <div class="col-xs-10 col-xs-offset-2 col-sm-10 col-sm-offset-0">
+    <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-0">
       {% for each in resume.interests %} 
-        {{ each.name }}{% unless forloop.last %},{% endunless %}
+        {% if forloop.first == true %}
+          {{ each.name | capitalize }};
+        {% elsif forloop.last == true %}
+          {{ each.name | downcase}}.
+        {% else %}
+          {{ each.name | downcase}};
+        {% endif %}
       {% endfor %}
     </div>
   </div>
-  <hr />
   {% endif %}
 
 </div>

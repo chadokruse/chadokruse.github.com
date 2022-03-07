@@ -1,9 +1,9 @@
 html {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 body {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 hr {
@@ -11,8 +11,35 @@ hr {
   margin-bottom: 10px;
 }
 
+.row-flex-stretch {
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: wrap;
+}
+.col-flex-stretch {
+  flex-grow: 1;
+  width: unset;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.col-flex-stretch:first-child {
+  padding-left: 15px;
+  padding-right: 5px;
+}
+.col-flex-stretch:last-child {
+  padding-right: 15px;
+  padding-left: 5px;
+}
+.col-flex-stretch ul {
+  margin-bottom: 0;
+}
+
 .header {
   margin: 10px 0;
+}
+
+.borderless .list-group-item {
+    border: none;
 }
 
 .name {
@@ -39,6 +66,13 @@ hr {
   margin-top: 0;
 }
 
+#skills ul {
+  padding-left: 0;
+}
+#skills li {
+  padding-left: 10px;
+  list-style-position: inside;
+}
 .skill {
   font-weight: bold;
 }
@@ -84,10 +118,6 @@ hr {
   margin-bottom: 5px;
 }
 
-.list-profiles {
-  margin-top: 10px;
-}
-
 .list-profiles > li {
   padding-right: 10px;
 }
@@ -102,8 +132,22 @@ hr {
 /*********************************************************************************/
 
 @media print {
+  .list-profiles img {
+    width: 11px;
+    height: 11px;
+  }
+  /* Prevents default Bootstrap print handling of links */
+  a[href]:after {
+    content: none !important;
+  }
+  /* Instead, print a helper data attribute */
+  .list-profiles a{
+    content: attr(data-print);
+  }
+}
+@media print {
   html {
-    font-size: 11px;
+    font-size: 10px;
   }
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
