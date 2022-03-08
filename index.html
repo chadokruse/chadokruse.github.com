@@ -109,16 +109,17 @@
 </main>
 
 <nav id="filter-bar" class="sticky top-0 self-start bg-white px-2 sm:px-4 py-2.5 rounded border-gray-200 shadow-md z-50">
-  <div class="container flex flex-wrap mx-auto">
+  <div class="container mx-auto px-4">
     <ul class="flex m-1 flex-row justify-center items-center md:justify-start space-x-2 md:text-sm md:font-medium">
       <li class="font-bold hidden md:list-item leading-6">
         Filter By:
       </li>
       <li><a href="#all" id="all" class="nav-btn" data-filter="*">All</a></li>
       <li><a href="#advisor" id="advisor" class="nav-btn" data-filter=".advisor">Advisor</a></li>
-      <li><a href="#consulting" id="consulting" class="nav-btn hidden md:inline" data-filter=".consulting">Consultant</a></li>
+      <li class="hidden md:list-item"><a href="#consulting" id="consulting" class="nav-btn" data-filter=".consulting">Consultant</a></li>
       <li><a href="#founder" id="founder" class="nav-btn" data-filter=".founder">Founder</a></li>
       <li><a href="#developer" id="developer" class="nav-btn" data-filter=".developer">Developer</a></li>
+      <li class="hidden md:list-item"><a href="/resume/" class="nav-btn pull-right">Resume</a></li>
     </ul>
   </div>
 </nav>
