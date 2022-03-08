@@ -1,16 +1,18 @@
 ---
 name: tech-stack
-image: tech-stack.png
+image: tech-stack-all-logos.png
 image_href:
-header: Tech Stack
+header: Current Tech Stack
 tags:
   - Developer
-item_sort: 1.5
+item_sort: 3
 ---
-**JavaScript** remains my primary language. **Node.js** for scripting and backend, and **Vue.js** when a front-end framework is needed. 
+<span>
 
-**Jekyll** is my go-to SSG and I love me the **Jamstack**. I'd love to see **Gridsome** hit v1, but I'm currently most enamored with **11ty** and **Tailwind**.
+**JavaScript** remains my primary language.
 
-**Google Cloud Platform** for all things cloud, **bash** when I need it, and the **AWS S3 SDK** for accessing public datasets.
+I'm best known as a [Jamstack](https://jamstack.org/what-is-jamstack/) developer for my work on Grantmakers.io, which pushes the boundaries of [Jekyll](https://jekyllrb.com/), a static site generator.
 
-**MongoDB** is my preferred database. **MongoDB Atlas** when it's cost-effective, otherwise self-hosted. I also use their **MongoDB Realm** product to a smaller extent.
+The site uses [Vue.js](https://vuejs.org/) and [MongoDB Realm](https://www.mongodb.com/realm) for its dynamic components and [Google Cloud Platform](https://cloud.google.com/) and [Node.js](https://nodejs.org/) for the upstream data pipelines.
+
+</span>

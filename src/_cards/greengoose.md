@@ -6,6 +6,7 @@ header: Chief Operating Officer
 tags:
   - COO
   - Business Development
+  - Advisor
 item_sort: 4
 ---
 I served as COO for innovative sensor startup GreenGoose during a critical time in the company's history, partnering with the solo founder after a successful seed round but still during the prototype phase.

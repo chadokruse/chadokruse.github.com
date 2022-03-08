@@ -5,7 +5,7 @@ image_href:
 header: CDFI Underwriting
 tags:
   - Consulting
-  - Strategy Of Numbers
+  - The Art of Numbers
   - Clean Energy
 item_sort: 30
 ---

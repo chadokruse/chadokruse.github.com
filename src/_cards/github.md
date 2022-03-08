@@ -22,6 +22,4 @@ My popular repos include:
 
 </span>
 
-This site, of course, is also open source.
-
 [Github Profile →](https://github.com/chadokruse)

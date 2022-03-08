@@ -7,6 +7,7 @@ tags:
   - COO
   - Corporate Development
   - Clean Energy
+  - Advisor
 item_sort: 27
 ---
 Worked with a dedicated entrepreneur to bring the idea of refurbished wind turbines to life.
