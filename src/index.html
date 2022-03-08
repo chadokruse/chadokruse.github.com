@@ -68,9 +68,9 @@ title: Chad Kruse | Full Stack Developer
   </div>
 </main>
 
-<nav id="filter-bar" class="sticky top-0 self-start bg-white px-2 sm:px-4 py-2.5 rounded border-gray-200 shadow-md z-50">
-  <div class="container mx-auto px-4">
-    <ul class="flex m-1 flex-row justify-center items-center md:justify-start space-x-2 md:text-sm md:font-medium">
+<nav id="filter-bar" class="sticky top-0 bg-white px-2 sm:px-4 py-2.5 rounded border-gray-200 shadow-md z-50">
+  <div class="container flex justify-center md:justify-between mx-auto px-4">
+    <ul class="flex m-1 space-x-2 md:text-sm md:font-medium">
       <li class="font-bold hidden md:list-item leading-6">
         Filter By:
       </li>
@@ -79,7 +79,9 @@ title: Chad Kruse | Full Stack Developer
       <li class="hidden md:list-item"><a href="#consulting" id="consulting" class="nav-btn" data-filter=".consulting">Consultant</a></li>
       <li><a href="#founder" id="founder" class="nav-btn" data-filter=".founder">Founder</a></li>
       <li><a href="#developer" id="developer" class="nav-btn" data-filter=".developer">Developer</a></li>
-      <li class="hidden md:list-item"><a href="/resume/" class="nav-btn pull-right">Resume</a></li>
+    </ul>
+    <ul class="hidden md:flex m-1 ">
+      <li><a href="/resume/" class="nav-btn">Resume</a></li>
     </ul>
   </div>
 </nav>
