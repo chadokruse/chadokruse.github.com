@@ -5,7 +5,6 @@ image_href: https://github.com/chadokruse
 header: Open Source
 tags:
   - About
-  - Open Source
   - Developer
   - Product
 item_sort: 7
