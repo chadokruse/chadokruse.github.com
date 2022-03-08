@@ -7,7 +7,11 @@
     <meta name="description" content="Chicago-based full-stack developer, product builder, and recovering corporate development guy." />
     <title>Chad Kruse | Full Stack Developer</title>
     <meta name="author" content="Chad Kruse" />
-    <link rel="icon" type="image/png" href="/images/logos/logo.png" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -105,8 +109,8 @@
 </main>
 
 <nav id="filter-bar" class="sticky top-0 self-start bg-white px-2 sm:px-4 py-2.5 rounded border-gray-200 shadow-md z-50">
-  <div class="container flex flex-wrap justify-between items-center mx-auto">
-    <ul class="flex m-1 flex-row justify-center md:justify-start space-x-2 md:mt-0 md:text-sm md:font-medium">
+  <div class="container flex flex-wrap mx-auto">
+    <ul class="flex m-1 flex-row justify-center items-center md:justify-start space-x-2 md:text-sm md:font-medium">
       <li class="font-bold hidden md:list-item leading-6">
         Filter By:
       </li>
@@ -131,7 +135,7 @@
     <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 about ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
-      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/chicago.jpg" alt="About Me">
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/chicago.png" alt="About Me">
     
     <div class="p-5">
       <h2 class="mb-2 text-2xl tracking-tight font-bold text-gray-900 dark:text-white">About Me</h2>
@@ -141,7 +145,7 @@
         
       </div>
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
-        <p>Before launching my own ventures and teaching myself to code, I was often brought on as the first &quot;business hire&quot; at startups of all shapes and sizes. I've run development teams, owned product strategy, raised venture, seed, debt, and philanthropic capital, and closed business development deals with companies both large and small. I'm a generalist through and through.</p>
+        <p>Before launching my own ventures and teaching myself to code, I was often brought on as the first &quot;business hire&quot; at startups of all shapes and sizes. I've built web applications, run development teams, owned product strategy, raised venture, seed, debt, and philanthropic capital, and closed business development deals with companies both large and small. I'm a generalist through and through.</p>
 <p>My career started as a strategist and dealmaker for large tech companies.</p>
 <p>My head is in SF, my heart is in Bend, Oregon, and my body is currently in Chicago.</p>
 
@@ -178,23 +182,23 @@
 </div>
 
   
-    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 developer ">
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 developer open-source ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
-      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/tech-stack.png" alt="Tech Stack">
+      <a href="https://github.com/chadokruse/chadokruse.github.com"><img class="w-full mx-auto border-none rounded-t-lg" src="/images/open-source.png" alt="Transparency by default"></a>
     
     <div class="p-5">
-      <h2 class="mb-2 text-2xl tracking-tight font-bold text-gray-900 dark:text-white">Tech Stack</h2>
+      <h2 class="mb-2 text-2xl tracking-tight font-bold text-gray-900 dark:text-white">Transparency by default</h2>
       <div class="mb-2 font-normal">
         
           <a href="#developer" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".developer">Developer</a>
         
+          <a href="#open-source" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".open-source">Open Source</a>
+        
       </div>
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
-        <p><strong>JavaScript</strong> remains my primary language. <strong>Node.js</strong> for scripting and backend, and <strong>Vue.js</strong> when a front-end framework is needed.</p>
-<p><strong>Jekyll</strong> is my go-to SSG and I love me the <strong>Jamstack</strong>. I'd love to see <strong>Gridsome</strong> hit v1, but I'm currently most enamored with <strong>11ty</strong> and <strong>Tailwind</strong>.</p>
-<p><strong>Google Cloud Platform</strong> for all things cloud, <strong>bash</strong> when I need it, and the <strong>AWS S3 SDK</strong> for accessing public datasets.</p>
-<p><strong>MongoDB</strong> is my preferred database. <strong>MongoDB Atlas</strong> when it's cost-effective, otherwise self-hosted. I also use their <strong>MongoDB Realm</strong> product to a smaller extent.</p>
+        <p>This website is hosted on Github Pages, deployed via Github Actions, and built with Tailwind CSS and 11ty.</p>
+<p><a href="https://github.com/chadokruse/chadokruse.github.com">Github repo →</a></p>
 
       </div>
     </div>
@@ -256,7 +260,32 @@
 </div>
 
   
-    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 coo product mobile ">
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 developer ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/tech-stack-all-logos.png" alt="Current Tech Stack">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl tracking-tight font-bold text-gray-900 dark:text-white">Current Tech Stack</h2>
+      <div class="mb-2 font-normal">
+        
+          <a href="#developer" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".developer">Developer</a>
+        
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <span>
+<p><strong>JavaScript</strong> remains my primary language.</p>
+<p>I'm best known as a <a href="https://jamstack.org/what-is-jamstack/">Jamstack</a> developer for my work on Grantmakers.io, which pushes the boundaries of <a href="https://jekyllrb.com/">Jekyll</a>, a static site generator.</p>
+<p>The site uses <a href="https://vuejs.org/">Vue.js</a> and <a href="https://www.mongodb.com/realm">MongoDB Realm</a> for its dynamic components and <a href="https://cloud.google.com/">Google Cloud Platform</a> and <a href="https://nodejs.org/">Node.js</a> for the upstream data pipelines.</p>
+</span>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 coo product advisor ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
       <img class="w-full mx-auto border-none rounded-t-lg" src="/images/forkfly.jpg" alt="Chief Operating Officer & Product Lead">
@@ -269,11 +298,11 @@
         
           <a href="#product" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".product">Product</a>
         
-          <a href="#mobile" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".mobile">Mobile</a>
+          <a href="#advisor" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".advisor">Advisor</a>
         
       </div>
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
-        <p>Forkfly (now CloudEngage) was an early entrant in the highly competitive location-based mobile space, and as COO I had the honor of building a rockstar development team from the ground up, managing and launching three web apps and two mobile platforms, prioritizing a seemingly endless feature list, bringing the company to first revenue, and helping lead overall strategy development.</p>
+        <p>Forkfly (now CloudEngage) was an early entrant in the highly competitive location-based mobile space. As COO, I had the honor of building a world-class development team from the ground up, managed and launched three web apps and two mobile platforms, and prioritized a seemingly endless feature list. I brought the company to first revenues and helped lead overall strategy development.</p>
 
       </div>
     </div>
@@ -281,7 +310,7 @@
 </div>
 
   
-    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 coo business-development ">
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 coo business-development advisor ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
       <a href="http://www.wired.com/2011/12/spime-watch-green-goose-stickers/"><img class="w-full mx-auto border-none rounded-t-lg" src="/images/ggoose.jpg" alt="Chief Operating Officer"></a>
@@ -293,6 +322,8 @@
           <a href="#coo" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".coo">COO</a>
         
           <a href="#business-development" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".business-development">Business Development</a>
+        
+          <a href="#advisor" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".advisor">Advisor</a>
         
       </div>
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
@@ -326,6 +357,35 @@
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
         <p>Served as one of four dealmakers for Intuit, the Fortune 500 consumer and SMB-focused technology company. Our group not only executed software M&amp;A deals and explored new growth markets, but also served as internal sound board for business unit leaders while continuing to push for innovation across all levels of the company.</p>
 
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 about ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+      <img class="w-full mx-auto border-none rounded-t-lg" src="/images/four-grid.png" alt="My Career">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl tracking-tight font-bold text-gray-900 dark:text-white">My Career</h2>
+      <div class="mb-2 font-normal">
+        
+          <a href="#about" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".about">About</a>
+        
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <span>
+<p>As a <a href="/#founder">founder</a>...<br>
+I’m passionate, gritty, and capital efficient.</p>
+<p>As a <a href="#developer">developer</a>...<br>
+I’m curious, analytical, and creative.</p>
+<p>As a <a href="#consulting">consultant</a>...<br>
+I’m confident, collaborative, and effective.</p>
+<p>As an <a href="advisor">advisor</a>...<br>
+I’m empathetic, genuine, and versatile.</p>
+</span>
       </div>
     </div>
   </div>
@@ -384,7 +444,6 @@ My popular repos include:
 <li><a href="https://github.com/chadokruse/meteor-coming-soon-email-capture">Meteor Coming Soon Email Capture</a></li>
 </ul>
 </span>
-<p>This site, of course, is also open source.</p>
 <p><a href="https://github.com/chadokruse">Github Profile →</a></p>
 
       </div>
@@ -779,7 +838,7 @@ My popular repos include:
 </div>
 
   
-    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting strategy-of-numbers ">
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting the-art-of-numbers ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
       <img class="w-full mx-auto border-none rounded-t-lg" src="/images/calculations.jpg" alt="Consulting Work">
@@ -790,7 +849,7 @@ My popular repos include:
         
           <a href="#consulting" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".consulting">Consulting</a>
         
-          <a href="#strategy-of-numbers" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".strategy-of-numbers">Strategy of Numbers</a>
+          <a href="#the-art-of-numbers" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".the-art-of-numbers">The Art of Numbers</a>
         
       </div>
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
@@ -848,7 +907,7 @@ My popular repos include:
 </div>
 
   
-    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 coo business-development strategy-of-numbers ">
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 coo business-development the-art-of-numbers advisor ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
       <img class="w-full mx-auto border-none rounded-t-lg" src="/images/wilddoc.jpg" alt="Conservation-Based Forestry">
@@ -861,7 +920,9 @@ My popular repos include:
         
           <a href="#business-development" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".business-development">Business Development</a>
         
-          <a href="#strategy-of-numbers" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".strategy-of-numbers">Strategy Of Numbers</a>
+          <a href="#the-art-of-numbers" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".the-art-of-numbers">The Art of Numbers</a>
+        
+          <a href="#advisor" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".advisor">Advisor</a>
         
       </div>
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
@@ -897,7 +958,7 @@ My popular repos include:
 </div>
 
   
-    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 coo corporate-development clean-energy ">
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 coo corporate-development clean-energy advisor ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
       <a href="http://green.blogs.nytimes.com//2009/01/26/old-turbines-get-a-second-wind-through-remanufacturing/"><img class="w-full mx-auto border-none rounded-t-lg" src="/images/windbw.jpg" alt="Refurbished Wind Turbines"></a>
@@ -911,6 +972,8 @@ My popular repos include:
           <a href="#corporate-development" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".corporate-development">Corporate Development</a>
         
           <a href="#clean-energy" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".clean-energy">Clean Energy</a>
+        
+          <a href="#advisor" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".advisor">Advisor</a>
         
       </div>
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
@@ -969,7 +1032,7 @@ My popular repos include:
 </div>
 
   
-    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting strategy-of-numbers clean-energy ">
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting the-art-of-numbers clean-energy ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
       <img class="w-full mx-auto border-none rounded-t-lg" src="/images/sbec.jpg" alt="CDFI Underwriting">
@@ -980,7 +1043,7 @@ My popular repos include:
         
           <a href="#consulting" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".consulting">Consulting</a>
         
-          <a href="#strategy-of-numbers" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".strategy-of-numbers">Strategy Of Numbers</a>
+          <a href="#the-art-of-numbers" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".the-art-of-numbers">The Art of Numbers</a>
         
           <a href="#clean-energy" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".clean-energy">Clean Energy</a>
         
@@ -1019,7 +1082,7 @@ My popular repos include:
 </div>
 
   
-    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting strategy-of-numbers clean-energy ">
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting the-art-of-numbers clean-energy ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
       <img class="w-full mx-auto border-none rounded-t-lg" src="/images/excel.jpg" alt="Transaction Structuring & Modeling">
@@ -1030,7 +1093,7 @@ My popular repos include:
         
           <a href="#consulting" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".consulting">Consulting</a>
         
-          <a href="#strategy-of-numbers" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".strategy-of-numbers">Strategy Of Numbers</a>
+          <a href="#the-art-of-numbers" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".the-art-of-numbers">The Art of Numbers</a>
         
           <a href="#clean-energy" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".clean-energy">Clean Energy</a>
         
@@ -1045,31 +1108,7 @@ My popular repos include:
 </div>
 
   
-    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 developer open-source ">
-  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-    
-      <a href="https://github.com/chadokruse/chadokruse.github.com"><img class="w-full mx-auto border-none rounded-t-lg" src="/images/githubpages.jpg" alt="Github Pages"></a>
-    
-    <div class="p-5">
-      <h2 class="mb-2 text-2xl tracking-tight font-bold text-gray-900 dark:text-white">Github Pages</h2>
-      <div class="mb-2 font-normal">
-        
-          <a href="#developer" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".developer">Developer</a>
-        
-          <a href="#open-source" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".open-source">Open Source</a>
-        
-      </div>
-      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
-        <p>This website is fully open source and hosted by Github Pages. Help yourself!</p>
-<p><a href="https://github.com/chadokruse/chadokruse.github.com">Github repo →</a></p>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-  
-    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting excel strategy-of-numbers ">
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting excel the-art-of-numbers ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
       <img class="w-full mx-auto border-none rounded-t-lg" src="/images/sh.png" alt="Business Case Creation">
@@ -1082,7 +1121,7 @@ My popular repos include:
         
           <a href="#excel" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".excel">Excel</a>
         
-          <a href="#strategy-of-numbers" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".strategy-of-numbers">Strategy Of Numbers</a>
+          <a href="#the-art-of-numbers" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".the-art-of-numbers">The Art of Numbers</a>
         
       </div>
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
@@ -1094,7 +1133,7 @@ My popular repos include:
 </div>
 
   
-    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting excel strategy-of-numbers ">
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting excel the-art-of-numbers ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
       <img class="w-full mx-auto border-none rounded-t-lg" src="/images/yanchep.jpg" alt="Modeling Framework">
@@ -1107,7 +1146,7 @@ My popular repos include:
         
           <a href="#excel" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".excel">Excel</a>
         
-          <a href="#strategy-of-numbers" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".strategy-of-numbers">Strategy Of Numbers</a>
+          <a href="#the-art-of-numbers" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".the-art-of-numbers">The Art of Numbers</a>
         
       </div>
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
@@ -1142,7 +1181,7 @@ My popular repos include:
 </div>
 
   
-    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting excel strategy-of-numbers ">
+    <div class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting excel the-art-of-numbers ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
       <img class="w-full mx-auto border-none rounded-t-lg" src="/images/wa1.jpg" alt="Value Uplift">
@@ -1155,7 +1194,7 @@ My popular repos include:
         
           <a href="#excel" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".excel">Excel</a>
         
-          <a href="#strategy-of-numbers" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".strategy-of-numbers">Strategy Of Numbers</a>
+          <a href="#the-art-of-numbers" class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white" data-filter=".the-art-of-numbers">The Art of Numbers</a>
         
       </div>
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
