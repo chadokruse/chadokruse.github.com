@@ -16,7 +16,7 @@ permalink: /resume/
         <ul class="pull-right">
           <li><strong>Email:</strong> {{ resume.basics.email }}</li>
           <li><strong>Phone:</strong> {{ resume.basics.phone }}</li>
-          <li><strong>Website:</strong> <a href="{{ resume.basics.website }}">{{ resume.basics.website | split: "https://" | last }}</a></li>
+          <li class="hidden-xs"><strong>Website:</strong> <a href="{{ resume.basics.website }}">{{ resume.basics.website | split: "https://" | last }}</a></li>
           <ul class="list-inline list-profiles">
             {% for profile in resume.basics.profiles %}
             <li>
