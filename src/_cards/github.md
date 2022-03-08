@@ -21,4 +21,4 @@ My popular repos include:
 
 </span>
 
-[Github Profile →](https://github.com/chadokruse)
+[Github profile →](https://github.com/chadokruse)
