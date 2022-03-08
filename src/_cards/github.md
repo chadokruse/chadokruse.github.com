@@ -4,7 +4,6 @@ image: octocat.jpg
 image_href: https://github.com/chadokruse
 header: Open Source
 tags:
-  - About
   - Developer
   - Product
 item_sort: 7

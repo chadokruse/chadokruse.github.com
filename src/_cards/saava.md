@@ -6,8 +6,8 @@ header: Saava.org
 tags:
   - Founder
   - Business Development
+  - The Art of Numbers
 item_sort: 12
 ---
-Saava was part experiment, part informal network of individual investors, foundations, lenders, and resource providers. Members explored investment opportunities in mission-related organizations, using the Saava website to collaborate with other like-minded investors.
+Saava.org was a sabbatical experiment I created, ultimately growing to 35 local, accredited investors. Members explored investment opportunities in mission-related organizations, from smart growth real estate funds to cleantech upstarts and non-profits developing earned-income streams. Our purpose: making money and making the world a better place shouldn't be mutually exclusive.
 
-I incubated and launched the project while on sabbatical, eventually reaching 35 local, accredited investors. The organization facilitated the review of over 60 Portland-based organizations seeking capital, from smart growth real estate funds to cleantech upstarts and non-profits developing earned-income streams.
