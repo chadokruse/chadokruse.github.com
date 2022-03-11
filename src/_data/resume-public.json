@@ -6,7 +6,7 @@
     "email": "[redacted]",
     "phone": "[redacted]",
     "website": "https://www.chadkruse.com",
-    "summary": "Seeking a full-stack software developer position that fully utilizes my past product and entrepreneurial experience. Fun to work with, forever curious, and driven to continue growing as a software engineer.",
+    "summary": "Seeking a full-stack software developer position that fully utilizes my product and entrepreneurial background. Five years of programming experience across the stack as a self-taught, solo founder. Fun to work with and forever curious.",
     "location": {
       "address": "[address protected]",
       "postalCode": "IL 60611",
@@ -231,6 +231,19 @@
       ],
       "category": "Other"
     }, {
+      "company": "Apple, Inc.",
+      "position": "Technical Specialist",
+      "website": "https://www.apple.com/",
+      "startDate": "2016-02-19",
+      "endDate": "2021-08-06",
+      "summary": "Weekend gig allowed me to focus on Grantmakers.io and learn Node.js nearly full-time. Market timing required bootstrapping, as it was too early to raise a seed round.",
+      "highlights": [
+        "Repaired customer relationships through one-on-one interactions with mobile users.",
+        "Required immense empathy and the ability to quickly troubleshoot and resolve complex issues.",
+        "Consistently one of the top performers in technical accuracy and customer satisfaction."
+      ],
+      "category": "Other"
+    }, {
       "company": "SmarterGiving",
       "position": "Founder, CEO",
       "website": "https://smartergiving.org/",
@@ -309,7 +322,7 @@
         "Jamstack, Jekyll",
         "Google Cloud Platform",
         "Bash, CI/CD, Data Pipelines",
-        "MongoDB, MongoDB Realm"        
+        "MongoDB, MongoDB Realm"
       ]
     }
   ],
@@ -336,17 +349,17 @@
     "overview": [
       {
         "role": "Developer",
-        "duration": "3-5 Yrs"
+        "duration": "5 Yrs"
+      }, {
+        "role": "Product / COO",
+        "duration": "4 Yrs"
+      }, {
+        "role": "Corporate Development",
+        "duration": "8 Yrs"
       }, {
         "role": "Consultant",
         "duration": "10 Yrs"
-      }, {
-        "role": "COO-for-Hire",
-        "duration": "5 Yrs"
-      },{
-        "role": "Corporate Development",
-        "duration": "8 Yrs"
-      } 
+      }
     ]
   }
 }
