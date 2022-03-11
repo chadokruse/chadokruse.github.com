@@ -131,6 +131,12 @@ hr {
   margin-bottom:50px;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*********************************************************************************/
 /* Fix Bootstrap Printing                                                        */
 /* Source: https://gist.github.com/donnierayjones/6fd9802d992b2d8d6cfd           */
