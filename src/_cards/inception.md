@@ -4,6 +4,7 @@ image: inception.jpg
 image_href: https://github.com/chadokruse/inception
 header: Hackers + Ideas = Effective Philanthropy
 tags:
+  - Developer
   - Weekend Hack
 item_sort: 14
 ---
