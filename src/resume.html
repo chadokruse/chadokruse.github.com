@@ -18,12 +18,12 @@ permalink: /resume/
           <li><strong>Phone:</strong> {{ resume.basics.phone }}</li>
           <li class="hidden-xs"><strong>Website:</strong> <a href="{{ resume.basics.website }}">{{ resume.basics.website | split: "https://" | last }}</a></li>
           <ul class="list-inline list-profiles">
-            {% for profile in resume.basics.profiles %}
+          {% for profile in resume.basics.profiles %}
             <li>
               <img src="/images/icons/{{ profile.network | downcase }}.svg" alt="{{ profile.network }}" width="14px" height="14px">
               <a href="{{ profile.url }}" data-print="{{ profile.url | split: 'https://' | last}}"">{{ profile.username }}</a>
             </li>
-            {% endfor %}
+          {% endfor %}
           </ul>
         </ul>
       </div>
@@ -120,10 +120,9 @@ permalink: /resume/
           <div class="col-xs-12">
             <p class="company-summary">{{ job.summary }}</p>
             <ul>
-              {% for highlight in job.highlights %}
-              <!-- TODO Capture url addresses and make clickable -->
+            {% for highlight in job.highlights %}
               <li>{{ highlight }}</li>
-              {% endfor %}
+            {% endfor %}
             </ul>
           </div>
         </div>
@@ -138,7 +137,7 @@ permalink: /resume/
       <h4 class="section-title"> Education </h4>
     </div>
     <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-0">
-      {% for each in resume.education %}
+    {% for each in resume.education %}
       <div class="row education-section">
         <div class="col-xs-10">
           <div class="school"> {{ each.institution }} </div>
@@ -150,7 +149,7 @@ permalink: /resume/
           </div>
         </div>
       </div>
-      {% endfor %}
+    {% endfor %}
     </div>
   </div>
   <hr />
@@ -162,15 +161,15 @@ permalink: /resume/
       <h4 class="section-title"> Interests </h4>
     </div>
     <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-0">
-      {% for each in resume.interests %} 
-        {% if forloop.first == true %}
-          {{ each.name | capitalize }};
-        {% elsif forloop.last == true %}
-          {{ each.name | downcase}}.
-        {% else %}
-          {{ each.name | downcase}};
-        {% endif %}
-      {% endfor %}
+    {% for each in resume.interests %} 
+      {% if forloop.first == true %}
+        {{ each.name | capitalize }};
+      {% elsif forloop.last == true %}
+        {{ each.name | downcase}}.
+      {% else %}
+        {{ each.name | downcase}};
+      {% endif %}
+    {% endfor %}
     </div>
   </div>
   {% endif %}
