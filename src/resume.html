@@ -1,6 +1,5 @@
 ---
 layout: resume
-title: Chad Kruse | Resume
 permalink: /resume/
 ---
 {% assign resume = resume-public %}
@@ -21,7 +20,7 @@ permalink: /resume/
           {% for profile in resume.basics.profiles %}
             <li>
               <img src="/images/icons/{{ profile.network | downcase }}.svg" alt="{{ profile.network }}" width="14px" height="14px">
-              <a href="{{ profile.url }}" data-print="{{ profile.url | split: 'https://' | last}}"">{{ profile.username }}</a>
+              <a href="{{ profile.url }}" data-print="{{ profile.url | split: 'https://' | last}}">{{ profile.username }}</a>
             </li>
           {% endfor %}
           </ul>

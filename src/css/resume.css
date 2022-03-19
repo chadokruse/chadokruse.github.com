@@ -147,6 +147,27 @@ hr {
 }
 
 /*********************************************************************************/
+/* Cover Letter                                                                  */
+/*********************************************************************************/
+
+#cover-letter {
+  margin-bottom: 50px;
+}
+
+#cover-letter-body {
+  margin-top: 50px;
+}
+
+.list-embedded > li {
+  margin-bottom: 10px;
+}
+
+.list-embedded > li span {
+  display: block;
+  margin-top: 5px;
+}
+
+/*********************************************************************************/
 /* Fix Bootstrap Printing                                                        */
 /* Source: https://gist.github.com/donnierayjones/6fd9802d992b2d8d6cfd           */
 /*********************************************************************************/
@@ -170,7 +191,7 @@ hr {
   .list-profiles a{
     content: attr(data-print);
   }
-  #interests {
+  #interests, #cover-letter {
     margin-bottom: 0;
   }
   

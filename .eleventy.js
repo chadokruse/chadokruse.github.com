@@ -7,6 +7,10 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByGlob('src/_cards/*.md');
   });
 
+  eleventyConfig.addCollection('coverLetters', function(collectionApi) {
+    return collectionApi.getFilteredByGlob('src/_cover_letters/*.md');
+  });
+
   // Make Liquid capable of rendering "partials"
   eleventyConfig.setLiquidOptions({
     dynamicPartials: false,
