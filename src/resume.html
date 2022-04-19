@@ -1,5 +1,6 @@
 ---
 layout: resume
+show-contact-info: false
 permalink: /resume/
 ---
 {% assign resume = resume-public %}
@@ -13,8 +14,13 @@ permalink: /resume/
       </div>
       <div class="col-xs-6 contact-info">
         <ul class="pull-right">
+        {% if show-contact-info %}
+          <li><strong>Email:</strong> {{ resume-private.basics.email }}</li>
+          <li><strong>Phone:</strong> {{ resume-private.basics.phone }}</li>
+        {% else %}
           <li><strong>Email:</strong> {{ resume.basics.email }}</li>
           <li><strong>Phone:</strong> {{ resume.basics.phone }}</li>
+        {% endif %}
           <li class="hidden-xs"><strong>Website:</strong> <a href="{{ resume.basics.website }}">{{ resume.basics.website | split: "https://" | last }}</a></li>
           <ul class="list-inline list-profiles">
           {% for profile in resume.basics.profiles %}
