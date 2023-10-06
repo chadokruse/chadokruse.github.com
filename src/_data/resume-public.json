@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Chad Kruse",
-    "label": "Software Developer",
+    "label": "Product Engineer",
     "picture": "http://www.chadkruse.com/images/avatar.jpg",
     "email": "[redacted]",
     "phone": "[redacted]",
     "website": "https://www.chadkruse.com",
-    "summary": "Full-stack software engineer with a unique background in product and corporate strategy. Five years of programming experience across the stack as a self-taught, solo founder. Fun to work with and forever curious.",
+    "summary": "A Full Stack Developer with a unique ability to bridge the gap between strategy, product, and development. As a Product Engineer, I leverage my skills to extract, interpret, and utilize consumer insights to build category-defining products. Empathy is a core personality trait of mine, not just a skill. Intensely curious.",
     "location": {
       "address": "[address protected]",
       "postalCode": "IL 60611",
@@ -44,6 +44,7 @@
         "Modeling",
         "Financial Analysis"
       ],
+      "careerStage": "early",
       "category": "Job"
     }, {
       "company": "SAIC",
@@ -62,6 +63,7 @@
         "Corporate VC",
         "Diligence"
       ],
+      "careerStage": "early",
       "category": "Job"
     }, {
       "company": "Intuit",
@@ -71,16 +73,16 @@
       "endDate": "2002-10-31",
       "summary": "Served as one of four dealmakers and corporate strategists for Intuit, the Fortune 500 consumer and SMB-focused technology company.",
       "highlights": [
-        "Explored new avenues for growth, cultivated internal innovation, prioritized opportunities, coordinated collaboration across functional units, drove internal buy-in, and led deal execution.",
-        "Developed investment theses across the build, buy, partner spectrum.",
-        "Recognized by CEO for my leadership in driving large, cross-functional teams of internal and external resources to quickly and efficiently close complicated and dynamic deals.",
-        "Led the company's first partnership with Paypal, which created $1B of value for Intuit."
+        "Successfully led the company's first partnership with Paypal, generating $100M of value creation.",
+        "Recognized for driving cross-functional teams and closing dynamic deals efficiently and effectively, earning praise from the CEO.",
+        "Proactively identified growth opportunities, prioritized them, and led internal collaboration, planning, and execution."
       ],
       "tags": [
         "Build-Buy-Partner",
         "Corporate Development",
         "Cross-Functional Teams"
       ],
+      "careerStage": "early",
       "category": "Job"
     }, {
       "company": "Sabbatical",
@@ -111,10 +113,11 @@
         "Financial Engineering",
         "Debt Fundraising"
       ],
+      "careerStage": "early",
       "category": "Job"
     }, {
-      "company": "Consulting",
-      "position": "Startup COO, Business Advisor & Strategist",
+      "company": "Early-Stage Startups",
+      "position": "COO, Product Lead & Strategist",
       "website": "http://www.chadkruse.com",
       "startDate": "2007-05-01",
       "endDate": "2015-03-31",
@@ -122,13 +125,14 @@
       "highlights": [
         "Served as product lead and COO for Forkfly, managing the launch of three web applications and two mobile platforms. Transitioned the company from single app to digital advertising platform, tripling the team from 4 to 12 and bringing the company to first revenues.",
         "Crafted and evangelized the platform strategy for innovative sensor startup GreenGoose resulting in a successful seven-figure fundraise.",
-        "Full interactive list of clients and projects available at www.chadkruse.com."
+        "Full interactive list of companies and projects available at www.chadkruse.com."
       ],
       "tags": [
         "Business Modeling",
         "Go-To-Market",
         "New Market Tax Credits"
       ],
+      "careerStage": "mid",
       "category": "Job"
     }, {
       "company": "NexionDG",
@@ -147,6 +151,7 @@
         "Go-To-Market",
         "New Market Tax Credits"
       ],
+      "careerStage": "mid",
       "category": "Advisor"
     }, {
       "company": "WiLD",
@@ -165,6 +170,7 @@
         "Story Telling",
         "ROI Analysis"
       ],
+      "careerStage": "mid",
       "category": "Advisor"
     }, {
       "company": "Bonanza",
@@ -178,6 +184,7 @@
         "Assessed new vertical growth opportunities through customer interviews and data mining.",
         "Lead early API evangelism efforts and managed the company's first ad campaign."
       ],
+      "careerStage": "mid",
       "category": "Advisor"
     }, {
       "company": "Forkfly",
@@ -196,6 +203,7 @@
         "Product",
         "Agile"
       ],
+      "careerStage": "mid",
       "category": "Advisor"
     }, {
       "company": "GreenGoose",
@@ -216,6 +224,7 @@
         "Hardware",
         "Go-To-Market"
       ],
+      "careerStage": "mid",
       "category": "Advisor"
     }, {
       "company": "10Speak",
@@ -229,6 +238,7 @@
         "Recruited A-list alpha customers including many prominent VCs.",
         "Responsible for overall product strategy, UI/UX, and the bulk of front-end development."
       ],
+      "careerStage": "mid",
       "category": "Other"
     }, {
       "company": "Apple, Inc.",
@@ -242,13 +252,14 @@
         "Required immense empathy and the ability to quickly troubleshoot and resolve complex issues.",
         "Consistently one of the top performers in customer satisfaction and technical accuracy."
       ],
+      "careerStage": "current",
       "category": "Other"
     }, {
       "company": "SmarterGiving",
       "position": "Founder, CEO",
       "website": "https://smartergiving.org/",
       "startDate": "2012-11-01",
-      "endDate": "",
+      "endDate": "2016-09-01",
       "summary": "Conceptualized, created, and launched SmarterGiving, a prototype studio focused on market opportunities across the \"charity stack\".",
       "highlights": [
         "Architected and developed robust data pipelines using bash, Node.js, AWS S3 SDK, and Google Cloud Platform.",
@@ -261,19 +272,19 @@
         "Rapid Prototyping",
         "MeteorJS"
       ],
+      "careerStage": "current",
       "category": "Job"
     }, {
       "company": "Grantmakers.io",
-      "position": "Creator",
+      "position": "Founder & Product Engineer",
       "website": "https://www.grantmakers.io/",
       "startDate": "2016-09-01",
       "endDate": "",
       "summary": "Grantmakers.io has grown into one of the largest free sources of searchable philanthropic data on the Internet. Built for purpose, not profit, the site makes a large, public IRS dataset useful to nonprofits.",
       "highlights": [
-        "Brought project to market as the sole founder and developer, owning the entire Software Development Life Cycle.",
-        "Innovative use of Jamstack and serverless technologies minimizes ongoing costs while maximizing the ability to deliver new dynamic features quickly and cost-effectively.",
-        "Extensive use of Algolia search API, using customer feedback and A/B testing to optimize the UX.",
-        "Evangelize the technology and explore business development deals with industry-leading organizations, earning recognition from world-renowned experts in the field."
+        "Successfully brought project to market as the sole founder and developer, utilizing lean-startup principles from ideation to ongoing maintenance.",
+        "Utilized modern web development technologies, including JAMstack and serverless, to achieve unexpected time to market and earn recognition from world-renowned foundations and experts.",
+        "Optimized user experience through extensive use of Algolia search API, incorporating customer feedback and A/B testing."
       ],
       "tags": [
         "Developer",
@@ -281,6 +292,28 @@
         "Rapid Prototyping",
         "Node.js"
       ],
+      "careerStage": "current",
+      "category": "Job"
+    }, {
+      "company": "Kimberly-Clark",
+      "position": "Full Stack Developer - Global Digital Innovation",
+      "website": "https://www.kimberly-clark.com/",
+      "startDate": "2022-05-30", 
+      "endDate": "2023-08-04",
+      "summary": "Part of a small, nimble team responsible for digital innovation opportunities across Kimberly-Clark, the Fortune 150 company best known for its global consumer brands including Huggies and Kleenex used daily by 25% of the world's population.",
+      "highlights": [
+        "Built prototypes showcasing the art of the possible.",
+        "Collaborated with diverse, global teams to translate ideas into reality.",
+        "Championed the Voice of the Customer (VoC) perspective in innovation engineering efforts, contributing to a 6x boost in conversions for a React/Typescript/Tailwind-based project.",
+        "Advocated for a fresh perspective on the company’s prototype stack, demonstrating a time to market reduction from 12 weeks to just a few hours."
+      ],
+      "tags": [
+        "Developer",
+        "Product",
+        "Rapid Prototyping",
+        "Node.js"
+      ],
+      "careerStage": "current",
       "category": "Job"
     }
   ],
@@ -317,10 +350,10 @@
       "name": "Technical",
       "level": "Practitioner",
       "keywords": [
-        "JavaScript, Node.js, Vue.js",
-        "Materialize, Tailwind, SCSS",
-        "Jamstack, Jekyll",
-        "Google Cloud Platform",
+        "Typescript, Node.js, React/Vue/Vanilla",
+        "Tailwind, Figma",
+        "JAMstack, MACH, Composable Architectures",
+        "Google Cloud Platform, Azure",
         "Bash, CI/CD, Data Pipelines",
         "MongoDB, MongoDB Realm"
       ]
@@ -337,7 +370,10 @@
         "Charity Stack",
         "Philanthrotech"
       ]
-    }, {
+    }
+  ],
+  "interests-deprecated": [
+    {
       "name": "Active open source contributor",
       "keywords": [
         "FOSS",
@@ -349,7 +385,7 @@
     "overview": [
       {
         "role": "Developer",
-        "duration": "5 Yrs"
+        "duration": "6 Yrs"
       }, {
         "role": "Product / COO",
         "duration": "4 Yrs"
