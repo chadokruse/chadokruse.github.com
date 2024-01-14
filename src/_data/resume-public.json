@@ -19,7 +19,8 @@
         "network": "Github",
         "username": "chadokruse",
         "url": "https://github.com/chadokruse"
-      }, {
+      },
+      {
         "network": "LinkedIn",
         "username": "chadokruse",
         "url": "https://www.linkedin.com/in/chadokruse"
@@ -46,7 +47,8 @@
       ],
       "careerStage": "early",
       "category": "Job"
-    }, {
+    },
+    {
       "company": "SAIC",
       "position": "Senior Associate - Acquisitions and Strategic Ventures",
       "website": "http://www.saic.com/",
@@ -65,7 +67,8 @@
       ],
       "careerStage": "early",
       "category": "Job"
-    }, {
+    },
+    {
       "company": "Intuit",
       "position": "Senior Manager - Corporate & New Market Development",
       "website": "http://www.intuit.com",
@@ -84,19 +87,21 @@
       ],
       "careerStage": "early",
       "category": "Job"
-    }, {
+    },
+    {
       "company": "Sabbatical",
       "position": "",
       "website": "",
       "startDate": "2002-11-01",
       "endDate": "2005-06-30",
-      "summary": "Traveled the world and launched Saava.org, a localized, online angel investing network focused on mission-related opportunties (e.g. nonprofits developing for-profit income streams). Ultimately grew the network to 35 accredited investor members, presenting over 60 deals to the community.",
+      "summary": "Traveled the world and launched Saava.org, a localized, online angel investing network focused on mission-related opportunities (e.g. nonprofits developing for-profit income streams). Ultimately grew the network to 35 accredited investor members, presenting over 60 deals to the community.",
       "highlights": [
         "Venture Philanthropy",
         "World Travel"
       ],
       "category": "Other"
-    }, {
+    },
+    {
       "company": "Riverlake Partners",
       "position": "Senior Associate",
       "website": "http://www.riverlakepartners.com/",
@@ -115,7 +120,8 @@
       ],
       "careerStage": "early",
       "category": "Job"
-    }, {
+    },
+    {
       "company": "Early-Stage Startups",
       "position": "COO, Product Lead & Strategist",
       "website": "http://www.chadkruse.com",
@@ -134,7 +140,8 @@
       ],
       "careerStage": "mid",
       "category": "Job"
-    }, {
+    },
+    {
       "company": "NexionDG",
       "position": "Director, Strategy & Finance",
       "website": "http://green.blogs.nytimes.com//2009/01/26/old-turbines-get-a-second-wind-through-remanufacturing/",
@@ -153,7 +160,8 @@
       ],
       "careerStage": "mid",
       "category": "Advisor"
-    }, {
+    },
+    {
       "company": "WiLD",
       "position": "VP, Corporate Development & Finance",
       "website": "",
@@ -163,7 +171,7 @@
       "highlights": [
         "Brought focus to the company's historical activities, allowing for drastically improved upside with far less overhead.",
         "Identified and hired nationally-recognized legal counsel to develop the fund's Confidential Information Memorandum.",
-        "Lead all corporate development, finance, and fundraising activites, from assessing project ROI to pitching institutional investment partners."
+        "Lead all corporate development, finance, and fundraising activities, from assessing project ROI to pitching institutional investment partners."
       ],
       "tags": [
         "Go-To-Market",
@@ -172,7 +180,8 @@
       ],
       "careerStage": "mid",
       "category": "Advisor"
-    }, {
+    },
+    {
       "company": "Bonanza",
       "position": "Consultant",
       "website": "http://www.bonanza.com/",
@@ -186,7 +195,8 @@
       ],
       "careerStage": "mid",
       "category": "Advisor"
-    }, {
+    },
+    {
       "company": "Forkfly",
       "position": "Chief Operating Officer",
       "website": "https://pando.com/2013/02/19/forkfly-partners-with-the-seattle-times-flips-daily-deals-model-on-its-head/",
@@ -205,7 +215,8 @@
       ],
       "careerStage": "mid",
       "category": "Advisor"
-    }, {
+    },
+    {
       "company": "GreenGoose",
       "position": "Chief Operating Officer",
       "website": "http://radar.oreilly.com/2011/12/stickers-as-sensors.html",
@@ -226,7 +237,8 @@
       ],
       "careerStage": "mid",
       "category": "Advisor"
-    }, {
+    },
+    {
       "company": "10Speak",
       "position": "Founder, CEO",
       "website": "http://www.chadkruse.com/10speak/",
@@ -240,7 +252,8 @@
       ],
       "careerStage": "mid",
       "category": "Other"
-    }, {
+    },
+    {
       "company": "Apple, Inc.",
       "position": "Technical Specialist",
       "website": "https://www.apple.com/",
@@ -254,7 +267,8 @@
       ],
       "careerStage": "current",
       "category": "Other"
-    }, {
+    },
+    {
       "company": "SmarterGiving",
       "position": "Founder, CEO",
       "website": "https://smartergiving.org/",
@@ -274,12 +288,13 @@
       ],
       "careerStage": "current",
       "category": "Job"
-    }, {
+    },
+    {
       "company": "Grantmakers.io",
       "position": "Founder & Product Engineer",
       "website": "https://www.grantmakers.io/",
       "startDate": "2016-09-01",
-      "endDate": "",
+      "endDate": "2022-04-30",
       "summary": "Grantmakers.io has grown into one of the largest free sources of searchable philanthropic data on the Internet. Built for purpose, not profit, the site makes a large, public IRS dataset useful to nonprofits.",
       "highlights": [
         "Successfully brought project to market as the sole founder and developer, utilizing lean-startup principles from ideation to ongoing maintenance.",
@@ -294,13 +309,14 @@
       ],
       "careerStage": "current",
       "category": "Job"
-    }, {
+    },
+    {
       "company": "Kimberly-Clark",
       "position": "Full Stack Developer - Global Digital Innovation",
       "website": "https://www.kimberly-clark.com/",
-      "startDate": "2022-05-30", 
+      "startDate": "2022-05-30",
       "endDate": "2023-08-04",
-      "summary": "Part of a small, nimble team responsible for digital innovation opportunities across Kimberly-Clark, the Fortune 150 company best known for its global consumer brands including Huggies and Kleenex used daily by 25% of the world's population.",
+      "summary": "Part of a small, agile team responsible for digital innovation opportunities across Kimberly-Clark, the Fortune 150 company best known for its global consumer brands including Huggies and Kleenex.",
       "highlights": [
         "Built prototypes showcasing the art of the possible.",
         "Collaborated with diverse, global teams to translate ideas into reality.",
@@ -315,16 +331,39 @@
       ],
       "careerStage": "current",
       "category": "Job"
+    },
+    {
+      "company": "Grantmakers.io",
+      "position": "Founder & Product Engineer",
+      "website": "https://www.grantmakers.io/",
+      "startDate": "2023-09-01",
+      "endDate": "",
+      "summary": "I took a sabbatical from a full-time software engineering role to modernize Grantmakers.io, a popular philanthropic endeavor I founded 7 years ago.",
+      "highlights": [
+        "Transitioned from a static Jekyll site developed with vanilla JavaScript, to a dynamic, modern web application using Typescript and Svelte.",
+        "Designed an event-driven architecture for the ETL pipeline and refactored legacy components, using Node.js, Bash, and Typescript.",
+        "Applied my product experience to convert user feedback and analytics into innovative 0-1 features, experimenting with new AI APIs, services, and LLM platforms to develop promising proofs of concept (POCs)."
+      ],
+      "tags": [
+        "Developer",
+        "Product",
+        "Rapid Prototyping",
+        "Node.js"
+      ],
+      "careerStage": "current",
+      "category": "Job"
     }
   ],
-  "education": [{
-    "institution": "University of Iowa",
-    "area": "Finance",
-    "studyType": "Bachelor of Business Administration",
-    "startDate": "1993-08-01",
-    "endDate": "1996-12-31",
-    "gpa": ""
-  }],
+  "education": [
+    {
+      "institution": "University of Iowa",
+      "area": "Finance",
+      "studyType": "Bachelor of Business Administration",
+      "startDate": "1993-08-01",
+      "endDate": "1996-12-31",
+      "gpa": ""
+    }
+  ],
   "skills": [
     {
       "name": "Strategy",
@@ -335,8 +374,9 @@
         "Market Research",
         "Customer Interviews",
         "Opportunity Assessments"
-        ]
-    }, {
+      ]
+    },
+    {
       "name": "Product",
       "level": "Master",
       "keywords": [
@@ -346,7 +386,8 @@
         "Data & Analytics",
         "Github Workflow"
       ]
-    }, {
+    },
+    {
       "name": "Technical",
       "level": "Practitioner",
       "keywords": [
@@ -359,10 +400,12 @@
       ]
     }
   ],
-  "languages": [{
-    "language": "English",
-    "fluency": "Native speaker"
-  }],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
   "interests": [
     {
       "name": "Intersection of philanthropy and technology",
@@ -386,13 +429,16 @@
       {
         "role": "Developer",
         "duration": "6 Yrs"
-      }, {
+      },
+      {
         "role": "Product / COO",
         "duration": "4 Yrs"
-      }, {
+      },
+      {
         "role": "Corporate Development",
         "duration": "8 Yrs"
-      }, {
+      },
+      {
         "role": "Consultant",
         "duration": "10 Yrs"
       }

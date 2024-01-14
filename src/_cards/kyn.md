@@ -7,7 +7,7 @@ tags:
   - Founder
   - Product
   - Developer
-item_sort: 3
+item_sort: 5
 ---
 You shouldn't need to recreate the infrastructure of the Gates Foundation to be an effective philanthropist. 
 

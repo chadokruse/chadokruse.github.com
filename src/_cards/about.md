@@ -1,14 +1,15 @@
 ---
 name: About
 image: chicago.png
-image_href: 
+image_href:
 header: About Me
 tags:
   - About
 item_sort: 0
 ---
-Before launching my own ventures and teaching myself to code, I was often brought on as the first "business hire" at startups of all shapes and sizes. I've built web applications, run development teams, owned product strategy, raised venture, seed, debt, and philanthropic capital, and closed business development deals with companies both large and small. I'm a generalist through and through.
+
+I’m a Product Engineer and Full Stack Developer with a unique ability to bridge the gap between strategy, product, and development. I’ve worked at numerous early-stage startups, founded some of my own, and understand innovation at scale thanks to my time at four different Fortune 500 companies.
 
 My career started as a strategist and dealmaker for large tech companies.
 
-My head is in SF, my heart is in Bend, Oregon, and my body is currently in Chicago.
+I'm currently on sabbatical to modernize [Grantmakers.io](http://Grantmakers.io), a passion project that continues to save nonprofits hundreds of thousands of dollars a year.

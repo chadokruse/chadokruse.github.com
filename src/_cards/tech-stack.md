@@ -7,12 +7,13 @@ tags:
   - Developer
 item_sort: 3
 ---
+
 <span>
 
 **JavaScript** remains my primary language.
 
-I'm best known as a [Jamstack](https://jamstack.org/what-is-jamstack/) developer for my work on Grantmakers.io, which pushes the boundaries of [Jekyll](https://jekyllrb.com/), a static site generator.
+NodeJS on the backend, Tailwind for styling, and MongoDB for document stores. I'm frontend framework agnostic, having worked with React, Vue, and Svelte, grounded in a solid foundation of vanilla JS.
 
-The site uses [Vue.js](https://vuejs.org/) and [MongoDB Realm](https://www.mongodb.com/realm) for its dynamic components and [Google Cloud Platform](https://cloud.google.com/) and [Node.js](https://nodejs.org/) for the upstream data pipelines.
+The bulk of my cloud experience is with GCP, I dip into AWS when needed, and have worked with Azure professionally. I am currently most intrigued by Cloudflare's services, especially Workers, R2, and Workers AI.
 
 </span>
