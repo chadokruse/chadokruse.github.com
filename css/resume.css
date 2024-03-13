@@ -158,6 +158,10 @@ hr {
   margin-top: 50px;
 }
 
+#cover-letter p, #cover-letter ul {
+  margin-bottom: 20px;
+}
+
 .list-embedded > li {
   margin-bottom: 10px;
 }
