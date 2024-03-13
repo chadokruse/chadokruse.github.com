@@ -1,14 +1,14 @@
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   // Create cards collection
   // Note: See the _cards/11tydata .js file in the _cards directory
   // Current best practice appears to be setting 'permalink: false' there
   // Yet, having settings for that collection in two places feels strange
-  eleventyConfig.addCollection('cards', function(collectionApi) {
+  eleventyConfig.addCollection('cards', function (collectionApi) {
     return collectionApi.getFilteredByGlob('src/_cards/*.md');
   });
 
-  eleventyConfig.addCollection('coverLetters', function(collectionApi) {
-    return collectionApi.getFilteredByGlob('src/_cover_letters/*.md');
+  eleventyConfig.addCollection('coverLetters', function (collectionApi) {
+    return collectionApi.getFilteredByGlob('src/cover-letters/*.md');
   });
 
   // Make Liquid capable of rendering "partials"
@@ -17,9 +17,8 @@ module.exports = function(eleventyConfig) {
   });
 
   // Passthrough static items
-  // eleventyConfig.addPassthroughCopy({ './node_modules/flowbite/dist/flowbite.js': './js/flowbite.js' });
   eleventyConfig.addPassthroughCopy({ './src/css/resume.css': './css/resume.css' });
-  eleventyConfig.addPassthroughCopy({ './src/static': '.'});
+  eleventyConfig.addPassthroughCopy({ './src/static': '.' });
   eleventyConfig.addPassthroughCopy('./src/images');
   eleventyConfig.addPassthroughCopy('./src/js');
 

@@ -5,5 +5,5 @@ node_modules/
 # Project-specific files
 .DS_Store
 src/_data/resume-private.json
-src/_cover_letters/*
-!src/_cover_letters/example.md
+src/cover-letters/*
+!src/cover-letters/example.md
