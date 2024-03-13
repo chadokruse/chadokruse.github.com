@@ -391,10 +391,10 @@
       "name": "Technical",
       "level": "Practitioner",
       "keywords": [
-        "Typescript, Node.js, React/Vue/Vanilla",
+        "Typescript, Node.js, React/Svelte/Vanilla",
         "Tailwind, Figma",
-        "JAMstack, MACH, Composable Architectures",
-        "Google Cloud Platform, Azure",
+        "Composable Architectures, MACH, JAMstack",
+        "Google Cloud Platform, Cloudflare Workers",
         "Bash, CI/CD, Data Pipelines",
         "MongoDB, MongoDB Realm"
       ]
