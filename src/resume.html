@@ -14,21 +14,24 @@ permalink: /resume/
       </div>
       <div class="col-xs-6 contact-info">
         <ul class="pull-right">
-        {% if show-contact-info %}
+          {% if show-contact-info %}
           <li><strong>Email:</strong> {{ resume-private.basics.email }}</li>
           <li><strong>Phone:</strong> {{ resume-private.basics.phone }}</li>
-        {% else %}
+          {% else %}
           <li><strong>Email:</strong> {{ resume.basics.email }}</li>
           <li><strong>Phone:</strong> {{ resume.basics.phone }}</li>
-        {% endif %}
-          <li class="hidden-xs"><strong>Website:</strong> <a href="{{ resume.basics.website }}">{{ resume.basics.website | split: "https://" | last }}</a></li>
+          {% endif %}
+          <li class="hidden-xs"><strong>Website:</strong> <a href="{{ resume.basics.website }}">{{ resume.basics.website
+              | split: "https://" | last }}</a></li>
           <ul class="list-inline list-profiles">
-          {% for profile in resume.basics.profiles %}
+            {% for profile in resume.basics.profiles %}
             <li>
-              <img src="/images/icons/{{ profile.network | downcase }}.svg" alt="{{ profile.network }}" width="14px" height="14px">
-              <a href="{{ profile.url }}" data-print="{{ profile.url | split: 'https://' | last}}">{{ profile.username }}</a>
+              <img src="/images/icons/{{ profile.network | downcase }}.svg" alt="{{ profile.network }}" width="14px"
+                height="14px">
+              <a href="{{ profile.url }}" data-print="{{ profile.url | split: 'https://' | last}}">{{ profile.username
+                }}</a>
             </li>
-          {% endfor %}
+            {% endfor %}
           </ul>
         </ul>
       </div>
@@ -58,41 +61,42 @@ permalink: /resume/
     <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-0">
       {% for job in jobs reversed %}
       {% unless job.company == "Riverlake Partners" %}
-        <div class="row">
+      <div class="row">
       {% else %}
-        <div class="row"> <!-- Add class .pagebreak to force page break when printing`-->
+      <div class="row"> <!-- Add class .pagebreak to force page break when printing`-->
       {% endunless %}
-          <div class="col-xs-12 col-sm-6">
-            <div class="company"> {{ job.company }} </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="company"> {{ job.company }} </div>
+        </div>
+        <div class="hidden-xs col-sm-6">
+          <div class="company-date pull-right text-right">
+            <span>{{ job.startDate | date: "%b, %Y" }}</span>
+            <span>{% if job.endDate == "" %}- Present{% else %}- {{ job.endDate | date: "%b, %Y" }}{% endif %}</span>
           </div>
-          <div class="hidden-xs col-sm-6">
-            <div class="company-date pull-right text-right">
-              <span>{{ job.startDate | date: "%b, %Y" }}</span>
-              <span>{% if job.endDate == "" %}- Present{% else %}- {{ job.endDate | date: "%b, %Y" }}{% endif %}</span>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="company-position">{{ job.position }}</div>
-          </div>
-          <div class="hidden col-xs-12 visible-xs-block italic">
-            <div class="company-date hidden-print">
-              <em>
+        </div>
+        <div class="col-xs-12">
+          <div class="company-position">{{ job.position }}</div>
+        </div>
+        <div class="hidden col-xs-12 visible-xs-block italic">
+          <div class="company-date hidden-print">
+            <em>
               <span>({{ job.startDate | date: "%b, %Y" }}</span>
-              <span>{% if job.endDate == "" %}- Present{% else %}- {{ job.endDate | date: "%b, %Y" }}{% endif %})</span>
+              <span>{% if job.endDate == "" %}- Present{% else %}- {{ job.endDate | date: "%b, %Y" }}{% endif
+                %})</span>
             </em>
-            </div>
           </div>
         </div>
-        <div class="row company-description">
-          <div class="col-xs-12">
-            <p class="company-summary">{{ job.summary }}</p>
-            <ul>
+      </div>
+      <div class="row company-description">
+        <div class="col-xs-12">
+          <p class="company-summary">{{ job.summary }}</p>
+          <ul>
             {% for highlight in job.highlights %}
-              <li>{{ highlight }}</li>
+            <li>{{ highlight }}</li>
             {% endfor %}
-            </ul>
-          </div>
+          </ul>
         </div>
+      </div>
       {% endfor %}
     </div>
     <div class="col-xs-12 col-sm-2">
@@ -101,41 +105,43 @@ permalink: /resume/
     <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-0">
       {% for job in jobsMid reversed %}
       {% unless job.company == "Riverlake Partners" %}
-        <div class="row">
+      <div class="row">
       {% else %}
-        <div class="row"> <!-- Add class .pagebreak to force page break when printing`-->
+      <div class="row"> <!-- Add class .pagebreak to force page break when printing`-->
       {% endunless %}
-          <div class="col-xs-12 col-sm-6">
-            <div class="company"> {{ job.company }} </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="company"> {{ job.company }} </div>
+        </div>
+        <div class="hidden-xs col-sm-6">
+          <div class="company-date pull-right text-right">
+            <span>{{ job.startDate | date: "%b, %Y" }}</span>
+            <span>{% if job.endDate == "" %}- Present{% else %}- {{ job.endDate | date: "%b, %Y" }}{% endif
+              %}</span>
           </div>
-          <div class="hidden-xs col-sm-6">
-            <div class="company-date pull-right text-right">
-              <span>{{ job.startDate | date: "%b, %Y" }}</span>
-              <span>{% if job.endDate == "" %}- Present{% else %}- {{ job.endDate | date: "%b, %Y" }}{% endif %}</span>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="company-position">{{ job.position }}</div>
-          </div>
-          <div class="hidden col-xs-12 visible-xs-block italic">
-            <div class="company-date hidden-print">
-              <em>
+        </div>
+        <div class="col-xs-12">
+          <div class="company-position">{{ job.position }}</div>
+        </div>
+        <div class="hidden col-xs-12 visible-xs-block italic">
+          <div class="company-date hidden-print">
+            <em>
               <span>({{ job.startDate | date: "%b, %Y" }}</span>
-              <span>{% if job.endDate == "" %}- Present{% else %}- {{ job.endDate | date: "%b, %Y" }}{% endif %})</span>
+              <span>{% if job.endDate == "" %}- Present{% else %}- {{ job.endDate | date: "%b, %Y" }}{% endif
+                %})</span>
             </em>
-            </div>
           </div>
         </div>
-        <div class="row company-description">
-          <div class="col-xs-12">
-            <p class="company-summary">{{ job.summary }}</p>
-            <ul>
+      </div>
+      <div class="row company-description">
+        <div class="col-xs-12">
+          <p class="company-summary">{{ job.summary }}</p>
+          <ul>
             {% for highlight in job.highlights %}
-              <li>{{ highlight }}</li>
+            <li>{{ highlight }}</li>
             {% endfor %}
-            </ul>
-          </div>
+          </ul>
         </div>
+      </div>
       {% endfor %}
     </div>
     <div class="col-xs-12 col-sm-2" style="height: 200px;">
@@ -144,39 +150,41 @@ permalink: /resume/
     <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-0">
       {% for job in jobsEarly reversed %}
       {% unless job.company == "Riverlake Partners" or job.company == "Columbia Financial Advisors" %}
-        <div class="row">
-          <div class="col-xs-12 col-sm-6">
-            <div class="company"> {{ job.company }} </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="company"> {{ job.company }} </div>
+        </div>
+        <div class="hidden-xs col-sm-6">
+          <div class="company-date pull-right text-right">
+            <span>{{ job.startDate | date: "%b, %Y" }}</span>
+            <span>{% if job.endDate == "" %}- Present{% else %}- {{ job.endDate | date: "%b, %Y" }}{% endif
+              %}</span>
           </div>
-          <div class="hidden-xs col-sm-6">
-            <div class="company-date pull-right text-right">
-              <span>{{ job.startDate | date: "%b, %Y" }}</span>
-              <span>{% if job.endDate == "" %}- Present{% else %}- {{ job.endDate | date: "%b, %Y" }}{% endif %}</span>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="company-position">{{ job.position }}</div>
-          </div>
-          <div class="hidden col-xs-12 visible-xs-block italic">
-            <div class="company-date hidden-print">
-              <em>
+        </div>
+        <div class="col-xs-12">
+          <div class="company-position">{{ job.position }}</div>
+        </div>
+        <div class="hidden col-xs-12 visible-xs-block italic">
+          <div class="company-date hidden-print">
+            <em>
               <span>({{ job.startDate | date: "%b, %Y" }}</span>
-              <span>{% if job.endDate == "" %}- Present{% else %}- {{ job.endDate | date: "%b, %Y" }}{% endif %})</span>
+              <span>{% if job.endDate == "" %}- Present{% else %}- {{ job.endDate | date: "%b, %Y" }}{% endif
+                %})</span>
             </em>
-            </div>
           </div>
         </div>
-        <div class="row company-description">
-          <div class="col-xs-12">
-            <p class="company-summary">{{ job.summary }}</p>
-            <ul>
+      </div>
+      <div class="row company-description">
+        <div class="col-xs-12">
+          <p class="company-summary">{{ job.summary }}</p>
+          <ul>
             {% for highlight in job.highlights %}
-              <li>{{ highlight }}</li>
+            <li>{{ highlight }}</li>
             {% endfor %}
-            </ul>
-          </div>
+          </ul>
         </div>
-        {% endunless %}
+      </div>
+      {% endunless %}
       {% endfor %}
       Full early career history available at chadkruse.com.
     </div>
@@ -190,28 +198,28 @@ permalink: /resume/
     </div>
     <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-0">
       <div class="row row-flex-stretch">
-      {% for skill in resume.skills reversed %}
+        {% for skill in resume.skills reversed %}
         <div class="col-xs-12 col-flex-stretch">
-        {% if skill.name == 'Strategy' %}
+          {% if skill.name == 'Strategy' %}
           <span class="hidden-sm hidden-md hidden-lg">Full list available in printed resume.</span>
           <div class="skill hidden-xs">{{ skill.name }}</div>
           <hr class="skills-hr hidden-xs">
           <ul class="hidden-xs">
-          {% for keyword in skill.keywords %}
+            {% for keyword in skill.keywords %}
             <li>{{ keyword }}</li>
-          {% endfor %}
+            {% endfor %}
           </ul>
-        {% else %}
+          {% else %}
           <div class="skill">{{ skill.name }}</div>
           <hr class="skills-hr">
           <ul>
-          {% for keyword in skill.keywords %}
+            {% for keyword in skill.keywords %}
             <li>{{ keyword }}</li>
-          {% endfor %}
+            {% endfor %}
           </ul>
-        {% endif %}
+          {% endif %}
         </div>
-      {% endfor %}
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -223,7 +231,7 @@ permalink: /resume/
       <h4 class="section-title"> Education </h4>
     </div>
     <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-0">
-    {% for each in resume.education %}
+      {% for each in resume.education %}
       <div class="row education-section">
         <div class="col-xs-10">
           <div class="school"> {{ each.institution }} </div>
@@ -235,7 +243,7 @@ permalink: /resume/
           </div>
         </div>
       </div>
-    {% endfor %}
+      {% endfor %}
     </div>
   </div>
   <hr />
@@ -247,15 +255,15 @@ permalink: /resume/
       <h4 class="section-title"> Interests </h4>
     </div>
     <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-0">
-    {% for each in resume.interests %} 
+      {% for each in resume.interests %}
       {% if forloop.first == true %}
-        {{ each.name | capitalize }}
+      {{ each.name | capitalize }}
       {% elsif forloop.last == true %}
-        {{ each.name | downcase}}.
+      {{ each.name | downcase}}.
       {% else %}
-        {{ each.name | downcase}};
+      {{ each.name | downcase}};
       {% endif %}
-    {% endfor %}
+      {% endfor %}
     </div>
   </div>
   {% endif %}

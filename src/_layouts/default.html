@@ -25,10 +25,12 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
   <!-- JS -->
+  {% if page.url == "/" %}
   <script defer type="text/javascript" src="/js/imagesloaded.pkgd.min.js"></script>
   <script defer type="text/javascript" src="/js/isotope.pkgd.min.js"></script>
   <script defer type="text/javascript" src="/js/packery-mode.pkgd.min.js"></script>
   <script defer type="text/javascript" src="/js/main.js"></script>
+  {% endif %}
 
   <!-- Google Analytics -->
   <script>

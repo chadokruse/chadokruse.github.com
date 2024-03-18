@@ -8,13 +8,16 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection('coverLetters', function (collectionApi) {
-    return collectionApi.getFilteredByGlob('src/cover-letters/*.md');
+    return collectionApi.getFilteredByGlob('./src/_cover-letters/*.md');
   });
 
   // Make Liquid capable of rendering "partials"
   eleventyConfig.setLiquidOptions({
     dynamicPartials: false,
   });
+
+  // Explicity use .eleventyignore, not .gitignore
+  eleventyConfig.setUseGitIgnore(false);
 
   // Passthrough static items
   eleventyConfig.addPassthroughCopy({ './src/css/resume.css': './css/resume.css' });

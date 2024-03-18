@@ -1,2 +1,9 @@
+# By default, 11ty ignores paths in .gitignore
+# However, we override this in .eleventy.js
+# Thus, we need to add back certain defaults
+dist/
+node_modules/
+
+# Ignore specific paths
 README.md
 CNAME
