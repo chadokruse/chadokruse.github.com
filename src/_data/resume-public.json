@@ -340,7 +340,7 @@
       "endDate": "",
       "summary": "I took a sabbatical from a full-time software engineering role to modernize Grantmakers.io, a popular philanthropic endeavor I founded 7 years ago.",
       "highlights": [
-        "Transitioned from a static Jekyll site developed with vanilla JavaScript, to a dynamic, modern web application using Typescript and Svelte.",
+        "Transformed the original Jekyll site, developed with vanilla JavaScript, into a dynamic, modern web application using Typescript, Svelte, SvelteKit, and Tailwind CSS.",
         "Designed an event-driven architecture for the ETL pipeline and refactored legacy components, using Node.js, Bash, and Typescript.",
         "Applied my product experience to convert user feedback and analytics into innovative 0-1 features, experimenting with new AI APIs, services, and LLM platforms to develop promising proofs of concept (POCs)."
       ],

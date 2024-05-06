@@ -2,10 +2,10 @@
 name: kimberly-clark
 image: kc.png
 image_href: https://careers.kimberly-clark.com/en/search#q=innovation&sort=relevancy
-header: Innovation at Scale
+header: Innovation Engineering at Scale
 tags:
   - Developer
-item_sort: 1.5
+item_sort: 3
 ---
 
 Great experience on a small, agile software engineering team responsible for digital innovation opportunities across Kimberly-Clark.

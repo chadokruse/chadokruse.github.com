@@ -2,7 +2,7 @@
 name: grantmakers
 image: grantmakers_reduced.png
 image_href: https://www.grantmakers.io
-header: Creator
+header: Founder
 tags:
   - Founder
   - Product
