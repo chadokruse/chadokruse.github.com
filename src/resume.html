@@ -1,6 +1,6 @@
 ---
 layout: resume
-show-contact-info: false
+show-contact-info: true
 permalink: /resume/
 ---
 {% assign resume = resume-public %}
@@ -99,7 +99,8 @@ permalink: /resume/
       </div>
       {% endfor %}
     </div>
-    <div class="col-xs-12 col-sm-2">
+    {% comment %} Mid-career header {% endcomment %}
+    <div class="col-xs-12 col-sm-2" style="break-before:page">
       <h4 class="section-title"> Mid Career</h4>
     </div>
     <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-0">
