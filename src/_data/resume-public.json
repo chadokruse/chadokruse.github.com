@@ -6,7 +6,7 @@
     "email": "[redacted]",
     "phone": "[redacted]",
     "website": "https://www.chadkruse.com",
-    "summary": "A Full Stack Developer with a unique ability to bridge the gap between strategy, product, and development. As a Product Engineer, I leverage my skills to extract, interpret, and utilize consumer insights to build category-defining products. Empathy is a core personality trait of mine, not just a skill. Intensely curious.",
+    "summary": "An experienced Full Stack Developer with a proven track record of bringing ambitious 0-1 ideas to market. As a Product Engineer, I lean frontend, but have demonstrated experience across the stack. My early career experience in product and corporate strategy allows me to be an immediate force multiplier. A natural collaborator - fun to work with and intensely curious.",
     "location": {
       "address": "[address protected]",
       "postalCode": "IL 60611",
@@ -272,11 +272,11 @@
       "company": "SmarterGiving",
       "position": "Founder, CEO",
       "website": "https://smartergiving.org/",
-      "startDate": "2012-11-01",
-      "endDate": "2016-09-01",
+      "startDate": "2012-10-01",
+      "endDate": "2022-04-01",
       "summary": "Conceptualized, created, and launched SmarterGiving, a prototype studio focused on market opportunities across the \"charity stack\".",
       "highlights": [
-        "Architected and developed robust data pipelines using bash, Node.js, AWS S3 SDK, and Google Cloud Platform.",
+        "Architected and developed data pipelines using bash, Node.js, AWS S3 SDK, and Google Cloud Platform.",
         "Leveraged and explored various machine learning (ML) and natural language processing (NLP) APIs to bring advanced classification algorithms in-house.",
         "Drove multiple products from concept to launch using agile and lean startup principles."
       ],
@@ -308,7 +308,7 @@
         "Node.js"
       ],
       "careerStage": "current",
-      "category": "Job"
+      "category": "Other"
     },
     {
       "company": "Kimberly-Clark",
@@ -340,9 +340,10 @@
       "endDate": "",
       "summary": "I took a sabbatical from a full-time software engineering role to modernize Grantmakers.io, a popular philanthropic endeavor I founded 7 years ago.",
       "highlights": [
-        "Transformed the original Jekyll site, developed with vanilla JavaScript, into a dynamic, modern web application using Typescript, Svelte, SvelteKit, and Tailwind CSS.",
+        "Transformed the v1 static site developed with vanilla JavaScript to a dynamic, modern web application using Typescript, Svelte, SvelteKit, Tailwind CSS, and Cloudflare Workers.",
         "Designed an event-driven architecture for the ETL pipeline and refactored legacy components, using Node.js, Bash, and Typescript.",
-        "Applied my product experience to convert user feedback and analytics into innovative 0-1 features, experimenting with new AI APIs, services, and LLM platforms to develop promising proofs of concept (POCs)."
+        "Applied my product experience to convert user feedback and analytics into innovative 0-1 features, experimenting with new AI APIs, services, and LLM platforms to develop promising proofs of concept (POCs).",
+        "Repo: https://github.com/grantmakers/grantmakers-next"
       ],
       "tags": [
         "Developer",
