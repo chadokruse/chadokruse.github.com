@@ -1,11 +1,12 @@
 ---
 name: product-engineer
 image: 0-1.png
-image_href: https://github.com/grantmakers/grantmakers-next
+image_href:
 header: Product Engineer
 tags:
   - Developer
+  - Innovation
 item_sort: 1.5
 ---
 
-On the spectrum of full stack developers I lean product thanks to my early career in strategy and product. I'm most at home turning ambitious ideas into functional prototypes that delight users.
+As a Product Engineer, I bring a unique blend of strategic thinking and technical expertise. My background in corporate strategy allows me to see the big picture while my coding skills enable me to bring ideas to life.

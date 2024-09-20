@@ -7,6 +7,7 @@ tags:
   - Founder
   - Product
   - Developer
+  - Innovation
 item_sort: 1
 ---
 Since its creation in 2016, Grantmakers.io has become one of the largest free sources of searchable philanthropic data on the Internet.

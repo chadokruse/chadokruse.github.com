@@ -7,6 +7,7 @@ tags:
   - Founder
   - Product
   - Developer
+  - Innovation
 item_sort: 2
 ---
 What does it take to triple charitable giving in the US to $1 trillion? 

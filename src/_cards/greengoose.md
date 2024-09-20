@@ -6,6 +6,7 @@ header: Chief Operating Officer
 tags:
   - COO
   - Business Development
+  - Strategy
   - Advisor
 item_sort: 7
 ---
