@@ -107,21 +107,52 @@
 </nav>
 <main
   class="mt-10 mb-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:mb-12 sm:px-6 md:mt-16 md:mb-16 lg:mt-20 lg:mb-20 lg:px-8 xl:mt-28 xl:mb-28">
-  <div class="sm:text-center lg:text-left">
-    <span class="noscript"><noscript>You have Javascript turned off. This site requires Javascript to be viewed
-        properly.</noscript></span>
-    <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-      <span class="inline">Current Status:</span><br>
-      <span class="text-indigo-600 inline">Hacking on Philanthropy</span>
-    </h1>
-    <p class="mt-3 text-base text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-      👋 Hi! I'm Chad Kruse, a <span class="text-gray-800 font-bold">software developer</span> with a background in
-      product and strategy.
-    </p>
-    <p class="mt-3 text-base text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-      My experience spans Fortune 500s, startups, and my own ventures in the philanthropy space.
-    </p>
+  <div class="flex flex-col lg:flex-row justify-between">
+    <div class="lg:w-2/3 sm:text-center lg:text-left">
+      <span class="noscript"><noscript>You have Javascript turned off. This site requires Javascript to be viewed
+          properly.</noscript></span>
+      <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+        <span class="inline">Current Status:</span><br>
+        <span class="text-indigo-600 inline">Hacking on Philanthropy</span>
+      </h1>
+      <p class="mt-3 text-base text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+        👋 Hi! I'm Chad Kruse, a <span class="text-gray-800 font-bold">software developer</span> with a background in
+        product and strategy.
+      </p>
+      <p class="mt-3 text-base text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+        My experience spans Fortune 500s, startups, and my own ventures in the philanthropy space.
+      </p>
+    </div>
+    <div class="lg:w-1/3 mt-8 lg:mt-0 flex flex-col">
+      <div class="shadow-lg rounded-lg p-6 pb-8 bg-gray-900 bg-[url(/images/backgrounds/dot-texture.svg)]">
+        <h2 class="text-2xl font-bold text-white mb-4 text-center">My Career</h2>
+        <div class="flex flex-col space-y-4">
+          <div class="flex justify-center">
+            <div class="w-3/4 bg-indigo-50 p-4 rounded-lg">
+              <p class="text-xs text-gray-600 mt-1 uppercase">Since 2016</p>
+              <h3 class="text-lg font-semibold text-gray-800">Innovation Engineering</h3>
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <div class="w-3/4 bg-indigo-100 p-4 rounded-lg">
+              <p class="text-xs text-gray-600 mt-1 uppercase">Mid Career</p>
+              <h3 class="text-lg font-semibold text-gray-800">Product Strategy</h3>
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <div class="w-3/4 bg-indigo-200 p-4 rounded-lg">
+              <p class="text-xs text-gray-600 mt-1 uppercase">Early Career</p>
+              <h3 class="text-lg font-semibold text-gray-800">Corporate Strategy</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  </div>
+
 </main>
 
 <nav id="filter-bar" class="sticky top-0 bg-white px-2 sm:px-4 py-2.5 rounded border-gray-200 shadow-md z-50">
@@ -131,11 +162,9 @@
         Filter By:
       </li>
       <li><a href="#all" id="all" class="nav-btn" data-filter="*">All</a></li>
-      <li><a href="#advisor" id="advisor" class="nav-btn" data-filter=".advisor">Advisor</a></li>
-      <li class="hidden md:list-item"><a href="#consulting" id="consulting" class="nav-btn"
-          data-filter=".consulting">Consultant</a></li>
-      <li><a href="#founder" id="founder" class="nav-btn" data-filter=".founder">Founder</a></li>
-      <li><a href="#developer" id="developer" class="nav-btn" data-filter=".developer">Developer</a></li>
+      <li><a href="#strategy" id="strategy" class="nav-btn" data-filter=".strategy">Strategy</a></li>
+      <li><a href="#product" id="product" class="nav-btn" data-filter=".product">Product</a></li>
+      <li><a href="#innovation" id="innovation" class="nav-btn" data-filter=".innovation">Innovation</a></li>
     </ul>
     <ul class="hidden md:flex m-1 ">
       <li><a href="/resume/" class="nav-btn" rel="nofollow">Resume</a></li>
@@ -180,7 +209,7 @@
 </div>
   
   <div
-  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 founder product developer ">
+  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 founder product developer innovation ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
     <a href="https://www.grantmakers.io" target="_blank"><img class="w-full mx-auto border-none rounded-t-lg"
@@ -202,6 +231,10 @@
           class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
           data-filter=".developer">Developer</a>
         
+        <a href="#innovation"
+          class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
+          data-filter=".innovation">Innovation</a>
+        
       </div>
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
         <p>Since its creation in 2016, Grantmakers.io has become one of the largest free sources of searchable philanthropic data on the Internet.</p>
@@ -214,11 +247,11 @@
 </div>
   
   <div
-  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 developer ">
+  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 developer innovation ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
-    <a href="https://github.com/grantmakers/grantmakers-next" target="_blank"><img class="w-full mx-auto border-none rounded-t-lg"
-        src="/images/0-1.png" alt="Product Engineer"></a>
+    <img class="w-full mx-auto border-none rounded-t-lg" src="/images/0-1.png"
+      alt="Product Engineer">
     
     <div class="p-5">
       <h2 class="mb-2 text-2xl tracking-tight font-bold text-gray-900 dark:text-white">Product Engineer</h2>
@@ -228,9 +261,13 @@
           class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
           data-filter=".developer">Developer</a>
         
+        <a href="#innovation"
+          class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
+          data-filter=".innovation">Innovation</a>
+        
       </div>
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
-        <p>On the spectrum of full stack developers I lean product thanks to my early career in strategy and product. I'm most at home turning ambitious ideas into functional prototypes that delight users.</p>
+        <p>As a Product Engineer, I bring a unique blend of strategic thinking and technical expertise. My background in corporate strategy allows me to see the big picture while my coding skills enable me to bring ideas to life.</p>
 
       </div>
     </div>
@@ -238,7 +275,7 @@
 </div>
   
   <div
-  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 founder product developer ">
+  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 founder product developer innovation ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
     <a href="https://smartergiving.org" target="_blank"><img class="w-full mx-auto border-none rounded-t-lg"
@@ -260,6 +297,10 @@
           class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
           data-filter=".developer">Developer</a>
         
+        <a href="#innovation"
+          class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
+          data-filter=".innovation">Innovation</a>
+        
       </div>
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
         <p>What does it take to triple charitable giving in the US to $1 trillion?</p>
@@ -272,7 +313,7 @@
 </div>
   
   <div
-  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 developer ">
+  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 developer innovation ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
     <a href="https://careers.kimberly-clark.com/en/search#q=innovation&sort=relevancy" target="_blank"><img class="w-full mx-auto border-none rounded-t-lg"
@@ -285,6 +326,10 @@
         <a href="#developer"
           class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
           data-filter=".developer">Developer</a>
+        
+        <a href="#innovation"
+          class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
+          data-filter=".innovation">Innovation</a>
         
       </div>
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
@@ -394,7 +439,7 @@
 </div>
   
   <div
-  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 founder product developer ">
+  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 founder product developer innovation ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
     <a href="https://kyn.github.io/" target="_blank"><img class="w-full mx-auto border-none rounded-t-lg"
@@ -416,11 +461,48 @@
           class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
           data-filter=".developer">Developer</a>
         
+        <a href="#innovation"
+          class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
+          data-filter=".innovation">Innovation</a>
+        
       </div>
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
         <p>You shouldn't need to recreate the infrastructure of the Gates Foundation to be an effective philanthropist.</p>
 <p>At The Kyn Project, we rethought modern philanthropy systems to bring simplicity, passion, and a personal connection to each and every charitable gift.</p>
 <p><a href="https://kyn.github.io/">Lessons learned →</a></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div
+  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 developer product innovation ">
+  <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    
+    <img class="w-full mx-auto border-none rounded-t-lg" src="/images/simplify.png"
+      alt="Complexity to Clarity">
+    
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl tracking-tight font-bold text-gray-900 dark:text-white">Complexity to Clarity</h2>
+      <div class="mb-2 font-normal">
+        
+        <a href="#developer"
+          class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
+          data-filter=".developer">Developer</a>
+        
+        <a href="#product"
+          class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
+          data-filter=".product">Product</a>
+        
+        <a href="#innovation"
+          class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
+          data-filter=".innovation">Innovation</a>
+        
+      </div>
+      <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
+        <p>Simplicity isn't just about clean code or minimalist design. It's about creating products that solve real problems in the most straightforward way possible.</p>
+<p>Start small, learn fast, and scale smartly.</p>
 
       </div>
     </div>
@@ -460,7 +542,7 @@ I’m empathetic, genuine, and versatile.</p>
 </div>
   
   <div
-  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 corporate-development vc ">
+  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 corporate-development vc strategy ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
     <img class="w-full mx-auto border-none rounded-t-lg" src="/images/saic.jpg"
@@ -477,6 +559,10 @@ I’m empathetic, genuine, and versatile.</p>
         <a href="#vc"
           class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
           data-filter=".vc">VC</a>
+        
+        <a href="#strategy"
+          class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
+          data-filter=".strategy">Strategy</a>
         
       </div>
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
@@ -526,7 +612,7 @@ My popular repos include:
 </div>
   
   <div
-  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 coo business-development advisor ">
+  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 coo business-development strategy advisor ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
     <a href="http://www.wired.com/2011/12/spime-watch-green-goose-stickers/" target="_blank"><img class="w-full mx-auto border-none rounded-t-lg"
@@ -543,6 +629,10 @@ My popular repos include:
         <a href="#business-development"
           class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
           data-filter=".business-development">Business Development</a>
+        
+        <a href="#strategy"
+          class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
+          data-filter=".strategy">Strategy</a>
         
         <a href="#advisor"
           class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
@@ -817,7 +907,7 @@ My popular repos include:
 </div>
   
   <div
-  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting speaking ">
+  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 consulting speaking innovation ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
     <img class="w-full mx-auto border-none rounded-t-lg" src="/images/oz.jpg"
@@ -834,6 +924,10 @@ My popular repos include:
         <a href="#speaking"
           class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
           data-filter=".speaking">Speaking</a>
+        
+        <a href="#innovation"
+          class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
+          data-filter=".innovation">Innovation</a>
         
       </div>
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
@@ -928,7 +1022,7 @@ My popular repos include:
 </div>
   
   <div
-  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 founder product ">
+  class="eachcard w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 p-4 founder product innovation ">
   <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     
     <img class="w-full mx-auto border-none rounded-t-lg" src="/images/10speak.jpg"
@@ -945,6 +1039,10 @@ My popular repos include:
         <a href="#product"
           class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
           data-filter=".product">Product</a>
+        
+        <a href="#innovation"
+          class="inline-flex leading-5 mr-2 mb-1 px-2 text-xs text-gray-900 bg-gray-200 rounded whitespace-nowrap hover:bg-indigo-600 hover:text-white"
+          data-filter=".innovation">Innovation</a>
         
       </div>
       <div class="prose prose-p:leading-snug prose-li:m-0 mb-3 font-normal">
