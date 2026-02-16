@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Chad Kruse",
-    "label": "Product Engineer",
+    "label": "Innovation Architect",
     "picture": "http://www.chadkruse.com/images/avatar.jpg",
     "email": "[redacted]",
     "phone": "[redacted]",
     "website": "https://www.chadkruse.com",
-    "summary": "An experienced Full Stack Developer with a proven track record of bringing ambitious 0-1 ideas to market. As a Product Engineer, I lean frontend, but have demonstrated experience across the stack. My early career experience in product and corporate strategy allows me to be an immediate force multiplier. A natural collaborator - fun to work with and intensely curious.",
+    "summary": "An experienced Product Engineer with a proven track record of bringing ambitious 0-1 ideas to market. A natural collaborator, fun to work with and intensely curious.",
     "location": {
       "address": "[address protected]",
       "postalCode": "IL 60611",
@@ -338,11 +338,12 @@
       "website": "https://www.grantmakers.io/",
       "startDate": "2023-09-01",
       "endDate": "",
-      "summary": "I took a sabbatical from a full-time software engineering role to modernize Grantmakers.io, a popular philanthropic endeavor I founded 7 years ago.",
+      "summary": "Rebuilt and continue to lead Grantmakers.io, a philanthropic endeavor that has saved nonprofits an estimated $3.3M on a total annual budget of $200.",
       "highlights": [
-        "Transformed the v1 static site developed with vanilla JavaScript to a dynamic, modern web application using Typescript, Svelte, SvelteKit, Tailwind CSS, and Cloudflare Workers.",
-        "Designed an event-driven architecture for the ETL pipeline and refactored legacy components, using Node.js, Bash, and Typescript.",
-        "Applied my product experience to convert user feedback and analytics into innovative 0-1 features, experimenting with new AI APIs, services, and LLM platforms to develop promising proofs of concept (POCs).",
+        "Defined what AI-enabled philanthropy infrastructure could become, prototyping extensively with LLMs and AI agents to separate tangible value from AI hype.",
+        "Solved a longstanding entity-matching problem using a multi-agent LLM pipeline, expanding the underlying ETL infrastructure to capture millions of new grounding data points.",
+        "Architected a transition from keyword-based faceted search toward a conversational UX. Built and evaluated RAG, embedding models, and vector databases to inform the feasibility and maintenance requirements of moving to fully AI-powered search.",
+        "Technical stack: NodeJS, TypeScript, Svelte/SvelteKit, MongoDB, Cloudflare Workers, and React as needed.",
         "Repo: https://github.com/grantmakers/grantmakers-next"
       ],
       "tags": [
