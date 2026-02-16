@@ -12,6 +12,9 @@
     "build:11ty": "npx @11ty/eleventy",
     "build": "NODE_ENV=production npm-run-all clean --sequential build:*"
   },
+  "engines": {
+    "node": ">=22"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chadokruse/chadokruse.github.com.git"
